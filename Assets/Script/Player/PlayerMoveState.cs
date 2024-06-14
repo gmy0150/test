@@ -36,7 +36,7 @@ public class PlayerMoveState : PlayerGroundState
         }
         else if(player.gravityState.count == 2){
             Debug.Log('2');
-            player.SetVelocity(xInput * player.moveSpeed, yvelocity);
+            player.SetVelocity(-xInput * player.moveSpeed, yvelocity);
         }
         else if(player.gravityState.count == 3){
             Debug.Log('3');
