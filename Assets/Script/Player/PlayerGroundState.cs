@@ -21,7 +21,7 @@ public class PlayerGroundState : PlayerInputKey
     public override void Update()
     {
         base.Update();
-        if(Input.GetKeyDown(KeyCode.X)){
+        if(Input.GetKeyDown(KeyCode.Tab)&&player.IsGroundDetected()){
             control.ChangeState(player.gravityState);
         }
         

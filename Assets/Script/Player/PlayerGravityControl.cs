@@ -13,10 +13,10 @@ public class PlayerGravityControl : PlayerInputKey
     public override void Enter()
     {
         base.Enter();
-        count++;
-        if(count > 4){
-            count = 1;
-        }
+        // count++;
+        // if(count > 4){
+        //     count = 1;
+        // }
     }
     public override void Exit()
     {
@@ -25,11 +25,43 @@ public class PlayerGravityControl : PlayerInputKey
     public override void Update()
     {
         base.Update();
-        if(!player.IsGroundDetected()){
-            control.ChangeState(player.moveState);
-        }
-        if(player.IsGroundDetected()){
-            control.ChangeState(player.idleState);
-        }
+        KeyDown();
     } 
+    void KeyDown(){
+        if(Input.GetKeyDown(KeyCode.Z)){
+            count = 4;
+            if(!player.IsGroundDetected()){
+                control.ChangeState(player.moveState);
+            }
+            if(player.IsGroundDetected()){
+                control.ChangeState(player.idleState);
+            }
+        }else if(Input.GetKeyDown(KeyCode.X)){
+            count = 1;
+            if(!player.IsGroundDetected()){
+                control.ChangeState(player.moveState);
+            }
+            if(player.IsGroundDetected()){
+                control.ChangeState(player.idleState);
+            }
+        }else if(Input.GetKeyDown(KeyCode.C)){
+            count = 2;
+            if(!player.IsGroundDetected()){
+                control.ChangeState(player.moveState);
+            }
+            if(player.IsGroundDetected()){
+                control.ChangeState(player.idleState);
+            }
+
+        }else if(Input.GetKeyDown(KeyCode.V)){
+            count = 3;
+            if(!player.IsGroundDetected()){
+                control.ChangeState(player.moveState);
+            }
+            if(player.IsGroundDetected()){
+                control.ChangeState(player.idleState);
+            }
+        }
+        
+    }
 }

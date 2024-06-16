@@ -28,22 +28,17 @@ public class PlayerMoveState : PlayerGroundState
     public void move(){
         if(player.gravityState.count == 0){
             player.SetVelocity(xInput * player.moveSpeed, yvelocity);
-            Debug.Log('0');
         }
         else if(player.gravityState.count == 1){
-            Debug.Log('1');
             player.SetVelocity(xvelocity , xInput * player.moveSpeed);
         }
         else if(player.gravityState.count == 2){
-            Debug.Log('2');
             player.SetVelocity(-xInput * player.moveSpeed, yvelocity);
         }
         else if(player.gravityState.count == 3){
-            Debug.Log('3');
             player.SetVelocity(xvelocity,-xInput * player.moveSpeed);
         }
         else if(player.gravityState.count == 4){
-            Debug.Log('4');
             player.SetVelocity(xInput * player.moveSpeed, yvelocity);
         }
     }
