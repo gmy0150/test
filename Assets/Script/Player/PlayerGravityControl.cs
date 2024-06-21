@@ -28,7 +28,7 @@ public class PlayerGravityControl : PlayerInputKey
         KeyDown();
     } 
     void KeyDown(){
-        if(Input.GetKeyDown(KeyCode.Z)){
+        if(Input.GetKeyUp(KeyCode.DownArrow)){
             count = 4;
             if(!player.IsGroundDetected()){
                 control.ChangeState(player.moveState);
@@ -36,7 +36,7 @@ public class PlayerGravityControl : PlayerInputKey
             if(player.IsGroundDetected()){
                 control.ChangeState(player.idleState);
             }
-        }else if(Input.GetKeyDown(KeyCode.X)){
+        }else if(Input.GetKeyUp(KeyCode.RightArrow)){
             count = 1;
             if(!player.IsGroundDetected()){
                 control.ChangeState(player.moveState);
@@ -44,7 +44,7 @@ public class PlayerGravityControl : PlayerInputKey
             if(player.IsGroundDetected()){
                 control.ChangeState(player.idleState);
             }
-        }else if(Input.GetKeyDown(KeyCode.C)){
+        }else if(Input.GetKeyUp(KeyCode.UpArrow)){
             count = 2;
             if(!player.IsGroundDetected()){
                 control.ChangeState(player.moveState);
@@ -53,7 +53,7 @@ public class PlayerGravityControl : PlayerInputKey
                 control.ChangeState(player.idleState);
             }
 
-        }else if(Input.GetKeyDown(KeyCode.V)){
+        }else if(Input.GetKeyUp(KeyCode.LeftArrow)){
             count = 3;
             if(!player.IsGroundDetected()){
                 control.ChangeState(player.moveState);

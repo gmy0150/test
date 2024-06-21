@@ -21,9 +21,19 @@ public class PlayerGroundState : PlayerInputKey
     public override void Update()
     {
         base.Update();
-        if(Input.GetKeyDown(KeyCode.Tab)&&player.IsGroundDetected()){
+        if(Input.GetKeyDown(KeyCode.LeftArrow)&&player.IsGroundDetected()){
             control.ChangeState(player.gravityState);
         }
+        if(Input.GetKeyDown(KeyCode.UpArrow)&&player.IsGroundDetected()){
+            control.ChangeState(player.gravityState);
+        }
+        if(Input.GetKeyDown(KeyCode.DownArrow)&&player.IsGroundDetected()){
+            control.ChangeState(player.gravityState);
+        }
+        if(Input.GetKeyDown(KeyCode.RightArrow)&&player.IsGroundDetected()){
+            control.ChangeState(player.gravityState);
+        }
+
         
     }
 }

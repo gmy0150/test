@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class CubeObj : MonoBehaviour
 {
-    Player player;
     [SerializeField]private float groundCheckDistance = 0.5f;
     private LayerMask whatIsGround;
     [SerializeField]private Transform groundCheck;

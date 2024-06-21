@@ -18,7 +18,6 @@ public class OpenButton : MonoBehaviour
     void Update()
     {
         if(isbutton()){
-            Debug.Log("?");
             transY = 9.5f;
             float a = transform.position.y + 0.2f;
 
@@ -29,7 +28,6 @@ public class OpenButton : MonoBehaviour
             opendoor.SetActive(false);
 
             }
-        Debug.Log(a);  
         }
     }
     private void OnDrawGizmos() {
