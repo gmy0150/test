@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -20,6 +21,8 @@ public class Player : MonoBehaviour
 
     int gravity = 10;
     public float moveSpeed = 8f;
+
+    MapManager mapManager;
     int rotate = 90;
     void Awake() {
         stateMachine = new PlayerControl();
@@ -31,11 +34,13 @@ public class Player : MonoBehaviour
     }
     void Start(){
         rigid = GetComponent<Rigidbody2D>();
+        mapManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<MapManager>();
         stateMachine.Initalize(idleState);
 
         Physics2D.gravity = new Vector3(0f,-gravity,0f);
         
     }
+
 
     void Update(){
         stateMachine.currentState.Update();
@@ -123,5 +128,13 @@ public class Player : MonoBehaviour
         else{
             return 0;
         }
+    }
+    private void OnTriggerExit2D(Collider2D other) {
+        mapManager.transpos = false;
+        Debug.Log(other.name);
+        mapManager.mapCount++;
+        gravityState.count = 4;
+        Debug.Log(mapManager.mapCount);
+
     }
 }

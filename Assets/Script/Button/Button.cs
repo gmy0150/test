@@ -8,13 +8,14 @@ public class OpenButton : MonoBehaviour
     float transY;
     SpriteRenderer render;
     public GameObject opendoor;
+    public float raylength = 0.5f;
     void Start()
     {
         cubemask = LayerMask.GetMask("Cube");
+        
         render = GetComponent<SpriteRenderer>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if(isbutton()){
@@ -33,8 +34,7 @@ public class OpenButton : MonoBehaviour
     private void OnDrawGizmos() {
         Gizmos.color = Color.red;
 
-        // 레이캐스트를 그릴 위치와 방향 설정
-        Gizmos.DrawLine(transform.position, transform.position -transform.up * 1f);
+        Gizmos.DrawLine(transform.position, transform.position -transform.up * raylength);
     }
-    private bool isbutton() =>Physics2D.Raycast(transform.position, -transform.up,1f,cubemask);
+    private bool isbutton() =>Physics2D.Raycast(transform.position, -transform.up,raylength,cubemask);
 }

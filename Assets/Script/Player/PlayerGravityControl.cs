@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerGravityControl : PlayerInputKey
 {
-    public int count{get;private set;}
+    public int count;
     public PlayerGravityControl(Player _player, PlayerControl _control) : base(_player, _control)
     {
     }
