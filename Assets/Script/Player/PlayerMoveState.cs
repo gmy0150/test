@@ -20,26 +20,24 @@ public class PlayerMoveState : PlayerGroundState
     {
         base.Update();
         move();
-        // Debug.Log(yInput);
+
         if(xInput == 0){
             control.ChangeState(player.idleState);
         }
     } 
     public void move(){
-        if(player.gravityState.count == 0){
-            player.SetVelocity(xInput * player.moveSpeed, yvelocity);
-        }
-        else if(player.gravityState.count == 1){
+        if(player.gravityState.count == 1){//오른쪽
             player.SetVelocity(xvelocity , xInput * player.moveSpeed);
         }
-        else if(player.gravityState.count == 2){
+        else if(player.gravityState.count == 2){//위
             player.SetVelocity(-xInput * player.moveSpeed, yvelocity);
         }
-        else if(player.gravityState.count == 3){
+        else if(player.gravityState.count == 3){//왼쪽
             player.SetVelocity(xvelocity,-xInput * player.moveSpeed);
         }
-        else if(player.gravityState.count == 4){
+        else if(player.gravityState.count == 4){//아래
             player.SetVelocity(xInput * player.moveSpeed, yvelocity);
         }
     }
+
 }

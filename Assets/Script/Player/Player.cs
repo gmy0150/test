@@ -10,13 +10,17 @@ public class Player : MonoBehaviour
     public PlayerIdleState idleState{get; private set;}
     public PlayerMoveState moveState{get; private set;}
     public PlayerGravityControl gravityState{get; private set;}
+    public PlayerFreezeCube freezeState{get; private set;}
+
     public PlayerControl stateMachine{get;private set;}
     public int facingDir {get;private set;} = -1;
     private bool facingRight = true;
     private bool gravityRight = false;
 
     [SerializeField]private float groundCheckDistance;
+    public float cubeCheckDistance;
     [SerializeField]private LayerMask whatIsGround;
+    public LayerMask CubeLayer;
     [SerializeField]private Transform groundCheck;
 
     int gravity = 10;
@@ -24,9 +28,9 @@ public class Player : MonoBehaviour
 
     MapManager mapManager;
     int rotate = 90;
-    void Awake() {
+    void Awake() {  
         stateMachine = new PlayerControl();
-
+        freezeState = new PlayerFreezeCube(this,stateMachine);
         idleState = new PlayerIdleState(this,stateMachine);
         moveState = new PlayerMoveState(this,stateMachine);
         gravityState = new PlayerGravityControl(this,stateMachine);
@@ -89,6 +93,9 @@ public class Player : MonoBehaviour
         Gizmos.color = Color.red;
 
         Gizmos.DrawLine(groundCheck.position, groundCheck.position -transform.up * groundCheckDistance);
+
+        Gizmos.DrawLine(transform.position, transform.position + transform.right * cubeCheckDistance);
+
     }
     private void FlipX(){
         if(gravityState.count ==2 || gravityState.count == 4){
@@ -129,12 +136,20 @@ public class Player : MonoBehaviour
             return 0;
         }
     }
+
+    public bool isCube()=> Physics2D.Raycast(transform.position, transform.right,cubeCheckDistance,CubeLayer);
+    public GameObject CheckCube(){
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.right, cubeCheckDistance, CubeLayer);
+        if(hit.collider != null){
+            return hit.collider.gameObject;
+        }
+        else{
+            return null;
+        }
+    }
     private void OnTriggerExit2D(Collider2D other) {
         mapManager.transpos = false;
-        Debug.Log(other.name);
         mapManager.mapCount++;
         gravityState.count = 4;
-        Debug.Log(mapManager.mapCount);
-
     }
 }

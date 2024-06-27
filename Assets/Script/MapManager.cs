@@ -26,6 +26,8 @@ public class MapManager : MonoBehaviour
     private void Update() {
         switch (mapCount)
         {
+            case 0:
+            break;
             default:
             if(!transpos){
                 maplist[mapCount].SetActive(true);
@@ -33,7 +35,6 @@ public class MapManager : MonoBehaviour
                 player.transform.position = maplist[mapCount].transform.position;
                 player.rigid.velocity = Vector2.zero;
                 transpos = true;
-                
             }
 
             break;

@@ -5,10 +5,12 @@ using UnityEngine;
 public class MetalObj : MonoBehaviour
 {
     [SerializeField]private float groundCheckDistance = 0.5f;
+
     // CameraManager Camera;
     private LayerMask whatIsGround;
     private LayerMask BrokenGround;
     [SerializeField]private Transform groundCheck;
+
     Vector2 startPosition;
     private float distance = 3.0f;
     Rigidbody2D rigid;
@@ -16,7 +18,7 @@ public class MetalObj : MonoBehaviour
     void Start()
     {
         rigid = GetComponent<Rigidbody2D>();
-        whatIsGround = LayerMask.GetMask("Floor");   
+        whatIsGround = LayerMask.GetMask("Floor");
         BrokenGround = LayerMask.GetMask("BrokenFloor");
     }
     private void OnDrawGizmos() {
