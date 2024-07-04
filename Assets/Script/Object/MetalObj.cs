@@ -12,7 +12,8 @@ public class MetalObj : MonoBehaviour
     [SerializeField]private Transform groundCheck;
 
     Vector2 startPosition;
-    private float distance = 3.0f;
+    [Header("충돌거리")]
+    [SerializeField]private float distance = 8.0f;
     Rigidbody2D rigid;
     bool isFalling;
     void Start()

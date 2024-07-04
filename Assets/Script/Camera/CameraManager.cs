@@ -9,11 +9,11 @@ public class CameraManager : MonoBehaviour
     public static CameraManager Instance{get;private set;}
     GameObject player;
     Vector3 originPos;
-    float getX,getY;
     public float ShakeAmount = 3.0f;
     public float ShakeTime = 2.0f;
     bool isShaking;
     float saveSahke;
+    MapManager mapManager;
     void Awake() {
         if(Instance == null){
             Instance = this;
@@ -27,14 +27,17 @@ public class CameraManager : MonoBehaviour
     {
         player = GameObject.FindWithTag("Player");
         saveSahke = ShakeTime;
+        mapManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<MapManager>();
     }
 
     void Update()
     {
-        getX = player.transform.position.x;
-        getY = player.transform.position.y;
-        originPos = new Vector3(getX,getY,-10f);
-        transform.localPosition = originPos;
+        // getX = transform.position.x;
+        // getY = transform.position.y;
+        if(!isShaking){
+            originPos = transform.position;
+            transform.localPosition = originPos;
+        }
     }
     public void ShakeCamera(){
         if(!isShaking){

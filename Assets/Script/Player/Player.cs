@@ -52,6 +52,9 @@ public class Player : MonoBehaviour
         FlipController();
 
         gravitycontrol();
+        if(Input.GetKeyDown(KeyCode.B)){
+            Skip();
+        }
     }
     int y = 1;
     int x = 0;
@@ -136,20 +139,31 @@ public class Player : MonoBehaviour
             return 0;
         }
     }
-
     public bool isCube()=> Physics2D.Raycast(transform.position, transform.right,cubeCheckDistance,CubeLayer);
     public GameObject CheckCube(){
         RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.right, cubeCheckDistance, CubeLayer);
+        Debug.DrawRay(transform.position, transform.right*cubeCheckDistance);
+
         if(hit.collider != null){
+            switch(gravityState.count){
+                default:
+                if(IsGroundDetected())
+                    rigid.velocity = Vector2.zero;
+            break;
+            }
             return hit.collider.gameObject;
+
         }
         else{
             return null;
         }
     }
     private void OnTriggerExit2D(Collider2D other) {
-        mapManager.transpos = false;
-        mapManager.mapCount++;
+        Skip();
+    }
+    void Skip(){
         gravityState.count = 4;
+        mapManager.mapCount++;
+        mapManager.transpos = false;
     }
 }

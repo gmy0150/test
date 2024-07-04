@@ -8,6 +8,7 @@ TagManager:
   - Cube
   - Map
   - GameManager
+  - OpenDoor
   layers:
   - Default
   - TransparentFX

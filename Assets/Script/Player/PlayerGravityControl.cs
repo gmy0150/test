@@ -44,6 +44,7 @@ public class PlayerGravityControl : PlayerInputKey
         }
         if(player.IsGroundDetected()){
             control.ChangeState(player.idleState);
+            player.rigid.velocity = Vector2.zero;
         }
     }
 }
