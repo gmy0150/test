@@ -9,6 +9,8 @@ TagManager:
   - Map
   - GameManager
   - OpenDoor
+  - nextmap
+  - respawn
   layers:
   - Default
   - TransparentFX

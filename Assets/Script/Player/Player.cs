@@ -25,6 +25,7 @@ public class Player : MonoBehaviour
 
     int gravity = 10;
     public float moveSpeed = 8f;
+    public Vector3 savePos;
 
     MapManager mapManager;
     int rotate = 90;
@@ -48,12 +49,14 @@ public class Player : MonoBehaviour
 
     void Update(){
         stateMachine.currentState.Update();
-
         FlipController();
 
         gravitycontrol();
         if(Input.GetKeyDown(KeyCode.B)){
             Skip();
+        }
+        if(Input.GetKeyDown(KeyCode.R)){
+            Respawn();
         }
     }
     int y = 1;
@@ -159,11 +162,22 @@ public class Player : MonoBehaviour
         }
     }
     private void OnTriggerExit2D(Collider2D other) {
-        Skip();
+        if(other.tag == "nextmap"){
+            Skip();
+        }
+        if(other.tag == "respawn"){
+            Respawn();
+        }
     }
     void Skip(){
         gravityState.count = 4;
         mapManager.mapCount++;
         mapManager.transpos = false;
+        // transform.position = savePos;
+    }
+    void Respawn(){
+        gravityState.count = 4;
+        transform.position = savePos;
+        mapManager.ResetCubePositions();
     }
 }
