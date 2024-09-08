@@ -6,20 +6,22 @@ using UnityEngine;
 public class OpenButton : MonoBehaviour
 {
     LayerMask cubemask;
+    LayerMask playermask;
     float transY;
-    SpriteRenderer render;
+    protected SpriteRenderer render;
     public GameObject opendoor;
-    Player player;
+    protected Player player;
     Vector3 ToRay;
-    [SerializeField]private Type ButtonType;
+    protected bool isClick;
+    public Type ButtonType;
     
-    [SerializeField]private enum Type{under, on,right,left};
-    public float raylength = 0.5f;
-    float buttonValue;
-    bool isClick;
-    void Start()
+    public enum Type{under, on,right,left};
+    public float raylength = 0.55f;
+    protected float buttonValue;
+    protected void Start()
     {
         cubemask = LayerMask.GetMask("Cube");
+        playermask = LayerMask.GetMask("Player");
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         render = GetComponent<SpriteRenderer>();
         howray();
@@ -27,39 +29,7 @@ public class OpenButton : MonoBehaviour
 
     void Update()
     {
-        if(isbutton()){
-            if(!isClick){
-                switch(ButtonType){
-                    case Type.under:
-                        buttonValue = transform.position.y - 0.2f;
-                    transform.position = new Vector3(transform.position.x,buttonValue,transform.position.z);
-                    break;
-                    case Type.on:
-                        buttonValue = transform.position.y + 0.2f;
-                    transform.position = new Vector3(transform.position.x,buttonValue,transform.position.z);
-
-                    break;
-                    case Type.left:
-                        buttonValue = transform.position.x - 0.2f;
-                        transform.position = new Vector3(buttonValue,transform.position.y,transform.position.z);
-
-                    break;
-                    case Type.right:
-                        buttonValue = transform.position.x - 0.2f;
-                        transform.position = new Vector3(buttonValue,transform.position.y,transform.position.z);
-
-
-                    break;
-                }
-
-                isClick = true;
-            
-                render.material.color = Color.red;
-                if(gameObject !=null){
-                    opendoor.SetActive(false);
-                }
-            }
-        }
+        
     }
     void howray(){
         switch(ButtonType){
@@ -78,10 +48,10 @@ public class OpenButton : MonoBehaviour
         }
 
     }
-    private void OnDrawGizmos() {
+    protected void OnDrawGizmos() {
         Gizmos.color = Color.red;
 
         Gizmos.DrawLine(transform.position, transform.position + ToRay * raylength);
     }
-    private bool isbutton() =>Physics2D.Raycast(transform.position, ToRay,raylength,cubemask);
+    public bool isbutton() =>Physics2D.Raycast(transform.position, ToRay,raylength,cubemask|playermask);
 }

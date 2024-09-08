@@ -22,6 +22,8 @@ public class PlayerMoveState : PlayerGroundState
         move();
 
         if(xInput == 0){
+            player.SetVelocity(0, player.rigid.velocity.y);
+            Debug.Log("작동했니?");
             control.ChangeState(player.idleState);
         }
     } 
@@ -32,10 +34,10 @@ public class PlayerMoveState : PlayerGroundState
         else if(player.gravityState.count == 2){//위
             player.SetVelocity(-xInput * player.moveSpeed, yvelocity);
         }
-        else if(player.gravityState.count == 3){//왼쪽
+        else if(player.gravityState.count == -1){//왼쪽
             player.SetVelocity(xvelocity,-xInput * player.moveSpeed);
         }
-        else if(player.gravityState.count == 4){//아래
+        else if(player.gravityState.count == -2){//아래
             player.SetVelocity(xInput * player.moveSpeed, yvelocity);
         }
     }
