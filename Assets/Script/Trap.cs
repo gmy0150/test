@@ -60,26 +60,7 @@ public class Trap : MonoBehaviour
                 Time.deltaTime * duration // 시간에 따라 스케일 증가 속도 조절
             );
 
-            // 피벗에 상관없이 오른쪽이나 왼쪽으로만 스케일을 변경하기 위해 위치 보정
-            // Vector3 oldPosition = targetobj.transform.position;
-            // if (scaleRight)
-            // {
-            //     targetobj.transform.position = new Vector3(
-            //         oldPosition.x + (targetobj.transform.localScale.x - initScale.x) / 2,
-            //         oldPosition.y,
-            //         oldPosition.z
-            //     );
-            // }
-            // else
-            // {
-            //     targetobj.transform.position = new Vector3(
-            //         oldPosition.x - (targetobj.transform.localScale.x - initScale.x) / 2,
-            //         oldPosition.y,
-            //         oldPosition.z
-            //     );
-            // }
 
-            // 목표 스케일에 거의 도달하면 스케일링을 중지
             if (Vector3.Distance(targetobj.transform.localScale, target) < 0.01f)
             {
                 targetobj.transform.localScale = target; // 최종 스케일 적용

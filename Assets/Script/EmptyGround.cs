@@ -21,7 +21,6 @@ public class EmptyGround : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.CompareTag("Player")||other.CompareTag("Cube")) // 충돌한 오브젝트의 태그를 확인
         {
-            Debug.Log("Collision detected with Floor object: " + other.name);
             DisableTilemapCollider(other);
         }else{
             EnableTileMap(other);
