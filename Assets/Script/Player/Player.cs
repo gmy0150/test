@@ -35,7 +35,6 @@ public class Player : MonoBehaviour
         idleState = new PlayerIdleState(this,stateMachine);
         moveState = new PlayerMoveState(this,stateMachine);
         gravityState = new PlayerGravityControl(this,stateMachine);
-        
     }
     void Start(){
         savePos = transform.position;
@@ -53,7 +52,6 @@ public class Player : MonoBehaviour
 
         gravitycontrol();
         if(Input.GetKeyDown(KeyCode.B)){
-            Skip();
         }
         if(Input.GetKeyDown(KeyCode.R)){
             Respawn();
@@ -100,7 +98,7 @@ public class Player : MonoBehaviour
         rigid.velocity = new Vector2(_xVelocity,_yVelocity);
         FlipController();
     }
-    public bool IsGroundDetected() => Physics2D.Raycast(groundCheck.position, -transform.up,groundCheckDistance,whatIsGround);
+    public bool IsGroundDetected() => Physics2D.Raycast(groundCheck.position, -transform.up,groundCheckDistance,whatIsGround|CubeLayer);
     private void OnDrawGizmos() {
         Gizmos.color = Color.red;
 
@@ -179,11 +177,22 @@ public class Player : MonoBehaviour
         gravityState.count = -2;
         mapManager.mapCount++;
         mapManager.transpos = false;
-        // transform.position = savePos;
     }
     void Respawn(){
         gravityState.count = -2;
         transform.position = savePos;
         mapManager.ResetCubePositions();
+        mapManager.ResetTrapPositions();
+    }
+    void getDamage(){
+        Vector2 pushDir = -Vector2.right * facingDir;
+        rigid.AddForce(pushDir * 15f, ForceMode2D.Impulse);
+    }
+
+    private void OnCollisionEnter2D(Collision2D other) {
+        if(other.transform.tag == "spike"){
+            getDamage();
+            Debug.Log("?");
+        }
     }
 }

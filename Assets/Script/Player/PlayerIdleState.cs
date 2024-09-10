@@ -25,6 +25,7 @@ public class PlayerIdleState : PlayerGroundState
         if(xInput != 0){
             control.ChangeState(player.moveState);
         }
+
         
     }
 }

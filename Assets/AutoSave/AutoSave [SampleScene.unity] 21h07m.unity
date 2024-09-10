@@ -190,7 +190,7 @@ MonoBehaviour:
   transpos: 0
   trapLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1024
   traps: []
 --- !u!4 &10330507
 Transform:
@@ -17068,7 +17068,7 @@ GameObject:
   - component: {fileID: 773456863}
   - component: {fileID: 773456866}
   - component: {fileID: 773456867}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Empty
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18123,7 +18123,7 @@ GameObject:
   m_Component:
   - component: {fileID: 946782026}
   - component: {fileID: 946782027}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: respawn
   m_TagString: respawn
   m_Icon: {fileID: 0}
@@ -22781,7 +22781,7 @@ PrefabInstance:
       objectReference: {fileID: 6200000, guid: 895640d0d9c4ba9428e91bc0cd351a46, type: 2}
     - target: {fileID: 1305314574017203149, guid: 2cf540e42086a6948bbdb9b8b284a16d, type: 3}
       propertyPath: m_Simulated
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5553275498193116797, guid: 2cf540e42086a6948bbdb9b8b284a16d, type: 3}
       propertyPath: m_Name

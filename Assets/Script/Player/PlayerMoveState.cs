@@ -22,8 +22,6 @@ public class PlayerMoveState : PlayerGroundState
         move();
 
         if(xInput == 0){
-            player.SetVelocity(0, player.rigid.velocity.y);
-            Debug.Log("작동했니?");
             control.ChangeState(player.idleState);
         }
     } 

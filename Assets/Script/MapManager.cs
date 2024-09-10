@@ -10,9 +10,14 @@ public class MapManager : MonoBehaviour
     Player player;
     CameraManager cameraManager;
     float cameraX,cameraY;
+    public string trapLayerName;
     public bool transpos = true;
+    public LayerMask trapLayer;
+    private Dictionary<GameObject, Vector3> trapPositions;
+    public List<Trap> traps;
     private Dictionary<GameObject, Vector3> cubePositions; // 큐브의 위치를 저장할 딕셔너리
     private List<GameObject> cubes; // 큐브 오브젝트 리스트
+    Trap trap1;
     private void Awake() {
         GameObject[] taggedObjects = GameObject.FindGameObjectsWithTag("OpenDoor");
         foreach(GameObject obj in taggedObjects){
@@ -24,9 +29,13 @@ public class MapManager : MonoBehaviour
     }
     void Start() {
         cubePositions = new Dictionary<GameObject, Vector3>();
-
         cubes = new List<GameObject>(GameObject.FindGameObjectsWithTag("Cube"));
+        trapPositions = new Dictionary<GameObject,Vector3>();
+        int trapLayer = LayerMask.NameToLayer(trapLayerName);
+        traps = FindTrapsOnLayer(trapLayer);
+        //traps = new List<GameObject>(FindObjectsOnLayer(trapLayer));
         SaveCubePositions();
+        SaveTrapPositions();
         GameObject[] findMapTag = GameObject.FindGameObjectsWithTag("Map");
         var sortedObjects = findMapTag.OrderBy(obj => obj.name).ToList();
         maplist = sortedObjects;
@@ -64,8 +73,64 @@ public class MapManager : MonoBehaviour
         }
     }
 
+    // Trap의 위치를 저장하는 메서드
+    public void SaveTrapPositions()
+    {
+        trapPositions.Clear();
+        foreach (var trap in traps)
+        {
+            if (trap != null && !trapPositions.ContainsKey(trap.gameObject))
+            {
+                trapPositions[trap.gameObject] = trap.transform.position;
+                Debug.Log("Trap 위치"+trapPositions[trap.gameObject]);
 
-        private void Update() {
+            }
+        }
+        Debug.Log("Trap 위치가 저장되었습니다.");
+    }
+
+    // Trap의 위치를 초기화하는 메서드
+    public void ResetTrapPositions()
+    {
+        foreach (var kvp in trapPositions)
+        {
+            if (kvp.Key != null)
+            {
+                Trap trap = kvp.Key.GetComponent<Trap>();
+                if(trap != null){
+                    trap.ResetTrap();
+                }
+                //kvp.Key.transform.position = kvp.Value;
+                //Debug.Log($"Trap {kvp.Key.name}의 위치를 재설정했습니다.");
+                //Debug.Log($"trap{kvp.Key.name}의 위치 이동"+ kvp.Value  );
+            }
+            else
+            {
+                Debug.LogWarning("Trap이 null입니다. 위치 재설정이 실패했습니다.");
+            }
+        }
+    }
+    private List<Trap> FindTrapsOnLayer(int layer)
+    {
+        List<Trap> traps = new List<Trap>();
+        GameObject[] allObjects = GameObject.FindObjectsOfType<GameObject>();
+
+        foreach (var obj in allObjects)
+        {
+            if (obj.layer == layer)
+            {
+                Trap trapComponent = obj.GetComponent<Trap>();
+                if (trapComponent != null)
+                {
+                    traps.Add(trapComponent); // Trap 컴포넌트를 가진 GameObject를 추가
+                }
+            }
+        }
+
+        return traps;
+    }
+
+    private void Update() {
         switch (mapCount)
         {
             case 0:
