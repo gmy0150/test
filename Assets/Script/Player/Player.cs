@@ -183,6 +183,7 @@ public class Player : MonoBehaviour
         transform.position = savePos;
         mapManager.ResetCubePositions();
         mapManager.ResetTrapPositions();
+        mapManager.ResetButton();
     }
     void getDamage(){
         Vector2 pushDir = -Vector2.right * facingDir;

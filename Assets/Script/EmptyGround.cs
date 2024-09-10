@@ -6,6 +6,8 @@ using UnityEngine.Tilemaps;
 public class EmptyGround : MonoBehaviour
 {
     public Tilemap tilemap; // 타일맵 참조
+    public LayerMask playerLayer; // 플레이어 레이어
+    public LayerMask cubeLayer; // 큐브 레이어
         private void Start() 
     {
         
@@ -17,35 +19,35 @@ public class EmptyGround : MonoBehaviour
         //UpdateEmptyTiles();
     }
     private void OnTriggerEnter2D(Collider2D other) {
-        if (other.CompareTag("Player")) // 충돌한 오브젝트의 태그를 확인
+        if (other.CompareTag("Player")||other.CompareTag("Cube")) // 충돌한 오브젝트의 태그를 확인
         {
             Debug.Log("Collision detected with Floor object: " + other.name);
-            DisableTilemapCollider();
+            DisableTilemapCollider(other);
         }else{
-            EnableTileMap();
+            EnableTileMap(other);
         }
     }
     private void OnTriggerExit2D(Collider2D other) {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player")||other.CompareTag("Cube"))
         {
-            EnableTileMap();
+            EnableTileMap(other);
         }
     }
 
-    void DisableTilemapCollider()
+    void DisableTilemapCollider(Collider2D other)
     {
         Collider2D tilemapCollider = tilemap.GetComponent<Collider2D>();
         if (tilemapCollider != null)
         {
-            tilemapCollider.enabled = false; 
+            Physics2D.IgnoreCollision(tilemapCollider,other,true);
         }
     }
-    void EnableTileMap(){
+    void EnableTileMap(Collider2D other){
     {
         Collider2D tilemapCollider = tilemap.GetComponent<Collider2D>();
             if (tilemapCollider != null)
             {
-                tilemapCollider.enabled = true;
+            Physics2D.IgnoreCollision(tilemapCollider,other ,false);
             }
         }
     }

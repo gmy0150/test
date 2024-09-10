@@ -54,4 +54,8 @@ public class OpenButton : MonoBehaviour
         Gizmos.DrawLine(transform.position, transform.position + ToRay * raylength);
     }
     public bool isbutton() =>Physics2D.Raycast(transform.position, ToRay,raylength,cubemask|playermask);
+
+    public void ResetButton(){
+        isClick = false;
+    }
 }

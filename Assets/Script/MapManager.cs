@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MapManager : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public class MapManager : MonoBehaviour
     private Dictionary<GameObject, Vector3> cubePositions; // 큐브의 위치를 저장할 딕셔너리
     private List<GameObject> cubes; // 큐브 오브젝트 리스트
     Trap trap1;
+    private List<GameObject> button;
     private void Awake() {
         GameObject[] taggedObjects = GameObject.FindGameObjectsWithTag("OpenDoor");
         foreach(GameObject obj in taggedObjects){
@@ -28,6 +30,7 @@ public class MapManager : MonoBehaviour
         }
     }
     void Start() {
+        button = new List<GameObject>(GameObject.FindGameObjectsWithTag("Button"));
         cubePositions = new Dictionary<GameObject, Vector3>();
         cubes = new List<GameObject>(GameObject.FindGameObjectsWithTag("Cube"));
         trapPositions = new Dictionary<GameObject,Vector3>();
@@ -48,6 +51,7 @@ public class MapManager : MonoBehaviour
         if(maplist.Count > 0){
             maplist[0].SetActive(true);
         }
+        
 
     }
     public void SaveCubePositions()
@@ -129,7 +133,16 @@ public class MapManager : MonoBehaviour
 
         return traps;
     }
-
+    public void ResetButton(){
+        foreach (var buttonObject in button)
+        {
+            OpenButton buttonScript = buttonObject.GetComponent<OpenButton>();
+            if (buttonScript != null)
+            {
+                buttonScript.ResetButton(); 
+            }
+        }
+    }
     private void Update() {
         switch (mapCount)
         {

@@ -12,6 +12,7 @@ TagManager:
   - nextmap
   - respawn
   - spike
+  - Button
   layers:
   - Default
   - TransparentFX
