@@ -101,7 +101,10 @@ public class MapManager : MonoBehaviour
             if (kvp.Key != null)
             {
                 Trap trap = kvp.Key.GetComponent<Trap>();
+                    Debug.Log("!?!?!");
+
                 if(trap != null){
+                    Debug.Log("작동!");
                     trap.ResetTrap();
                 }
                 //kvp.Key.transform.position = kvp.Value;

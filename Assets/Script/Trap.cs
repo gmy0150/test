@@ -32,14 +32,14 @@ public class Trap : MonoBehaviour
         if(targetobj == null){
             targetobj = this.gameObject;
         }
-        startPos = targetobj.transform.position;
+        startPos = targetobj.transform.localPosition;
         initScale = targetobj.transform.localScale;
     }
 
     private void Update() {
         if(TrapTypes == TrapType.Move&&Detect){
             float elasped = (Time.time - startTime) / duration;
-            targetobj.transform.position = Vector3.Lerp(startPos,target,elasped);
+            targetobj.transform.localPosition = Vector3.Lerp(startPos,target,elasped);
         }
          if (TrapTypes == TrapType.strenlth && Detect && !scaled)
         {
@@ -77,12 +77,13 @@ public class Trap : MonoBehaviour
         }
     }
     public void ResetTrap(){
+        Debug.Log("작동?");
         Detect = false;
         scaled = false;
         scaling = false;
         timer = 0;
         startTime = 0;
-        targetobj.transform.position = startPos;
+        targetobj.transform.localPosition = startPos;
         targetobj.transform.localScale = initScale;
         Debug.Log("현재위치"+targetobj.transform.position);
     }

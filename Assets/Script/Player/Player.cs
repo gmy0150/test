@@ -178,22 +178,18 @@ public class Player : MonoBehaviour
         mapManager.mapCount++;
         mapManager.transpos = false;
     }
-    void Respawn(){
+    public void Respawn(){
         gravityState.count = -2;
         transform.position = savePos;
         mapManager.ResetCubePositions();
         mapManager.ResetTrapPositions();
         mapManager.ResetButton();
     }
-    void getDamage(){
-        Vector2 pushDir = -Vector2.right * facingDir;
-        rigid.AddForce(pushDir * 15f, ForceMode2D.Impulse);
-    }
+
 
     private void OnCollisionEnter2D(Collision2D other) {
         if(other.transform.tag == "spike"){
-            getDamage();
-            Debug.Log("?");
+            Respawn();
         }
     }
 }
