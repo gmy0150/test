@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class MapManager : MonoBehaviour
 {
+    public static MapManager Instance;
     public List<GameObject> maplist = new List<GameObject>();
     public int mapCount = 0;
     Player player;
@@ -20,6 +21,7 @@ public class MapManager : MonoBehaviour
     private List<GameObject> cubes; // 큐브 오브젝트 리스트
     Trap trap1;
     private List<GameObject> button;
+    public bool GravityRoom{get; private set;}
     private void Awake() {
         GameObject[] taggedObjects = GameObject.FindGameObjectsWithTag("OpenDoor");
         foreach(GameObject obj in taggedObjects){
@@ -28,6 +30,7 @@ public class MapManager : MonoBehaviour
                 objRender.material.color = Color.red;
             }
         }
+        Instance = this;
     }
     void Start() {
         button = new List<GameObject>(GameObject.FindGameObjectsWithTag("Button"));
@@ -50,6 +53,13 @@ public class MapManager : MonoBehaviour
         }
         if(maplist.Count > 0){
             maplist[0].SetActive(true);
+        }
+        foreach(var mapobj in maplist){
+            if(mapobj.name.Contains("Gravity")){
+                GravityRoom = true;
+            }else{
+                GravityRoom = false;
+            }
         }
         
 

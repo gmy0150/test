@@ -24,8 +24,11 @@ public class PlayerGroundState : PlayerInputKey
     {
         base.Update();
 
-        if(Input.GetButtonDown("Vertical")&&player.IsGroundDetected()){
+        if(Input.GetButtonDown("Vertical")&&player.IsGroundDetected()&&MapManager.Instance.GravityRoom){
             control.ChangeState(player.gravityState);
+        }
+        if(Input.GetButtonDown("Vertical")&&player.IsGroundDetected()&&!MapManager.Instance.GravityRoom){
+            control.ChangeState(player.jumpState);
         }
 
         if(Input.GetKeyDown(KeyCode.Q)){
