@@ -77,7 +77,6 @@ public class Trap : MonoBehaviour
         }
     }
     public void ResetTrap(){
-        Debug.Log("작동?");
         Detect = false;
         scaled = false;
         scaling = false;
@@ -85,7 +84,6 @@ public class Trap : MonoBehaviour
         startTime = 0;
         targetobj.transform.localPosition = startPos;
         targetobj.transform.localScale = initScale;
-        Debug.Log("현재위치"+targetobj.transform.position);
     }
 
 }

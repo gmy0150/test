@@ -21,7 +21,7 @@ public class MapManager : MonoBehaviour
     private List<GameObject> cubes; // 큐브 오브젝트 리스트
     Trap trap1;
     private List<GameObject> button;
-    public bool GravityRoom{get; private set;}
+    public bool GravityRoom;
     private void Awake() {
         GameObject[] taggedObjects = GameObject.FindGameObjectsWithTag("OpenDoor");
         foreach(GameObject obj in taggedObjects){
@@ -54,13 +54,13 @@ public class MapManager : MonoBehaviour
         if(maplist.Count > 0){
             maplist[0].SetActive(true);
         }
-        foreach(var mapobj in maplist){
-            if(mapobj.name.Contains("Gravity")){
-                GravityRoom = true;
-            }else{
-                GravityRoom = false;
-            }
-        }
+        // foreach(var mapobj in maplist){
+        //     if(mapobj.name.Contains("Gravity")){
+        //         GravityRoom = true;
+        //     }else{
+        //         GravityRoom = false;
+        //     }
+        // }
         
 
     }
@@ -111,10 +111,8 @@ public class MapManager : MonoBehaviour
             if (kvp.Key != null)
             {
                 Trap trap = kvp.Key.GetComponent<Trap>();
-                    Debug.Log("!?!?!");
 
                 if(trap != null){
-                    Debug.Log("작동!");
                     trap.ResetTrap();
                 }
                 //kvp.Key.transform.position = kvp.Value;
@@ -169,6 +167,14 @@ public class MapManager : MonoBehaviour
             if(!transpos){
                 maplist[mapCount].SetActive(true);
                 maplist[mapCount - 1].SetActive(false);
+                if (maplist[mapCount].name.Contains("Gravity"))
+                {
+                    GravityRoom = true;
+                }
+                else
+                {
+                    GravityRoom = false;
+                }
                 player.transform.position = maplist[mapCount].transform.position;
                 player.savePos = player.transform.position;
                 cameraX = maplist[mapCount].transform.position.x + 3;

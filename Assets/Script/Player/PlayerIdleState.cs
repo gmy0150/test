@@ -22,10 +22,9 @@ public class PlayerIdleState : PlayerGroundState
     public override void Update()
     {
         base.Update();
-        if(xInput != 0){
+        if(xInput != 0 && control.currentState != player.jumpState){
             control.ChangeState(player.moveState);
         }
-
         
     }
 }

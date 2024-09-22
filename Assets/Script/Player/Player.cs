@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Data;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -38,6 +39,7 @@ public class Player : MonoBehaviour
         moveState = new PlayerMoveState(this,stateMachine);
         gravityState = new PlayerGravityControl(this,stateMachine);
         jumpState = new PlayerJumpState(this,stateMachine);
+        AirState = new PlayerAirState(this,stateMachine);
     }
     void Start(){
         savePos = transform.position;

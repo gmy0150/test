@@ -20,7 +20,6 @@ public class PlayerAirState : PlayerInputKey
     {
         base.Update();
 
-        rb.velocity = new Vector2(xInput * player.moveSpeed, rb.velocity.y);
         
     }
 }
