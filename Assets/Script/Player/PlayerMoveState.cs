@@ -15,6 +15,7 @@ public class PlayerMoveState : PlayerGroundState
     public override void Exit()
     {
         base.Exit();
+        Debug.Log("무브작동");
     }
     public override void Update()
     {
@@ -23,6 +24,10 @@ public class PlayerMoveState : PlayerGroundState
 
         if(xInput == 0){
             control.ChangeState(player.idleState);
+        }
+        if(Input.GetButtonDown("Vertical")&&player.IsGroundDetected()&&!MapManager.Instance.GravityRoom){
+            control.ChangeState(player.jumpState);
+            Debug.Log("작동안해?");
         }
     } 
     public void move(){

@@ -2,14 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerIdleState : PlayerGroundState
+public class PlayerAirState : PlayerInputKey
 {
-    public PlayerIdleState(Player _player, PlayerControl _control) : base(_player, _control)
+    public PlayerAirState(Player _player, PlayerControl _control) : base(_player, _control)
     {
     }
-
-
-
 
     public override void Enter()
     {
@@ -22,9 +19,7 @@ public class PlayerIdleState : PlayerGroundState
     public override void Update()
     {
         base.Update();
-        if(xInput != 0 && control.currentState != player.jumpState){
-            control.ChangeState(player.moveState);
-        }
+
         
     }
 }
