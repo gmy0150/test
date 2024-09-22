@@ -9,6 +9,8 @@ public class Player : MonoBehaviour
     public Rigidbody2D rigid{get;private set;}
     public PlayerIdleState idleState{get; private set;}
     public PlayerMoveState moveState{get; private set;}
+    public PlayerJumpState jumpState {get; private set;}
+    public PlayerAirState AirState {get; private set;}
     public PlayerGravityControl gravityState{get; private set;}
     public PlayerFreezeCube freezeState{get; private set;}
 
@@ -26,7 +28,7 @@ public class Player : MonoBehaviour
     int gravity = 10;
     public float moveSpeed = 8f;
     public Vector3 savePos;
-
+    public float jumpforce;
     MapManager mapManager;
     int rotate = 90;
     void Awake() {  
@@ -35,6 +37,7 @@ public class Player : MonoBehaviour
         idleState = new PlayerIdleState(this,stateMachine);
         moveState = new PlayerMoveState(this,stateMachine);
         gravityState = new PlayerGravityControl(this,stateMachine);
+        jumpState = new PlayerJumpState(this,stateMachine);
     }
     void Start(){
         savePos = transform.position;
