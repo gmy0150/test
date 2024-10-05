@@ -223,7 +223,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3809370765898283195, guid: f1961cd3b999d0b4db9f621fe2476879, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.27
+      value: 1.3
       objectReference: {fileID: 0}
     - target: {fileID: 3809370765898283195, guid: f1961cd3b999d0b4db9f621fe2476879, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1337,10 +1337,7 @@ MonoBehaviour:
   maplist: []
   mapCount: 0
   trapLayerName: Trap
-  transpos: 1
-  trapLayer:
-    serializedVersion: 2
-    m_Bits: 0
+  transpos: 0
   traps: []
   GravityRoom: 0
 --- !u!4 &472541079
