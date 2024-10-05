@@ -142,11 +142,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3809370765898283195, guid: f1961cd3b999d0b4db9f621fe2476879, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 2.9
       objectReference: {fileID: 0}
     - target: {fileID: 3809370765898283195, guid: f1961cd3b999d0b4db9f621fe2476879, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.27
+      value: -8.3
       objectReference: {fileID: 0}
     - target: {fileID: 3809370765898283195, guid: f1961cd3b999d0b4db9f621fe2476879, type: 3}
       propertyPath: m_LocalPosition.z
@@ -260,7 +260,7 @@ GameObject:
   - component: {fileID: 665714546}
   m_Layer: 0
   m_Name: Door
-  m_TagString: spike
+  m_TagString: nextmap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -309,7 +309,7 @@ TilemapCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -813,6 +813,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7924774722092862084, guid: 984d3f952e70e59498d8ae80fbddf7da, type: 3}
+      propertyPath: jumpforce
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -982,9 +986,9 @@ GameObject:
   - component: {fileID: 2119561628}
   - component: {fileID: 2119561627}
   - component: {fileID: 2119561629}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
