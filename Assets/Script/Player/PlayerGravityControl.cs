@@ -13,7 +13,7 @@ public class PlayerGravityControl : PlayerInputKey
     public override void Enter()
     {
         base.Enter();
-
+        count *= -1;
     }
     public override void Exit()
     {
@@ -22,7 +22,7 @@ public class PlayerGravityControl : PlayerInputKey
     public override void Update()
     {
         base.Update();
-        KeyDown();
+        Changecontrol();
     } 
     void KeyDown(){
         if(Input.GetButtonUp("Vertical")){

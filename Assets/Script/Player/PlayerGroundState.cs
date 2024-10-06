@@ -24,6 +24,7 @@ public class PlayerGroundState : PlayerInputKey
     {
         base.Update();
         if(Input.GetButtonDown("Vertical")&&player.IsGroundDetected()&&MapManager.Instance.GravityRoom){
+            Debug.Log("작동안해?");
             control.ChangeState(player.gravityState);
         }
         if(Input.GetButtonDown("Vertical")&&player.IsGroundDetected()&&!MapManager.Instance.GravityRoom){

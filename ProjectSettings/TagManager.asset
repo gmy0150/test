@@ -59,3 +59,12 @@ TagManager:
   - name: player
     uniqueID: 701023955
     locked: 0
+  - name: 1
+    uniqueID: 119305773
+    locked: 0
+  - name: 2
+    uniqueID: 76070929
+    locked: 0
+  - name: 3
+    uniqueID: 3408234667
+    locked: 0

@@ -22,6 +22,7 @@ public class EmptyGround : MonoBehaviour
         if (other.CompareTag("Player")||other.CompareTag("Cube")) // 충돌한 오브젝트의 태그를 확인
         {
             DisableTilemapCollider(other);
+            
         }else{
             EnableTileMap(other);
         }
@@ -39,6 +40,11 @@ public class EmptyGround : MonoBehaviour
         if (tilemapCollider != null)
         {
             Physics2D.IgnoreCollision(tilemapCollider,other,true);
+            if (other.CompareTag("Player"))
+            {
+                
+                tilemapCollider.gameObject.layer = 0;
+            }
         }
     }
     void EnableTileMap(Collider2D other){
@@ -47,6 +53,10 @@ public class EmptyGround : MonoBehaviour
             if (tilemapCollider != null)
             {
             Physics2D.IgnoreCollision(tilemapCollider,other ,false);
+                if (other.CompareTag("Player"))
+                {
+                    tilemapCollider.gameObject.layer = 6;
+                }
             }
         }
     }
