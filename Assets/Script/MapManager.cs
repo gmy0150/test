@@ -10,6 +10,7 @@ public class MapManager : MonoBehaviour
     public List<GameObject> maplist = new List<GameObject>();
     public int mapCount = 0;
     Player player;
+    JustRunPlayer runplayer;
     CameraManager cameraManager;
     float cameraX, cameraY;
     public string trapLayerName;
@@ -47,6 +48,7 @@ public class MapManager : MonoBehaviour
         var sortedObjects = findMapTag.OrderBy(obj => obj.name).ToList();
         maplist = sortedObjects;
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        runplayer = GameObject.FindGameObjectWithTag("Player").GetComponent<JustRunPlayer>();
         cameraManager = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraManager>();
 
         foreach (var mapobj in maplist)
@@ -103,7 +105,6 @@ public class MapManager : MonoBehaviour
                 {
                     trap.ResetTrap();
                 }
-                //kvp.Key.transform.position = kvp.Value;
             }
         }
     }
@@ -129,7 +130,7 @@ public class MapManager : MonoBehaviour
     {
         foreach (var buttonObject in button)
         {
-            OpenButton buttonScript = buttonObject.GetComponent<OpenButton>();
+            Button buttonScript = buttonObject.GetComponent<Button>();
             if (buttonScript != null)
             {
                 buttonScript.ResetButton();
@@ -155,12 +156,25 @@ public class MapManager : MonoBehaviour
                     {
                         GravityRoom = false;
                     }
-                    player.transform.position = maplist[mapCount].transform.position;
-                    player.savePos = player.transform.position;
-                    cameraX = maplist[mapCount].transform.position.x + 3;
-                    cameraY = maplist[mapCount].transform.position.y;
-                    cameraManager.transform.position = new Vector3(cameraX, cameraY, -10f);
-                    player.rigid.velocity = Vector2.zero;
+                    if (player.enabled)
+                    {
+                        player.transform.position = maplist[mapCount].transform.position;
+                        player.savePos = player.transform.position;
+                        cameraX = maplist[mapCount].transform.position.x;
+                        cameraY = maplist[mapCount].transform.position.y;
+                        player.rigid.velocity = Vector2.zero;
+                        cameraManager.transform.position = new Vector3(cameraX, cameraY, -10f);
+                    }
+                    if (runplayer.enabled)
+                    {
+                        runplayer.transform.position = maplist[mapCount].transform.position;
+                        runplayer.savePos = runplayer.transform.position;
+                        cameraX = runplayer.transform.position.x;
+                        cameraY = runplayer.transform.position.y;
+                        runplayer.rigid.velocity = Vector2.zero;
+
+                        cameraManager.transform.position = new Vector3(cameraX, cameraY, -10f);
+                    }
                     SaveCubePositions();
                     transpos = true;
                 }

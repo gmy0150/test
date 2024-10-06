@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class OneButton : OpenButton
+public class OneButton : Button
 {
     // Start is called before the first frame update
     void Start()
@@ -16,7 +16,7 @@ public class OneButton : OpenButton
     {
         if(isbutton()){
             if(!isClick){
-                switch(ButtonType){
+                switch(ButtonTouch){
                     case Type.under:
                     buttonValue = transform.position.y - 0.2f;
                     transform.position = new Vector3(transform.position.x,buttonValue,transform.position.z);
@@ -41,10 +41,6 @@ public class OneButton : OpenButton
 
                 isClick = true;
                 player.gravityState.PushButton();
-                // render.material.color = Color.red;
-                // if(gameObject !=null){
-                //     opendoor.SetActive(false);
-                // }
             }
         }
     }

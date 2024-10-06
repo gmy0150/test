@@ -42,7 +42,6 @@ public class EmptyGround : MonoBehaviour
             Physics2D.IgnoreCollision(tilemapCollider,other,true);
             if (other.CompareTag("Player"))
             {
-                
                 tilemapCollider.gameObject.layer = 0;
             }
         }

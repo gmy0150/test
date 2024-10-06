@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OnButtton : OpenButton
+public class OnButtton : Button
 {
     // Start is called before the first frame update
     float savevalue;
@@ -17,7 +17,7 @@ public class OnButtton : OpenButton
         if(isbutton()){
             Debug.Log("나와");
             if(!isClick){
-                switch(ButtonType){
+                switch(ButtonTouch){
                     case Type.under:
                     savevalue = transform.position.y;
                     buttonValue = transform.position.y - 0.2f;

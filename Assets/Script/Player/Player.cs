@@ -6,7 +6,6 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    private Quaternion saveMap;
     public Rigidbody2D rigid{get;private set;}
     public PlayerIdleState idleState{get; private set;}
     public PlayerMoveState moveState{get; private set;}
@@ -16,22 +15,24 @@ public class Player : MonoBehaviour
     public PlayerFreezeCube freezeState{get; private set;}
 
     public PlayerControl stateMachine{get;private set;}
+    private Quaternion saveMap;
     public int facingDir {get;private set;} = -1;
     private bool facingRight = true;
     private bool gravityRight = false;
 
     [SerializeField]private float groundCheckDistance;
-    public float cubeCheckDistance;
     [SerializeField]private LayerMask whatIsGround;
-    public LayerMask CubeLayer;
     [SerializeField]private Transform groundCheck;
+    public LayerMask CubeLayer;
+    public float cubeCheckDistance;
 
-    int gravity = 10;
     public float moveSpeed = 8f;
     public Vector3 savePos;
     public float jumpforce;
     MapManager mapManager;
+    int gravity = 10;
     int rotate = 90;
+    public bool enable;
     void Awake() {  
         stateMachine = new PlayerControl();
         freezeState = new PlayerFreezeCube(this,stateMachine);
@@ -171,11 +172,16 @@ public class Player : MonoBehaviour
         }
     }
     private void OnTriggerExit2D(Collider2D other) {
-        if(other.tag == "nextmap"){
-            Skip();
-        }
-        if(other.tag == "respawn"){
-            Respawn();
+        if (enable)
+        {
+            if (other.tag == "nextmap"){
+                Debug.Log("너 작동하면안돼..");
+                Skip();
+            }
+            if(other.tag == "respawn"){
+                Debug.Log("너 작동하면안돼..");
+                Respawn();
+            }
         }
     }
     void Skip(){
@@ -193,8 +199,12 @@ public class Player : MonoBehaviour
 
 
     private void OnCollisionEnter2D(Collision2D other) {
-        if(other.transform.tag == "spike"){
-            Respawn();
+        if (enable)
+        {
+            if (other.transform.tag == "spike")
+            {
+                Respawn();
+            }
         }
     }
 }

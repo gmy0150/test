@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OpenButton : MonoBehaviour
+public class Button : MonoBehaviour
 {
     LayerMask cubemask;
     LayerMask playermask;
@@ -11,28 +11,92 @@ public class OpenButton : MonoBehaviour
     protected SpriteRenderer render;
     public GameObject opendoor;
     protected Player player;
+    protected JustRunPlayer runPlayer;
     Vector3 ToRay;
     protected bool isClick;
-    public Type ButtonType;
-    
-    public enum Type{under, on,right,left};
+    public Type ButtonTouch;
+    public enum Type { under, on,right,left};
+    public ButtonTypeEnum ButtonType;
+    public enum ButtonTypeEnum { Flip,Gravity};
+
     public float raylength = 0.55f;
+    Vector2 savePos;
     protected float buttonValue;
     protected void Start()
     {
         cubemask = LayerMask.GetMask("Cube");
         playermask = LayerMask.GetMask("Player");
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        runPlayer = GameObject.FindGameObjectWithTag("Player").GetComponent<JustRunPlayer>();
         render = GetComponent<SpriteRenderer>();
+        savePos = transform.position;
         howray();
     }
 
     void Update()
     {
-        
+        if (isbutton())
+        {
+            if (!isClick &&ButtonType == ButtonTypeEnum.Gravity)
+            {
+                switch (ButtonTouch)
+                {
+                    case Type.under:
+                        buttonValue = transform.position.y - 0.2f;
+                        transform.position = new Vector3(transform.position.x, buttonValue, transform.position.z);
+                        break;
+                    case Type.on:
+                        buttonValue = transform.position.y + 0.2f;
+                        transform.position = new Vector3(transform.position.x, buttonValue, transform.position.z);
+
+                        break;
+                    case Type.left:
+                        buttonValue = transform.position.x - 0.2f;
+                        transform.position = new Vector3(buttonValue, transform.position.y, transform.position.z);
+
+                        break;
+                    case Type.right:
+                        buttonValue = transform.position.x - 0.2f;
+                        transform.position = new Vector3(buttonValue, transform.position.y, transform.position.z);
+
+
+                     break;
+                }
+
+                isClick = true;
+                player.gravityState.PushButton();
+            }else if(!isClick &&ButtonType == ButtonTypeEnum.Flip)
+            {
+                switch (ButtonTouch)
+                {
+                    case Type.under:
+                        buttonValue = transform.position.y - 0.2f;
+                        transform.position = new Vector3(transform.position.x, buttonValue, transform.position.z);
+                        break;
+                    case Type.on:
+                        buttonValue = transform.position.y + 0.2f;
+                        transform.position = new Vector3(transform.position.x, buttonValue, transform.position.z);
+
+                        break;
+                    case Type.left:
+                        buttonValue = transform.position.x - 0.2f;
+                        transform.position = new Vector3(buttonValue, transform.position.y, transform.position.z);
+
+                        break;
+                    case Type.right:
+                        buttonValue = transform.position.x - 0.2f;
+                        transform.position = new Vector3(buttonValue, transform.position.y, transform.position.z);
+
+
+                        break;
+                }
+                runPlayer.FlipX();
+                isClick = true;
+            }
+        }
     }
     void howray(){
-        switch(ButtonType){
+        switch(ButtonTouch){
             case Type.under:
                 ToRay = transform.up;
             break;
@@ -57,5 +121,6 @@ public class OpenButton : MonoBehaviour
 
     public void ResetButton(){
         isClick = false;
+        transform.position = savePos;
     }
 }

@@ -101,7 +101,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5324771077306438399}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -157,8 +157,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TrapTypes: 2
   target: {x: 3, y: 1, z: 1}
-  duration: 2
-  maintainTime: 2
+  duration: 1
+  maintainTime: 1
   scaleRight: 1
   targetobj: {fileID: 7871144290872186615}
 --- !u!61 &736134765872989517
@@ -193,7 +193,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -6.67, y: 7.57}
+  m_Offset: {x: -6.67, y: 6.69}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -281,7 +281,7 @@ Transform:
   m_GameObject: {fileID: 7871144290872186615}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 9.97, y: -21.9, z: 0}
+  m_LocalPosition: {x: 9.97, y: -21.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -568,10 +568,10 @@ MonoBehaviour:
   tilemap: {fileID: 0}
   playerLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 512
   cubeLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
 --- !u!19719996 &3267031184919995110
 TilemapCollider2D:
   m_ObjectHideFlags: 0
