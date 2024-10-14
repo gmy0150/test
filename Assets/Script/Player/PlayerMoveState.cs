@@ -15,6 +15,7 @@ public class PlayerMoveState : PlayerGroundState
     public override void Exit()
     {
         base.Exit();
+        Debug.Log("무브작동");
     }
     public override void Update()
     {
@@ -24,6 +25,10 @@ public class PlayerMoveState : PlayerGroundState
         if(xInput == 0){
             control.ChangeState(player.idleState);
         }
+        if(Input.GetButtonDown("Vertical")&&player.IsGroundDetected()&&!MapManager.Instance.GravityRoom){
+            control.ChangeState(player.jumpState);
+            Debug.Log("작동안해?");
+        }
     } 
     public void move(){
         if(player.gravityState.count == 1){//오른쪽
@@ -32,10 +37,10 @@ public class PlayerMoveState : PlayerGroundState
         else if(player.gravityState.count == 2){//위
             player.SetVelocity(-xInput * player.moveSpeed, yvelocity);
         }
-        else if(player.gravityState.count == 3){//왼쪽
+        else if(player.gravityState.count == -1){//왼쪽
             player.SetVelocity(xvelocity,-xInput * player.moveSpeed);
         }
-        else if(player.gravityState.count == 4){//아래
+        else if(player.gravityState.count == -2){//아래
             player.SetVelocity(xInput * player.moveSpeed, yvelocity);
         }
     }

@@ -3,66 +3,118 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OpenButton : MonoBehaviour
+public class Button : MonoBehaviour
 {
     LayerMask cubemask;
+    LayerMask playermask;
     float transY;
-    SpriteRenderer render;
+    protected SpriteRenderer render;
     public GameObject opendoor;
-    Player player;
+    protected Player player;
+    protected JustRunPlayer runPlayer;
     Vector3 ToRay;
-    [SerializeField]private Type ButtonType;
-    
-    [SerializeField]private enum Type{under, on,right,left};
-    public float raylength = 0.5f;
-    float buttonValue;
-    bool isClick;
-    void Start()
+    protected bool isClick;
+    public Type ButtonTouch;
+    public enum Type { under, on,right,left};
+    public ButtonTypeEnum ButtonType;
+    public enum ButtonTypeEnum { Flip,Gravity,Delete};
+
+    public float raylength = 0.55f;
+    Vector2 savePos;
+    protected float buttonValue;
+    protected void Start()
     {
         cubemask = LayerMask.GetMask("Cube");
+        playermask = LayerMask.GetMask("Player");
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        runPlayer = GameObject.FindGameObjectWithTag("Player").GetComponent<JustRunPlayer>();
         render = GetComponent<SpriteRenderer>();
+        savePos = transform.position;
         howray();
     }
 
     void Update()
     {
-        if(isbutton()){
-            if(!isClick){
-                switch(ButtonType){
+        if (isbutton())
+        {
+            if (!isClick &&ButtonType == ButtonTypeEnum.Gravity)
+            {
+                switch (ButtonTouch)
+                {
                     case Type.under:
                         buttonValue = transform.position.y - 0.2f;
-                    transform.position = new Vector3(transform.position.x,buttonValue,transform.position.z);
-                    break;
+                        transform.position = new Vector3(transform.position.x, buttonValue, transform.position.z);
+                        break;
                     case Type.on:
                         buttonValue = transform.position.y + 0.2f;
-                    transform.position = new Vector3(transform.position.x,buttonValue,transform.position.z);
+                        transform.position = new Vector3(transform.position.x, buttonValue, transform.position.z);
 
-                    break;
+                        break;
                     case Type.left:
                         buttonValue = transform.position.x - 0.2f;
-                        transform.position = new Vector3(buttonValue,transform.position.y,transform.position.z);
+                        transform.position = new Vector3(buttonValue, transform.position.y, transform.position.z);
 
-                    break;
+                        break;
                     case Type.right:
                         buttonValue = transform.position.x - 0.2f;
-                        transform.position = new Vector3(buttonValue,transform.position.y,transform.position.z);
+                        transform.position = new Vector3(buttonValue, transform.position.y, transform.position.z);
 
 
-                    break;
+                     break;
                 }
 
                 isClick = true;
-            
-                render.material.color = Color.red;
-                if(gameObject !=null){
-                    opendoor.SetActive(false);
+                player.gravityState.PushButton();
+            }else if(!isClick &&ButtonType == ButtonTypeEnum.Flip)
+            {
+                switch (ButtonTouch)
+                {
+                    case Type.under:
+                        buttonValue = transform.position.y - 0.2f;
+                        transform.position = new Vector3(transform.position.x, buttonValue, transform.position.z);
+                        break;
+                    case Type.on:
+                        buttonValue = transform.position.y + 0.2f;
+                        transform.position = new Vector3(transform.position.x, buttonValue, transform.position.z);
+
+                        break;
+                    case Type.left:
+                        buttonValue = transform.position.x - 0.2f;
+                        transform.position = new Vector3(buttonValue, transform.position.y, transform.position.z);
+
+                        break;
+                    case Type.right:
+                        buttonValue = transform.position.x - 0.2f;
+                        transform.position = new Vector3(buttonValue, transform.position.y, transform.position.z);
+
+
+                        break;
                 }
+                runPlayer.FlipX();
+                isClick = true;
+            }
+            else if (!isClick && ButtonType == ButtonTypeEnum.Delete)
+            {
+                switch (ButtonTouch)
+                {
+                    case Type.under:
+                        buttonValue = transform.position.y - 0.2f;
+                        transform.position = new Vector3(transform.position.x, buttonValue, transform.position.z);
+                        break;
+                    case Type.on:
+                        buttonValue = transform.position.y + 0.2f;
+                        transform.position = new Vector3(transform.position.x, buttonValue, transform.position.z);
+
+                        break;
+
+                }
+                opendoor.SetActive(false);
+                isClick = true;
             }
         }
     }
     void howray(){
-        switch(ButtonType){
+        switch(ButtonTouch){
             case Type.under:
                 ToRay = transform.up;
             break;
@@ -78,10 +130,15 @@ public class OpenButton : MonoBehaviour
         }
 
     }
-    private void OnDrawGizmos() {
+    protected void OnDrawGizmos() {
         Gizmos.color = Color.red;
 
         Gizmos.DrawLine(transform.position, transform.position + ToRay * raylength);
     }
-    private bool isbutton() =>Physics2D.Raycast(transform.position, ToRay,raylength,cubemask);
+    public bool isbutton() =>Physics2D.Raycast(transform.position, ToRay,raylength,cubemask|playermask);
+
+    public void ResetButton(){
+        isClick = false;
+        transform.position = savePos;
+    }
 }

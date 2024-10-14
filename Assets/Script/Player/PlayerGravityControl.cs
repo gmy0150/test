@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class PlayerGravityControl : PlayerInputKey
 {
-    public int count = 4;
+    public int count = -2;
+    public int savecount = 0;
     public PlayerGravityControl(Player _player, PlayerControl _control) : base(_player, _control)
     {
     }
@@ -12,7 +13,7 @@ public class PlayerGravityControl : PlayerInputKey
     public override void Enter()
     {
         base.Enter();
-
+        count *= -1;
     }
     public override void Exit()
     {
@@ -21,24 +22,23 @@ public class PlayerGravityControl : PlayerInputKey
     public override void Update()
     {
         base.Update();
-        KeyDown();
+        Changecontrol();
     } 
     void KeyDown(){
-        if(Input.GetKeyUp(KeyCode.DownArrow)){
-            count = 4;
+        if(Input.GetButtonUp("Vertical")){
+            count *= -1;
             Changecontrol();
-        }else if(Input.GetKeyUp(KeyCode.RightArrow)){
-            count = 1;
-            Changecontrol();
-        }else if(Input.GetKeyUp(KeyCode.UpArrow)){
-            count = 2;
-            Changecontrol();
-        }else if(Input.GetKeyUp(KeyCode.LeftArrow)){
-            count = 3;
-            Changecontrol();
-        }   
+        } 
+    }
+    public void PushButton(){
+        count ++;
+        if(count == 0 || count == 3){
+            count -= 2;
+        }
+        Changecontrol();
     }
     void Changecontrol(){
+        //player.gravitycontrol();
         if(!player.IsGroundDetected()){
             control.ChangeState(player.moveState);
         }
@@ -46,5 +46,18 @@ public class PlayerGravityControl : PlayerInputKey
             control.ChangeState(player.idleState);
             player.rigid.velocity = Vector2.zero;
         }
+
+    }
+    public void KeepButton(){
+        // savecount = count;
+        // count ++;
+        // if(count == 0 || count == 3){
+        //     count -= 2;
+        // }
+        // Changecontrol();
+    }
+    public void ButtonOut(){
+        // count = savecount;
+        Changecontrol();
     }
 }

@@ -1,0 +1,7 @@
+함정 늘어나는거 empty에서 tilemap 바닥 콜라이더 있느는거 추가 레이어도 넣어
+Trap 스크립트가 있는 곳에서 type설정 
+target으로 위치 이동, 늘어날 곳
+오른쪽으로 늘어날 때 right끄고 ㅇㅇ rotation 180도 돌리는거라 미리 돌리고 ㄱ
+duration으로 시간 서렂ㅇ
+maintain이 늘어날 때 까지 대기 기간
+targetObj는 spike는 비어둬 됨 구멍은 empty로 넣어줘야됨
