@@ -203,6 +203,7 @@ public class Player : MonoBehaviour
         {
             if (other.transform.tag == "spike")
             {
+                Debug.Log("작동?");
                 Respawn();
             }
         }

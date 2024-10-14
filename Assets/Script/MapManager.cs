@@ -48,7 +48,7 @@ public class MapManager : MonoBehaviour
         var sortedObjects = findMapTag.OrderBy(obj => obj.name).ToList();
         maplist = sortedObjects;
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
-        runplayer = GameObject.FindGameObjectWithTag("Player").GetComponent<JustRunPlayer>();
+        //runplayer = GameObject.FindGameObjectWithTag("Player").GetComponent<JustRunPlayer>();
         cameraManager = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraManager>();
 
         foreach (var mapobj in maplist)
@@ -165,7 +165,7 @@ public class MapManager : MonoBehaviour
                         player.rigid.velocity = Vector2.zero;
                         cameraManager.transform.position = new Vector3(cameraX, cameraY, -10f);
                     }
-                    if (runplayer.enabled)
+                    else
                     {
                         runplayer.transform.position = maplist[mapCount].transform.position;
                         runplayer.savePos = runplayer.transform.position;

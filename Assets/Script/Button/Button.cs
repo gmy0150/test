@@ -17,7 +17,7 @@ public class Button : MonoBehaviour
     public Type ButtonTouch;
     public enum Type { under, on,right,left};
     public ButtonTypeEnum ButtonType;
-    public enum ButtonTypeEnum { Flip,Gravity};
+    public enum ButtonTypeEnum { Flip,Gravity,Delete};
 
     public float raylength = 0.55f;
     Vector2 savePos;
@@ -91,6 +91,24 @@ public class Button : MonoBehaviour
                         break;
                 }
                 runPlayer.FlipX();
+                isClick = true;
+            }
+            else if (!isClick && ButtonType == ButtonTypeEnum.Delete)
+            {
+                switch (ButtonTouch)
+                {
+                    case Type.under:
+                        buttonValue = transform.position.y - 0.2f;
+                        transform.position = new Vector3(transform.position.x, buttonValue, transform.position.z);
+                        break;
+                    case Type.on:
+                        buttonValue = transform.position.y + 0.2f;
+                        transform.position = new Vector3(transform.position.x, buttonValue, transform.position.z);
+
+                        break;
+
+                }
+                opendoor.SetActive(false);
                 isClick = true;
             }
         }
