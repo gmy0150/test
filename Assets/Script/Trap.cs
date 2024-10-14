@@ -66,11 +66,11 @@ public class Trap : MonoBehaviour
                 targetobj.transform.localScale = target; // 최종 스케일 적용
                 scaling = false;
                 scaled = true; // 스케일 완료 표시
-                Debug.Log("스케일 완료");
             }
         }
     }
     private void OnTriggerEnter2D(Collider2D other) {
+        Debug.Log("확인");
         if(other.tag == "Player"&&!Detect){
             Detect = true;
             startTime = Time.time;

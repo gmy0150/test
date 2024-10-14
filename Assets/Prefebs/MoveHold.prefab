@@ -314,7 +314,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbec805888dd08940bf1d5b8742201ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tilemap: {fileID: 8958841927672063292}
+  tilemap: {fileID: 0}
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  cubeLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!19719996 &8955833219514543339
 TilemapCollider2D:
   m_ObjectHideFlags: 0
@@ -581,6 +587,7 @@ MonoBehaviour:
   TrapTypes: 0
   target: {x: 1, y: -21.9, z: 0}
   duration: 2
+  maintainTime: 2
   scaleRight: 1
   targetobj: {fileID: 1202301366729452718}
 --- !u!61 &3930648799495891122
