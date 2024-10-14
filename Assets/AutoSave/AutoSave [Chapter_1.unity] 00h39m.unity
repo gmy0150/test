@@ -3197,10 +3197,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: normal Spike
       objectReference: {fileID: 0}
-    - target: {fileID: 7141947278924195908, guid: 5647c280479515e469261edb83adea74, type: 3}
-      propertyPath: m_TagString
-      value: spike
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11716,10 +11712,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: normal Spike (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 7141947278924195908, guid: 5647c280479515e469261edb83adea74, type: 3}
-      propertyPath: m_TagString
-      value: spike
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11742,7 +11734,7 @@ GameObject:
   - component: {fileID: 1712724968}
   m_Layer: 0
   m_Name: Stage1_3
-  m_TagString: Floor
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
