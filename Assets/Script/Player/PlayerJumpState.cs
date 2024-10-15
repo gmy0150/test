@@ -12,19 +12,16 @@ public class PlayerJumpState : PlayerAirState
     {
         base.Enter();
         rb.velocity = new Vector2(xvelocity, player.jumpforce);
-        Debug.Log("작동해");
     }
     public override void Exit()
     {
         base.Exit();
-        Debug.Log("나감?");
     }
     public override void Update()
     {
         
         rb.velocity = new Vector2(xInput * player.moveSpeed, rb.velocity.y);
         base.Update();
-        Debug.Log("작동중?");
         if(rb.velocity.y == 0 ){
             control.ChangeState(player.idleState);
         }

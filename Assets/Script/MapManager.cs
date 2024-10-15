@@ -17,8 +17,10 @@ public class MapManager : MonoBehaviour
     public bool transpos = false;
     private Dictionary<GameObject, Vector3> trapPositions;
     private Dictionary<GameObject, Vector3> cubePositions;
+    private Dictionary<GameObject, Vector3> CoinPosition;
     public List<Trap> traps;
     private List<GameObject> cubes;
+    private List<GameObject> Coins;
     private List<GameObject> button;
     public bool GravityRoom;
     private void Awake()
@@ -39,11 +41,11 @@ public class MapManager : MonoBehaviour
         button = new List<GameObject>(GameObject.FindGameObjectsWithTag("Button"));
         cubePositions = new Dictionary<GameObject, Vector3>();
         cubes = new List<GameObject>(GameObject.FindGameObjectsWithTag("Cube"));
+        CoinPosition = new Dictionary<GameObject, Vector3>();
+        Coins = new List<GameObject>(GameObject.FindGameObjectsWithTag("Coin"));
         trapPositions = new Dictionary<GameObject, Vector3>();
         int trapLayer = LayerMask.NameToLayer(trapLayerName);
         traps = FindTrapsOnLayer(trapLayer);
-        SaveCubePositions();
-        SaveTrapPositions();
         GameObject[] findMapTag = GameObject.FindGameObjectsWithTag("Map");
         var sortedObjects = findMapTag.OrderBy(obj => obj.name).ToList();
         maplist = sortedObjects;
@@ -58,6 +60,31 @@ public class MapManager : MonoBehaviour
         if (maplist.Count > 0)
         {
             maplist[0].SetActive(true);
+            SaveCubePositions();
+            SaveTrapPositions();
+        }
+    }
+    public void SaveCoin()
+    {
+        CoinPosition.Clear();
+        foreach (var Coin in Coins)
+        {
+            if (Coin != null && !CoinPosition.ContainsKey(Coin))
+            {
+                CoinPosition[Coin] = Coin.transform.position;
+                Debug.Log(Coin.transform.name);
+            }
+        }
+    }
+    public void ResetCoin()
+    {
+        foreach (var kvp in CoinPosition)
+        {
+            if (kvp.Key != null)
+            {
+                kvp.Key.SetActive(true);
+                Debug.Log("»Æ¿Œ¡ﬂ");
+            }
         }
     }
     public void SaveCubePositions()
@@ -68,8 +95,11 @@ public class MapManager : MonoBehaviour
             if (cube != null && !cubePositions.ContainsKey(cube))
             {
                 cubePositions[cube] = cube.transform.position;
+                Debug.Log(cube.transform.name);
             }
         }
+        SaveCoin();
+
     }
     public void ResetCubePositions()
     {
@@ -80,6 +110,7 @@ public class MapManager : MonoBehaviour
                 kvp.Key.transform.position = kvp.Value;
             }
         }
+        ResetCoin();
     }
     public void SaveTrapPositions()
     {
