@@ -138,6 +138,8 @@ public class Button : MonoBehaviour
     public bool isbutton() =>Physics2D.Raycast(transform.position, ToRay,raylength,cubemask|playermask);
 
     public void ResetButton(){
+        if(opendoor!=null)
+        opendoor.SetActive(true);
         isClick = false;
         transform.position = savePos;
     }
