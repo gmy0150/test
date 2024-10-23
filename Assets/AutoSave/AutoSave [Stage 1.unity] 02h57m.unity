@@ -5287,6 +5287,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7923135947111726103, guid: ab0c0263f65b60a488e7209a1192ddc8, type: 3}
+      propertyPath: scaleRight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7923135947111726103, guid: ab0c0263f65b60a488e7209a1192ddc8, type: 3}
       propertyPath: maintainTime
       value: 1
       objectReference: {fileID: 0}

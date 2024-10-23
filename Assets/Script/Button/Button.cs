@@ -17,7 +17,7 @@ public class Button : MonoBehaviour
     public Type ButtonTouch;
     public enum Type { under, on,right,left};
     public ButtonTypeEnum ButtonType;
-    public enum ButtonTypeEnum { Flip,Gravity,Delete};
+    public enum ButtonTypeEnum { Flip,Gravity,Delete,OnTrap,Generate,GenTrap};
 
     public float raylength = 0.55f;
     Vector2 savePos;
@@ -31,6 +31,10 @@ public class Button : MonoBehaviour
         render = GetComponent<SpriteRenderer>();
         savePos = transform.position;
         howray();
+        if (ButtonType == ButtonTypeEnum.GenTrap)
+        {
+            opendoor.SetActive(false);
+        }
     }
 
     void Update()
@@ -39,78 +43,68 @@ public class Button : MonoBehaviour
         {
             if (!isClick &&ButtonType == ButtonTypeEnum.Gravity)
             {
-                switch (ButtonTouch)
-                {
-                    case Type.under:
-                        buttonValue = transform.position.y - 0.2f;
-                        transform.position = new Vector3(transform.position.x, buttonValue, transform.position.z);
-                        break;
-                    case Type.on:
-                        buttonValue = transform.position.y + 0.2f;
-                        transform.position = new Vector3(transform.position.x, buttonValue, transform.position.z);
-
-                        break;
-                    case Type.left:
-                        buttonValue = transform.position.x - 0.2f;
-                        transform.position = new Vector3(buttonValue, transform.position.y, transform.position.z);
-
-                        break;
-                    case Type.right:
-                        buttonValue = transform.position.x - 0.2f;
-                        transform.position = new Vector3(buttonValue, transform.position.y, transform.position.z);
-
-
-                     break;
-                }
+                PushBtn();
 
                 isClick = true;
                 player.gravityState.PushButton();
             }else if(!isClick &&ButtonType == ButtonTypeEnum.Flip)
             {
-                switch (ButtonTouch)
-                {
-                    case Type.under:
-                        buttonValue = transform.position.y - 0.2f;
-                        transform.position = new Vector3(transform.position.x, buttonValue, transform.position.z);
-                        break;
-                    case Type.on:
-                        buttonValue = transform.position.y + 0.2f;
-                        transform.position = new Vector3(transform.position.x, buttonValue, transform.position.z);
-
-                        break;
-                    case Type.left:
-                        buttonValue = transform.position.x - 0.2f;
-                        transform.position = new Vector3(buttonValue, transform.position.y, transform.position.z);
-
-                        break;
-                    case Type.right:
-                        buttonValue = transform.position.x - 0.2f;
-                        transform.position = new Vector3(buttonValue, transform.position.y, transform.position.z);
-
-
-                        break;
-                }
+                PushBtn();
                 runPlayer.FlipX();
                 isClick = true;
             }
             else if (!isClick && ButtonType == ButtonTypeEnum.Delete)
             {
-                switch (ButtonTouch)
-                {
-                    case Type.under:
-                        buttonValue = transform.position.y - 0.2f;
-                        transform.position = new Vector3(transform.position.x, buttonValue, transform.position.z);
-                        break;
-                    case Type.on:
-                        buttonValue = transform.position.y + 0.2f;
-                        transform.position = new Vector3(transform.position.x, buttonValue, transform.position.z);
-
-                        break;
-
-                }
+                PushBtn();
                 opendoor.SetActive(false);
                 isClick = true;
             }
+            else if (!isClick && ButtonType == ButtonTypeEnum.OnTrap)
+            {
+                PushBtn();
+                opendoor.GetComponentInChildren<Trap>().ActiveDetect();
+
+                isClick = true;
+            }
+            else if (!isClick && ButtonType == ButtonTypeEnum.Generate)
+            {
+                PushBtn();
+                opendoor.SetActive(true);
+                isClick = true;
+            }
+            else if (!isClick && ButtonType == ButtonTypeEnum.GenTrap)
+            {
+                PushBtn();
+                opendoor.SetActive(true);
+                opendoor.GetComponentInChildren<Trap>().ActiveDetect();
+                isClick = true;
+            }
+        }
+    }
+    void PushBtn()
+    {
+        switch (ButtonTouch)
+        {
+            case Type.under:
+                buttonValue = transform.position.y - 0.2f;
+                transform.position = new Vector3(transform.position.x, buttonValue, transform.position.z);
+                break;
+            case Type.on:
+                buttonValue = transform.position.y + 0.2f;
+                transform.position = new Vector3(transform.position.x, buttonValue, transform.position.z);
+
+                break;
+            case Type.left:
+                buttonValue = transform.position.x - 0.2f;
+                transform.position = new Vector3(buttonValue, transform.position.y, transform.position.z);
+
+                break;
+            case Type.right:
+                buttonValue = transform.position.x - 0.2f;
+                transform.position = new Vector3(buttonValue, transform.position.y, transform.position.z);
+
+
+                break;
         }
     }
     void howray(){
@@ -138,8 +132,14 @@ public class Button : MonoBehaviour
     public bool isbutton() =>Physics2D.Raycast(transform.position, ToRay,raylength,cubemask|playermask);
 
     public void ResetButton(){
-        if(opendoor!=null)
+        if (opendoor != null)
+        {
+            if(ButtonType == ButtonTypeEnum.Delete)
         opendoor.SetActive(true);
+            if (ButtonType == ButtonTypeEnum.Generate || ButtonType == ButtonTypeEnum.GenTrap)
+        opendoor.SetActive(false);
+
+        }
         isClick = false;
         transform.position = savePos;
     }

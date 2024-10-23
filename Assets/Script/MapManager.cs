@@ -72,7 +72,6 @@ public class MapManager : MonoBehaviour
             if (Coin != null && !CoinPosition.ContainsKey(Coin))
             {
                 CoinPosition[Coin] = Coin.transform.position;
-                Debug.Log(Coin.transform.name);
             }
         }
     }

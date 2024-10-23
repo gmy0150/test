@@ -7,7 +7,7 @@ public class Trap : MonoBehaviour
 {
     public TrapType TrapTypes;
 
-    public enum TrapType { Move, Disappear, strenlth }
+    public enum TrapType { Move, increase }
     [SerializeField] public Vector3 target;
     [SerializeField] public float duration = 2.0f;
     public float maintainTime = 2.0f;
@@ -22,10 +22,18 @@ public class Trap : MonoBehaviour
     float timer;
     private void Awake()
     {
-        if (TrapTypes == TrapType.strenlth)
+        if (TrapTypes == TrapType.increase)
         {
             if (scaleRight == true)
+            {
+                targetobj.transform.rotation = Quaternion.Euler(0, 0, 0);
+                Debug.Log("¿Ö ");
+            }
+            else
+            {
                 targetobj.transform.rotation = Quaternion.Euler(0, 180, 0);
+
+            }
         }
     }
     void Start()
@@ -37,7 +45,11 @@ public class Trap : MonoBehaviour
         startPos = targetobj.transform.localPosition;
         initScale = targetobj.transform.localScale;
     }
-
+    public void ActiveDetect()
+    {
+        Detect = true;
+        startTime = Time.time;
+    }
     private void Update()
     {
         if (TrapTypes == TrapType.Move && Detect)
@@ -45,7 +57,7 @@ public class Trap : MonoBehaviour
             float elasped = (Time.time - startTime) / duration;
             targetobj.transform.localPosition = Vector3.Lerp(startPos, target, elasped);
         }
-        if (TrapTypes == TrapType.strenlth && Detect && !scaled)
+        if (TrapTypes == TrapType.increase && Detect && !scaled)
         {
             timer += Time.deltaTime;
             if (timer > maintainTime)

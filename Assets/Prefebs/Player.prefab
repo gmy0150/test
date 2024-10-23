@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8985055622618252246}
   - component: {fileID: 6857097584675749799}
   - component: {fileID: 5345182085463645033}
+  - component: {fileID: 8696885312795487397}
   m_Layer: 9
   m_Name: Player
   m_TagString: Player
@@ -49,16 +50,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   groundCheckDistance: 0.5
-  cubeCheckDistance: 1
   whatIsGround:
     serializedVersion: 2
     m_Bits: 64
+  groundCheck: {fileID: 2375987719226453912}
   CubeLayer:
     serializedVersion: 2
     m_Bits: 128
-  groundCheck: {fileID: 2375987719226453912}
+  cubeCheckDistance: 1
   moveSpeed: 10
   savePos: {x: 0, y: 0, z: 0}
+  jumpforce: 15
+  enable: 1
 --- !u!50 &8985055622618252246
 Rigidbody2D:
   serializedVersion: 4
@@ -75,7 +78,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 5
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 1d60ae0640aee0c499358232ae560a09, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -183,6 +186,32 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.3}
   m_EdgeRadius: 0
+--- !u!114 &8696885312795487397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4661098158403459292}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6637b779e34bd8b499e720c6eb1027dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cubes: 0
+  groundCheckDistance: 0.5
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 64
+  groundCheck: {fileID: 2375987719226453912}
+  CubeLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  cubeCheckDistance: 1
+  moveSpeed: 8
+  savePos: {x: 0, y: 0, z: 0}
+  jumpforce: 16
+  enable: 0
 --- !u!1 &8215969051584205298
 GameObject:
   m_ObjectHideFlags: 0

@@ -25,7 +25,7 @@ public class Player : MonoBehaviour
     [SerializeField]private Transform groundCheck;
     public LayerMask CubeLayer;
     public float cubeCheckDistance;
-
+    bool die = false;
     public float moveSpeed = 8f;
     public Vector3 savePos;
     public float jumpforce;
@@ -54,6 +54,7 @@ public class Player : MonoBehaviour
 
 
     void Update(){
+        if (die) return;
         stateMachine.currentState.Update();
 
         gravitycontrol();
@@ -190,13 +191,20 @@ public class Player : MonoBehaviour
         mapManager.transpos = false;
     }
     public void Respawn(){
+        die = true;
+        rigid.velocity = Vector2.zero;
+        StartCoroutine(Reset());
+    }
+     IEnumerator Reset()
+    {
+        yield return new WaitForSeconds(1);
         gravityState.count = -2;
         transform.position = savePos;
         mapManager.ResetCubePositions();
         mapManager.ResetTrapPositions();
         mapManager.ResetButton();
+        die = false;
     }
-
 
     private void OnCollisionEnter2D(Collision2D other) {
         if (enable)

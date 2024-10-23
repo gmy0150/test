@@ -173,5 +173,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   opendoor: {fileID: 0}
   ButtonTouch: 0
+  trap: {fileID: 0}
   ButtonType: 0
   raylength: 0.55
