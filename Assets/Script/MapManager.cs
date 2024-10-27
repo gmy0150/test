@@ -28,6 +28,7 @@ public class MapManager : MonoBehaviour
         mapCount++;
         transpos = false;
     }
+    public bool GetTranspos() {  return transpos; }
     private void Awake()
     {
         GameObject[] taggedObjects = GameObject.FindGameObjectsWithTag("OpenDoor");
