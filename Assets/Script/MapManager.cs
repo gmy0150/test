@@ -1,6 +1,6 @@
 
 using System.Collections.Generic;
-using System.Linq;
+using System.Linq  ;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,7 +14,7 @@ public class MapManager : MonoBehaviour
     CameraManager cameraManager;
     float cameraX, cameraY;
     public string trapLayerName;
-    public bool transpos = false;
+    bool transpos = false;
     private Dictionary<GameObject, Vector3> trapPositions;
     private Dictionary<GameObject, Vector3> cubePositions;
     private Dictionary<GameObject, Vector3> CoinPosition;
@@ -23,6 +23,11 @@ public class MapManager : MonoBehaviour
     private List<GameObject> Coins;
     private List<GameObject> button;
     public bool GravityRoom;
+    public void PlayerTranspos()
+    {
+        mapCount++;
+        transpos = false;
+    }
     private void Awake()
     {
         GameObject[] taggedObjects = GameObject.FindGameObjectsWithTag("OpenDoor");

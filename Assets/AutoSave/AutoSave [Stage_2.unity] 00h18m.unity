@@ -6764,7 +6764,7 @@ MonoBehaviour:
   maplist: []
   mapCount: 0
   trapLayerName: Trap
-  transpos: 0
+  transpos: 1
   traps: []
   GravityRoom: 0
 --- !u!4 &979436751
