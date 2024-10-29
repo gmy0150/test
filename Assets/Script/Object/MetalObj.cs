@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MetalObj : MonoBehaviour
+public class MetalObj : Cube
 {
     [SerializeField]private float groundCheckDistance = 0.5f;
 

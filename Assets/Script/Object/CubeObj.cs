@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CubeObj : MonoBehaviour
+public class CubeObj : Cube
 {
     [SerializeField]private float groundCheckDistance = 0.5f;
     private LayerMask whatIsGround;
