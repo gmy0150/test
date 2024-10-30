@@ -39,15 +39,18 @@ public class Button : MonoBehaviour
 
     void Update()
     {
-        if (isbutton())
-        {
-            if (!isClick &&ButtonType == ButtonTypeEnum.Gravity)
+        
+    }
+    void PushThat()
+    {
+            if (!isClick && ButtonType == ButtonTypeEnum.Gravity)
             {
                 PushBtn();
 
                 isClick = true;
                 player.gravityState.PushButton();
-            }else if(!isClick &&ButtonType == ButtonTypeEnum.Flip)
+            }
+            else if (!isClick && ButtonType == ButtonTypeEnum.Flip)
             {
                 PushBtn();
                 runPlayer.FlipX();
@@ -79,7 +82,7 @@ public class Button : MonoBehaviour
                 opendoor.GetComponentInChildren<Trap>().ActiveDetect();
                 isClick = true;
             }
-        }
+        
     }
     void PushBtn()
     {
@@ -130,7 +133,18 @@ public class Button : MonoBehaviour
         Gizmos.DrawLine(transform.position, transform.position + ToRay * raylength);
     }
     public bool isbutton() =>Physics2D.Raycast(transform.position, ToRay,raylength,cubemask|playermask);
-
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision == null) return;
+        if (collision.collider.CompareTag("Player"))
+        {
+            PushThat();
+        }
+        if (collision.collider.CompareTag("Cube"))
+        {
+            PushThat();
+        }
+    }
     public void ResetButton(){
         if (opendoor != null)
         {

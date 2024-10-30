@@ -2,7 +2,9 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Data;
+using System.Text.RegularExpressions;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -22,6 +24,7 @@ public class Player : MonoBehaviour
 
     [SerializeField]private float groundCheckDistance;
     [SerializeField]private LayerMask whatIsGround;
+    [SerializeField]private LayerMask whatIsBtn;
     [SerializeField]private Transform groundCheck;
     public LayerMask CubeLayer;
     public float cubeCheckDistance;
@@ -54,7 +57,11 @@ public class Player : MonoBehaviour
 
 
     void Update(){
-        if (die) return;
+        if (die)
+        {
+            stateMachine.Initalize(idleState);
+            return;
+        }
         stateMachine.currentState.Update();
 
         gravitycontrol();
@@ -105,7 +112,7 @@ public class Player : MonoBehaviour
         rigid.velocity = new Vector2(_xVelocity,_yVelocity);
         FlipController();
     }
-    public bool IsGroundDetected() => Physics2D.Raycast(groundCheck.position, -transform.up,groundCheckDistance,whatIsGround|CubeLayer);
+    public bool IsGroundDetected() => Physics2D.Raycast(groundCheck.position, -transform.up,groundCheckDistance,whatIsGround|CubeLayer|whatIsBtn);
     private void OnDrawGizmos() {
         Gizmos.color = Color.red;
 
@@ -173,13 +180,19 @@ public class Player : MonoBehaviour
         }
     }
     private void OnTriggerExit2D(Collider2D other) {
-        if (enable)
+        
+    }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (enable && !die)
         {
-            if (other.tag == "nextmap"){
+            if (other.tag == "nextmap")
+            {
                 Debug.Log("너 작동하면안돼..");
                 Skip();
             }
-            if(other.tag == "respawn"){
+            if (other.tag == "respawn")
+            {
                 Debug.Log("너 작동하면안돼..");
                 Respawn();
             }
@@ -187,22 +200,60 @@ public class Player : MonoBehaviour
     }
     void Skip(){
         gravityState.count = -2;
-        mapManager.mapCount++;
+        GameObject[] activeMaps = GameObject.FindGameObjectsWithTag("Map");
+        int number = 0;
+        foreach (var map in activeMaps)
+        {
+            if (map.activeSelf) // 활성화된 오브젝트만 확인
+            {
+                number = GetNumberAfterUnderscore(map.name);
+                if (number != -1)
+                {
+                    Debug.Log("추출된 번호: " + number);
+                }
+            }
+        }
+        if (number == 5)
+        {
+            string curname = SceneManager.GetActiveScene().name;
+            int stageNum = GetStageNumber(curname);
+            Debug.Log(curname);
+            if (stageNum != -1)
+            {
+                int nextStageNumber = stageNum + 1;
+                string NextScene = "Stage " + nextStageNumber;
+                SceneManager.LoadScene(NextScene);
+                Debug.Log(NextScene);
+            }
+        }else
+         mapManager.mapCount++;
         mapManager.transpos = false;
+    }
+    int GetNumberAfterUnderscore(string name)
+    {
+        // "_" 다음에 나오는 숫자만 추출
+        Match match = Regex.Match(name, @"_(\d+)$");
+        return match.Success ? int.Parse(match.Groups[1].Value) : -1;
+    }
+    int GetStageNumber(string sceneName)
+    {
+        Match match = Regex.Match(sceneName, @"\d+");
+        return match.Success ? int.Parse(match.Value) : -1;
     }
     public void Respawn(){
         die = true;
         rigid.velocity = Vector2.zero;
         StartCoroutine(Reset());
     }
-     IEnumerator Reset()
+    IEnumerator Reset()
     {
+        rigid.velocity = Vector2.zero;
+
         yield return new WaitForSeconds(1);
+        rigid.velocity = Vector2.zero;
         gravityState.count = -2;
         transform.position = savePos;
-        mapManager.ResetCubePositions();
-        mapManager.ResetTrapPositions();
-        mapManager.ResetButton();
+        mapManager.ResetList() ;
         die = false;
     }
 
