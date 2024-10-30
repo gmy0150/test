@@ -244,7 +244,7 @@ public class Player : MonoBehaviour
             if (stageNum != -1)
             {
                 int nextStageNumber = stageNum + 1;
-                string NextScene = "Stage " + nextStageNumber;
+                string NextScene = "Stage_" + nextStageNumber;
                 SceneManager.LoadScene(NextScene);
                 Debug.Log(NextScene);
             }

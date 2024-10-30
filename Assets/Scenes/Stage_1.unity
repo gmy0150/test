@@ -1206,25 +1206,7 @@ CompositeCollider2D:
   m_GeometryType: 1
   m_GenerationType: 0
   m_EdgeRadius: 0
-  m_ColliderPaths:
-  - m_Collider: {fileID: 26583570}
-    m_ColliderPaths:
-    - - X: 170000000
-        Y: -10000000
-      - X: -110000000
-        Y: -10000000
-      - X: -110000000
-        Y: -160000000
-      - X: 170000000
-        Y: -160000000
-    - - X: -100000000
-        Y: -150000000
-      - X: -100000000
-        Y: -20000000
-      - X: 160000000
-        Y: -20000000
-      - X: 160000000
-        Y: -150000000
+  m_ColliderPaths: []
   m_CompositePaths:
     m_Paths:
     - - {x: 16.999971, y: -16}
@@ -2309,7 +2291,7 @@ MonoBehaviour:
   maplist: []
   mapCount: 0
   trapLayerName: Trap
-  traps: []
+  transpos: 0
   GravityRoom: 0
 --- !u!4 &472541079
 Transform:
@@ -4486,7 +4468,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!156049354 &776732794
 Grid:
   m_ObjectHideFlags: 0
@@ -9674,11 +9656,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7923135947111726103, guid: ab0c0263f65b60a488e7209a1192ddc8, type: 3}
       propertyPath: duration
-      value: 0.002
+      value: 0.005
+      objectReference: {fileID: 0}
+    - target: {fileID: 7923135947111726103, guid: ab0c0263f65b60a488e7209a1192ddc8, type: 3}
+      propertyPath: target.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7923135947111726103, guid: ab0c0263f65b60a488e7209a1192ddc8, type: 3}
       propertyPath: target.y
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 7923135947111726103, guid: ab0c0263f65b60a488e7209a1192ddc8, type: 3}
+      propertyPath: target.z
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7923135947111726103, guid: ab0c0263f65b60a488e7209a1192ddc8, type: 3}
       propertyPath: TrapTypes
@@ -12023,7 +12013,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!156049354 &1712724968
 Grid:
   m_ObjectHideFlags: 0
@@ -15559,7 +15549,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!156049354 &1959670993
 Grid:
   m_ObjectHideFlags: 0
@@ -16676,25 +16666,7 @@ CompositeCollider2D:
   m_GeometryType: 1
   m_GenerationType: 0
   m_EdgeRadius: 0
-  m_ColliderPaths:
-  - m_Collider: {fileID: 1965181459}
-    m_ColliderPaths:
-    - - X: 170000000
-        Y: -10000000
-      - X: -110000000
-        Y: -10000000
-      - X: -110000000
-        Y: -160000000
-      - X: 170000000
-        Y: -160000000
-    - - X: -100000000
-        Y: -150000000
-      - X: -100000000
-        Y: -20000000
-      - X: 160000000
-        Y: -20000000
-      - X: 160000000
-        Y: -150000000
+  m_ColliderPaths: []
   m_CompositePaths:
     m_Paths:
     - - {x: 16.999971, y: -16}
@@ -18511,25 +18483,7 @@ CompositeCollider2D:
   m_GeometryType: 1
   m_GenerationType: 0
   m_EdgeRadius: 0
-  m_ColliderPaths:
-  - m_Collider: {fileID: 2119561629}
-    m_ColliderPaths:
-    - - X: 170000000
-        Y: -10000000
-      - X: -110000000
-        Y: -10000000
-      - X: -110000000
-        Y: -160000000
-      - X: 170000000
-        Y: -160000000
-    - - X: -100000000
-        Y: -150000000
-      - X: -100000000
-        Y: -20000000
-      - X: 160000000
-        Y: -20000000
-      - X: 160000000
-        Y: -150000000
+  m_ColliderPaths: []
   m_CompositePaths:
     m_Paths:
     - - {x: 16.999971, y: -16}
