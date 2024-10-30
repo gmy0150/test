@@ -36,7 +36,7 @@ public class EmptyGround : MonoBehaviour
 
     void DisableTilemapCollider(Collider2D other)
     {
-        Collider2D tilemapCollider = tilemap.GetComponent<Collider2D>();
+        CompositeCollider2D tilemapCollider = tilemap.GetComponent<CompositeCollider2D>();
         if (tilemapCollider != null)
         {
             Physics2D.IgnoreCollision(tilemapCollider,other,true);
@@ -48,7 +48,7 @@ public class EmptyGround : MonoBehaviour
     }
     void EnableTileMap(Collider2D other){
     {
-        Collider2D tilemapCollider = tilemap.GetComponent<Collider2D>();
+        CompositeCollider2D tilemapCollider = tilemap.GetComponent<CompositeCollider2D>();
             if (tilemapCollider != null)
             {
             Physics2D.IgnoreCollision(tilemapCollider,other ,false);
