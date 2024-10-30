@@ -38,7 +38,7 @@ public class MetalObj : Cube
                 if (collisionDistance >= distance) {
                     if(groundHit.collider !=null){
                         CameraManager.Instance.ShakeCamera();
-                        Destroy(groundHit.collider.gameObject);
+                        groundHit.collider.gameObject.SetActive(false);
                     }
                 }
             }

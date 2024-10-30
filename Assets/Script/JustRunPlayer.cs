@@ -121,7 +121,7 @@ public class JustRunPlayer : MonoBehaviour
     void Skips()
     {
         FlipInit();
-        mapManager.PlayerTranspos();
+        //mapManager.PlayerTranspos();
     }
     public void Respawns()
     {

@@ -25,6 +25,7 @@ public class Player : MonoBehaviour
     [SerializeField]private float groundCheckDistance;
     [SerializeField]private LayerMask whatIsGround;
     [SerializeField]private LayerMask whatIsBtn;
+    [SerializeField]private LayerMask bkfloor;
     [SerializeField]private Transform groundCheck;
     public LayerMask CubeLayer;
     public float cubeCheckDistance;
@@ -112,7 +113,7 @@ public class Player : MonoBehaviour
         rigid.velocity = new Vector2(_xVelocity,_yVelocity);
         FlipController();
     }
-    public bool IsGroundDetected() => Physics2D.Raycast(groundCheck.position, -transform.up,groundCheckDistance,whatIsGround|CubeLayer|whatIsBtn);
+    public bool IsGroundDetected() => Physics2D.Raycast(groundCheck.position, -transform.up,groundCheckDistance,whatIsGround|CubeLayer|whatIsBtn|bkfloor);
     private void OnDrawGizmos() {
         Gizmos.color = Color.red;
 
