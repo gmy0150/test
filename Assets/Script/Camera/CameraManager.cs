@@ -34,10 +34,11 @@ public class CameraManager : MonoBehaviour
     {
         // getX = transform.position.x;
         // getY = transform.position.y;
-        //if(!isShaking){
-        //    originPos = transform.position;
-        //    transform.localPosition = originPos;
-        //}
+        if (!isShaking)
+        {
+            originPos = transform.position;
+            transform.localPosition = originPos;
+        }
         if (MapManager.Instance.transpos)
         {
             transform.position = new Vector3(player.transform.position.x,player.transform.position.y,transform.position.z);

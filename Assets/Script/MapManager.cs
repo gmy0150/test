@@ -18,7 +18,7 @@ public class MapManager : MonoBehaviour
     public bool GravityRoom;
     public struct Data
     {
-        public object obj;
+        public GameObject obj;
         public Vector3 position;
     }
      List<Trap> trapList = new List<Trap>();
@@ -94,9 +94,9 @@ public class MapManager : MonoBehaviour
     {
         foreach (var kvp in Brkfloor)
         {
-            if (kvp.obj is GameObject brk)//오브젝트 캐스팅 > 게임오브젝ㅌ틑
+            if (kvp.obj != null)//오브젝트 캐스팅 > 게임오브젝ㅌ틑
             {
-                brk.SetActive(true);
+                kvp.obj.SetActive(true);
             }
         }
     }
@@ -139,13 +139,20 @@ public class MapManager : MonoBehaviour
     {
         foreach (var kvp in cubes)
         {
-            if (kvp.obj is GameObject cube)
+            if (kvp.obj != null)
             {
-                cube.SetActive(true);
-                cube.transform.position = kvp.position;
+                kvp.obj.gameObject.SetActive(true);
+                kvp.obj.gameObject.transform.position = kvp.position;
+
+                MetalObj met = kvp.obj.GetComponent<MetalObj>();
+                if (met != null)
+                {
+                    met.DontFall();
+                }
+                if (met == null)
+                    Debug.Log("없어");
             }
         }
-        ResetCoin();
     }
     private void SaveTrapPositions()
     {
@@ -154,7 +161,7 @@ public class MapManager : MonoBehaviour
         {
             if (trap != null)
             {
-                trapPositions.Add(new Data{obj = trap,position = trap.transform.position });
+                trapPositions.Add(new Data{obj = trap.gameObject,position = trap.transform.position });
             }
         }
     }
@@ -162,9 +169,9 @@ public class MapManager : MonoBehaviour
     {
         foreach (var kvp in trapPositions)
         {
-            if (kvp.obj is Trap trape)
+            if (kvp.obj != null)
             {
-                Trap trap = trape.GetComponent<Trap>();
+                Trap trap = kvp.obj.GetComponent<Trap>();
 
                 if (trap != null)
                 {

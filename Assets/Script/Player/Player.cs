@@ -113,14 +113,36 @@ public class Player : MonoBehaviour
         rigid.velocity = new Vector2(_xVelocity,_yVelocity);
         FlipController();
     }
-    public bool IsGroundDetected() => Physics2D.Raycast(groundCheck.position, -transform.up,groundCheckDistance,whatIsGround|CubeLayer|whatIsBtn|bkfloor);
-    private void OnDrawGizmos() {
-        Gizmos.color = Color.red;
-
-        Gizmos.DrawLine(groundCheck.position, groundCheck.position -transform.up * groundCheckDistance);
-
-        Gizmos.DrawLine(transform.position, transform.position + transform.right * cubeCheckDistance);
-
+    int numberOfRays = 3;
+    public bool IsGroundDetected()
+    {
+        for (int i = 0; i < numberOfRays; i++)
+        {
+            // 각 레이의 시작 위치를 계산합니다.
+            Vector2 rayOrigin = (Vector2)groundCheck.position + GetOffset(i);
+            // 레이를 쏘고 바닥과 충돌하는지 확인합니다.
+            if (Physics2D.Raycast(rayOrigin, -transform.up, groundCheckDistance, whatIsGround | CubeLayer | whatIsBtn | bkfloor))
+            {
+                return true; 
+            }
+        }
+        return false; 
+    }
+    private Vector2 GetOffset(int index)
+    {
+        float spacing = 0.3f; // 레이 간격
+        return new Vector2(index * spacing, 0); // x축 방향으로 간격을 둡니다.
+    }
+    //public bool IsGroundDetected() => Physics2D.Raycast(groundCheck.position, -transform.up,groundCheckDistance,whatIsGround|CubeLayer|whatIsBtn|bkfloor);
+    protected void OnDrawGizmos()
+    {
+        Gizmos.color = Color.green; // 레이 색상 설정
+        for (int i = 0; i < numberOfRays; i++)
+        {
+            Vector2 rayOrigin = (Vector2)groundCheck.position + GetOffset(i);
+            Vector2 rayDirection = -transform.up * groundCheckDistance; // 레이 방향과 길이
+            Gizmos.DrawLine(rayOrigin, rayOrigin + rayDirection); // 레이 그리기
+        }
     }
     private void FlipX(){
         if(gravityState.count ==2 || gravityState.count == -2){

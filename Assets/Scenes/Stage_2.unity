@@ -294,6 +294,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 35294519}
     m_Modifications:
     - target: {fileID: 431217601304287054, guid: 5badcc639a9e6aa41ada906490861a05, type: 3}
+      propertyPath: raylength
+      value: 0.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 431217601304287054, guid: 5badcc639a9e6aa41ada906490861a05, type: 3}
       propertyPath: ButtonType
       value: 1
       objectReference: {fileID: 0}
@@ -1240,6 +1244,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 35294519}
     m_Modifications:
+    - target: {fileID: 431217601304287054, guid: 5badcc639a9e6aa41ada906490861a05, type: 3}
+      propertyPath: raylength
+      value: 0.55
+      objectReference: {fileID: 0}
     - target: {fileID: 431217601304287054, guid: 5badcc639a9e6aa41ada906490861a05, type: 3}
       propertyPath: ButtonType
       value: 1
@@ -3606,6 +3614,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2375987719226453912, guid: 984d3f952e70e59498d8ae80fbddf7da, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.349
+      objectReference: {fileID: 0}
+    - target: {fileID: 2375987719226453912, guid: 984d3f952e70e59498d8ae80fbddf7da, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.576
+      objectReference: {fileID: 0}
     - target: {fileID: 3107936749478317446, guid: 984d3f952e70e59498d8ae80fbddf7da, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.1
@@ -3653,6 +3669,10 @@ PrefabInstance:
     - target: {fileID: 7924774722092862084, guid: 984d3f952e70e59498d8ae80fbddf7da, type: 3}
       propertyPath: bkfloor.m_Bits
       value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924774722092862084, guid: 984d3f952e70e59498d8ae80fbddf7da, type: 3}
+      propertyPath: groundCheckDistance
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 7924774722092862084, guid: 984d3f952e70e59498d8ae80fbddf7da, type: 3}
       propertyPath: whatIsbkGround.m_Bits
@@ -6622,6 +6642,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 35294519}
     m_Modifications:
     - target: {fileID: 431217601304287054, guid: 5badcc639a9e6aa41ada906490861a05, type: 3}
+      propertyPath: raylength
+      value: 0.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 431217601304287054, guid: 5badcc639a9e6aa41ada906490861a05, type: 3}
       propertyPath: ButtonType
       value: 1
       objectReference: {fileID: 0}
@@ -7101,6 +7125,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 35294519}
     m_Modifications:
+    - target: {fileID: 431217601304287054, guid: 5badcc639a9e6aa41ada906490861a05, type: 3}
+      propertyPath: raylength
+      value: 0.55
+      objectReference: {fileID: 0}
     - target: {fileID: 431217601304287054, guid: 5badcc639a9e6aa41ada906490861a05, type: 3}
       propertyPath: ButtonType
       value: 1
@@ -9949,25 +9977,7 @@ CompositeCollider2D:
   m_GeometryType: 1
   m_GenerationType: 0
   m_EdgeRadius: 0
-  m_ColliderPaths:
-  - m_Collider: {fileID: 1294318098}
-    m_ColliderPaths:
-    - - X: 160000000
-        Y: -10000000
-      - X: -100000000
-        Y: -10000000
-      - X: -100000000
-        Y: -20000000
-      - X: 160000000
-        Y: -20000000
-    - - X: 110000000
-        Y: -130000000
-      - X: 100000000
-        Y: -130000000
-      - X: 100000000
-        Y: -150000000
-      - X: 110000000
-        Y: -150000000
+  m_ColliderPaths: []
   m_CompositePaths:
     m_Paths:
     - - {x: 15.999971, y: -2}
@@ -10851,17 +10861,7 @@ CompositeCollider2D:
   m_GeometryType: 1
   m_GenerationType: 0
   m_EdgeRadius: 0
-  m_ColliderPaths:
-  - m_Collider: {fileID: 1411438668}
-    m_ColliderPaths:
-    - - X: 160000000
-        Y: -150000000
-      - X: -100000000
-        Y: -150000000
-      - X: -100000000
-        Y: -160000000
-      - X: 160000000
-        Y: -160000000
+  m_ColliderPaths: []
   m_CompositePaths:
     m_Paths:
     - - {x: 15.999971, y: -16}
@@ -11954,37 +11954,7 @@ CompositeCollider2D:
   m_GeometryType: 1
   m_GenerationType: 0
   m_EdgeRadius: 0
-  m_ColliderPaths:
-  - m_Collider: {fileID: 1514226766}
-    m_ColliderPaths:
-    - - X: -100000000
-        Y: -10000000
-      - X: -110000000
-        Y: -10000000
-      - X: -110000000
-        Y: -160000000
-      - X: -100000000
-        Y: -160000000
-    - - X: 170000000
-        Y: -10000000
-      - X: 30000000
-        Y: -10000000
-      - X: 30000000
-        Y: -20000000
-      - X: 100000000
-        Y: -20000000
-      - X: 100000000
-        Y: -130000000
-      - X: 110000000
-        Y: -130000000
-      - X: 110000000
-        Y: -20000000
-      - X: 160000000
-        Y: -20000000
-      - X: 160000000
-        Y: -160000000
-      - X: 170000000
-        Y: -160000000
+  m_ColliderPaths: []
   m_CompositePaths:
     m_Paths:
     - - {x: 16.999971, y: -16}
@@ -12285,7 +12255,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!156049354 &1630770813
 Grid:
   m_ObjectHideFlags: 0
@@ -15503,7 +15473,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1291843598876879302, guid: f1961cd3b999d0b4db9f621fe2476879, type: 3}
       propertyPath: orthographic size
-      value: 11.65625
+      value: 11.25
       objectReference: {fileID: 0}
     - target: {fileID: 1291843598876879302, guid: f1961cd3b999d0b4db9f621fe2476879, type: 3}
       propertyPath: m_BackGroundColor.b

@@ -20,6 +20,7 @@ public class Button : MonoBehaviour
     public enum ButtonTypeEnum { Flip,Gravity,Delete,OnTrap,Generate,GenTrap};
 
     public float raylength = 0.55f;
+    public int numberOfRays = 5;
     Vector2 savePos;
     protected float buttonValue;
     protected void Start()
@@ -30,7 +31,7 @@ public class Button : MonoBehaviour
         runPlayer = GameObject.FindGameObjectWithTag("Player").GetComponent<JustRunPlayer>();
         render = GetComponent<SpriteRenderer>();
         savePos = transform.position;
-        howray();
+        //howray();
         if (ButtonType == ButtonTypeEnum.GenTrap)
         {
             opendoor.SetActive(false);
@@ -39,10 +40,12 @@ public class Button : MonoBehaviour
 
     void Update()
     {
-        
+        PushThat();
     }
     void PushThat()
     {
+        if (IsButtonHit())
+        {
             if (!isClick && ButtonType == ButtonTypeEnum.Gravity)
             {
                 PushBtn();
@@ -82,7 +85,7 @@ public class Button : MonoBehaviour
                 opendoor.GetComponentInChildren<Trap>().ActiveDetect();
                 isClick = true;
             }
-        
+        }
     }
     void PushBtn()
     {
@@ -110,41 +113,53 @@ public class Button : MonoBehaviour
                 break;
         }
     }
-    void howray(){
-        switch(ButtonTouch){
-            case Type.under:
-                ToRay = transform.up;
-            break;
-            case Type.on:
-                ToRay = -transform.up;
-            break;
-            case Type.left:
-                ToRay = transform.right;
-            break;
-            case Type.right:
-                ToRay = -transform.right;
-            break;
-        }
-
-    }
-    protected void OnDrawGizmos() {
-        Gizmos.color = Color.red;
-
-        Gizmos.DrawLine(transform.position, transform.position + ToRay * raylength);
-    }
-    public bool isbutton() =>Physics2D.Raycast(transform.position, ToRay,raylength,cubemask|playermask);
-    private void OnCollisionEnter2D(Collision2D collision)
+    private Vector2 GetRayDirection()
     {
-        if(collision == null) return;
-        if (collision.collider.CompareTag("Player"))
+        switch (ButtonTouch)
         {
-            PushThat();
-        }
-        if (collision.collider.CompareTag("Cube"))
-        {
-            PushThat();
+            case Type.under: return transform.up; // 아래쪽
+            case Type.on: return -transform.up; // 위쪽
+            case Type.left: return transform.right; // 왼쪽
+            case Type.right: return -transform.right; // 오른쪽
+            default: return Vector2.zero; // 기본값
         }
     }
+    public bool IsButtonHit()
+    {
+        for (int i = 0; i < numberOfRays; i++)
+        {
+            Vector2 rayDirection = GetRayDirection();
+            Vector2 rayOrigin = (Vector2)transform.position + GetOffset(i);
+
+            RaycastHit2D hit = Physics2D.Raycast(rayOrigin, rayDirection, raylength, cubemask | playermask);
+            if (hit.collider != null)
+            {
+                return true; // 레이캐스트가 충돌하면 true 반환
+            }
+        }
+        return false; // 모든 레이에서 충돌이 없으면 false 반환
+    }
+    private Vector2 GetOffset(int index)
+    {
+        float offset = (index - (numberOfRays - 1) / 2f) * (transform.localScale.y / numberOfRays); // Y 방향의 스케일에 기반한 오프셋
+        return ButtonTouch == Type.left || ButtonTouch == Type.right ? new Vector2(0, offset) : new Vector2(offset, 0); // 방향에 따라 오프셋 조정
+    }
+    protected void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red; // 레이 색상 설정
+        DrawRays(); // 레이 그리기 호출
+    }
+    // 레이 그리기
+    public void DrawRays()
+    {
+        for (int i = 0; i < numberOfRays; i++)
+        {
+            Vector2 rayDirection = GetRayDirection();
+            Vector2 rayOrigin = (Vector2)transform.position + GetOffset(i);
+            Gizmos.DrawLine(rayOrigin, rayOrigin + rayDirection * raylength);
+        }
+    }
+
     public void ResetButton(){
         if (opendoor != null)
         {
