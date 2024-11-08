@@ -416,6 +416,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 35294519}
     m_Modifications:
     - target: {fileID: 431217601304287054, guid: 5badcc639a9e6aa41ada906490861a05, type: 3}
+      propertyPath: raylength
+      value: 0.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 431217601304287054, guid: 5badcc639a9e6aa41ada906490861a05, type: 3}
       propertyPath: ButtonType
       value: 1
       objectReference: {fileID: 0}
@@ -1677,6 +1681,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 35294519}
     m_Modifications:
+    - target: {fileID: 431217601304287054, guid: 5badcc639a9e6aa41ada906490861a05, type: 3}
+      propertyPath: raylength
+      value: 0.55
+      objectReference: {fileID: 0}
     - target: {fileID: 431217601304287054, guid: 5badcc639a9e6aa41ada906490861a05, type: 3}
       propertyPath: ButtonType
       value: 1
@@ -4263,7 +4271,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5191582306727898308, guid: e9106f2330ba9dc44819f705ce46cbdf, type: 3}
       propertyPath: m_GravityScale
-      value: 10
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4612,6 +4620,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2375987719226453912, guid: 984d3f952e70e59498d8ae80fbddf7da, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.349
+      objectReference: {fileID: 0}
+    - target: {fileID: 2375987719226453912, guid: 984d3f952e70e59498d8ae80fbddf7da, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.576
+      objectReference: {fileID: 0}
     - target: {fileID: 3107936749478317446, guid: 984d3f952e70e59498d8ae80fbddf7da, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.1
@@ -4655,6 +4671,14 @@ PrefabInstance:
     - target: {fileID: 4661098158403459292, guid: 984d3f952e70e59498d8ae80fbddf7da, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924774722092862084, guid: 984d3f952e70e59498d8ae80fbddf7da, type: 3}
+      propertyPath: bkfloor.m_Bits
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924774722092862084, guid: 984d3f952e70e59498d8ae80fbddf7da, type: 3}
+      propertyPath: groundCheckDistance
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 7924774722092862084, guid: 984d3f952e70e59498d8ae80fbddf7da, type: 3}
       propertyPath: whatIsbkGround.m_Bits
@@ -7624,6 +7648,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 35294519}
     m_Modifications:
     - target: {fileID: 431217601304287054, guid: 5badcc639a9e6aa41ada906490861a05, type: 3}
+      propertyPath: raylength
+      value: 0.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 431217601304287054, guid: 5badcc639a9e6aa41ada906490861a05, type: 3}
       propertyPath: ButtonType
       value: 1
       objectReference: {fileID: 0}
@@ -9832,7 +9860,7 @@ Transform:
   m_GameObject: {fileID: 700051947}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -21.45, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14160,6 +14188,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 35294519}
     m_Modifications:
     - target: {fileID: 431217601304287054, guid: 5badcc639a9e6aa41ada906490861a05, type: 3}
+      propertyPath: raylength
+      value: 0.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 431217601304287054, guid: 5badcc639a9e6aa41ada906490861a05, type: 3}
       propertyPath: ButtonType
       value: 1
       objectReference: {fileID: 0}
@@ -15033,7 +15065,7 @@ MonoBehaviour:
   maplist: []
   mapCount: 0
   trapLayerName: Trap
-  traps: []
+  transpos: 0
   GravityRoom: 0
 --- !u!4 &979436751
 Transform:
@@ -23290,7 +23322,7 @@ Transform:
   m_GameObject: {fileID: 1952160989}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

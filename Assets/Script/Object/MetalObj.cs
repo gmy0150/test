@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MetalObj : MonoBehaviour
+public class MetalObj : Cube
 {
     [SerializeField]private float groundCheckDistance = 0.5f;
 
@@ -16,6 +16,7 @@ public class MetalObj : MonoBehaviour
     [SerializeField]private float distance = 8.0f;
     Rigidbody2D rigid;
     bool isFalling;
+    bool wait;
     void Start()
     {
         rigid = GetComponent<Rigidbody2D>();
@@ -28,21 +29,36 @@ public class MetalObj : MonoBehaviour
         // 레이캐스트를 그릴 위치와 방향 설정
         Gizmos.DrawLine(groundCheck.position, groundCheck.position -transform.up * groundCheckDistance);
     }
+    public void DontFall()
+    {
+        isFalling = false;
+        Debug.Log("자가");
+        StartCoroutine(reset());
+    }
+    IEnumerator reset()
+    {
+        isFalling = false;
+        wait = true;
+        yield return new WaitForSeconds(0.65f);
+        wait = false;
+        startPosition = transform.position;
+        Debug.Log("너작동해");
+    }
     private void BrokenGroundDetected() {
-        if(isFalling){
+        if(isFalling && !wait){
             RaycastHit2D groundHit = Physics2D.Raycast(groundCheck.position, -transform.up,groundCheckDistance,BrokenGround);
             RaycastHit2D BrokenDistance = Physics2D.Raycast(groundCheck.position, Physics2D.gravity.normalized,Mathf.Infinity,BrokenGround);
             if (BrokenDistance.collider != null) {
                 float collisionDistance = Vector2.Distance(startPosition, BrokenDistance.point);
-
+                Debug.Log(collisionDistance);
                 if (collisionDistance >= distance) {
                     if(groundHit.collider !=null){
                         CameraManager.Instance.ShakeCamera();
-                        Destroy(groundHit.collider.gameObject);
+                        groundHit.collider.gameObject.SetActive(false);
                     }
                 }
             }
-        }else if(!isFalling && transform.hasChanged){
+        }else if(!isFalling && transform.hasChanged&& !wait){
             startPosition = transform.position;
             isFalling = true;
         }

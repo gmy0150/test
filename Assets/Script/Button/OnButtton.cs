@@ -14,7 +14,7 @@ public class OnButtton : Button
     // Update is called once per frame
     void Update()
     {
-        if(isbutton()){
+        if(IsButtonHit()){
             Debug.Log("나와");
             if(!isClick){
                 switch(ButtonTouch){

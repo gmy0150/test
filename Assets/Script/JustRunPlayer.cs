@@ -121,14 +121,12 @@ public class JustRunPlayer : MonoBehaviour
     void Skips()
     {
         FlipInit();
-        mapManager.PlayerTranspos();
+        //mapManager.PlayerTranspos();
     }
     public void Respawns()
     {
         transform.position = savePos;
-        mapManager.ResetCubePositions();
-        mapManager.ResetTrapPositions();
-        mapManager.ResetButton();
+        mapManager.ResetList();
         FlipInit();
     }
     private void OnCollisionEnter2D(Collision2D other)

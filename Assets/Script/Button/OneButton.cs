@@ -14,7 +14,7 @@ public class OneButton : Button
     // Update is called once per frame
     void Update()
     {
-        if(isbutton()){
+        if(IsButtonHit()){
             if(!isClick){
                 switch(ButtonTouch){
                     case Type.under:

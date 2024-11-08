@@ -1,6 +1,6 @@
 
 using System.Collections.Generic;
-using System.Linq  ;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,21 +14,20 @@ public class MapManager : MonoBehaviour
     CameraManager cameraManager;
     float cameraX, cameraY;
     public string trapLayerName;
-    bool transpos = false;
-    private Dictionary<GameObject, Vector3> trapPositions;
-    private Dictionary<GameObject, Vector3> cubePositions;
-    private Dictionary<GameObject, Vector3> CoinPosition;
-    public List<Trap> traps;
-    private List<GameObject> cubes;
-    private List<GameObject> Coins;
-    private List<GameObject> button;
+    public bool transpos = false;
     public bool GravityRoom;
-    public void PlayerTranspos()
+    public struct Data
     {
-        mapCount++;
-        transpos = false;
+        public GameObject obj;
+        public Vector3 position;
     }
-    public bool GetTranspos() {  return transpos; }
+     List<Trap> trapList = new List<Trap>();
+    private List<Data> cubes = new List<Data>();
+    private List<Data> Coins = new List<Data>();
+    private List<GameObject> button;
+     List<Data> trapPositions = new List<Data>();
+    private List<Data> Brkfloor = new List<Data>();
+
     private void Awake()
     {
         GameObject[] taggedObjects = GameObject.FindGameObjectsWithTag("OpenDoor");
@@ -45,13 +44,8 @@ public class MapManager : MonoBehaviour
     void Start()
     {
         button = new List<GameObject>(GameObject.FindGameObjectsWithTag("Button"));
-        cubePositions = new Dictionary<GameObject, Vector3>();
-        cubes = new List<GameObject>(GameObject.FindGameObjectsWithTag("Cube"));
-        CoinPosition = new Dictionary<GameObject, Vector3>();
-        Coins = new List<GameObject>(GameObject.FindGameObjectsWithTag("Coin"));
-        trapPositions = new Dictionary<GameObject, Vector3>();
         int trapLayer = LayerMask.NameToLayer(trapLayerName);
-        traps = FindTrapsOnLayer(trapLayer);
+        trapList = FindTrapsOnLayer(trapLayer);
         GameObject[] findMapTag = GameObject.FindGameObjectsWithTag("Map");
         var sortedObjects = findMapTag.OrderBy(obj => obj.name).ToList();
         maplist = sortedObjects;
@@ -66,76 +60,118 @@ public class MapManager : MonoBehaviour
         if (maplist.Count > 0)
         {
             maplist[0].SetActive(true);
-            SaveCubePositions();
-            SaveTrapPositions();
+            SaveList();
         }
     }
-    public void SaveCoin()
+    public void SaveList()
     {
-        CoinPosition.Clear();
-        foreach (var Coin in Coins)
+        SaveBK();
+        SaveCoin();
+        SaveCubePositions();
+        SaveTrapPositions();
+    }
+    public void ResetList()
+    {
+        ResetBk();
+        ResetCoin();
+        ResetCubePositions();
+        ResetButton();
+        ResetTrapPositions();
+    }
+    private void SaveBK()
+    {
+        Brkfloor.Clear();
+        GameObject[] BkList = GameObject.FindGameObjectsWithTag("Floor");
+        foreach (var bk in BkList)
         {
-            if (Coin != null && !CoinPosition.ContainsKey(Coin))
+            if (bk != null)
             {
-                CoinPosition[Coin] = Coin.transform.position;
+                Brkfloor.Add(new Data { obj = bk, position = bk.transform.position });
             }
         }
     }
-    public void ResetCoin()
+    void ResetBk()
     {
-        foreach (var kvp in CoinPosition)
+        foreach (var kvp in Brkfloor)
         {
-            if (kvp.Key != null)
+            if (kvp.obj != null)//오브젝트 캐스팅 > 게임오브젝ㅌ틑
             {
-                kvp.Key.SetActive(true);
+                kvp.obj.SetActive(true);
+            }
+        }
+    }
+    private void SaveCoin()
+    {
+        Coins.Clear();
+        GameObject[] coinslist = GameObject.FindGameObjectsWithTag("Coin");
+        foreach (var Coin in coinslist)
+        {
+            if (Coin != null)
+            {
+                Coins.Add(new Data { obj = Coin ,position = Coin.transform.position});
+            }
+        }
+    }
+    private void ResetCoin()
+    {
+        foreach (var kvp in Coins)
+        {
+            if (kvp.obj is GameObject Coins)//오브젝트 캐스팅 > 게임오브젝ㅌ틑
+            {
+                Coins.SetActive(true);
                 Debug.Log("확인중");
             }
         }
     }
-    public void SaveCubePositions()
+    private void SaveCubePositions()
     {
-        cubePositions.Clear();
-        foreach (var cube in cubes)
+        cubes.Clear();
+        GameObject[] cubelist = GameObject.FindGameObjectsWithTag("Cube");
+        foreach (var cube in cubelist)
         {
-            if (cube != null && !cubePositions.ContainsKey(cube))
+            if (cube != null)
             {
-                cubePositions[cube] = cube.transform.position;
-                Debug.Log(cube.transform.name);
+                cubes.Add(new Data { obj = cube ,position = cube.transform.position});
             }
         }
-        SaveCoin();
+    }
+    private void ResetCubePositions()
+    {
+        foreach (var kvp in cubes)
+        {
+            if (kvp.obj != null)
+            {
+                kvp.obj.gameObject.SetActive(true);
+                kvp.obj.gameObject.transform.position = kvp.position;
 
-    }
-    public void ResetCubePositions()
-    {
-        foreach (var kvp in cubePositions)
-        {
-            if (kvp.Key != null)
-            {
-                kvp.Key.transform.position = kvp.Value;
+                MetalObj met = kvp.obj.GetComponent<MetalObj>();
+                if (met != null)
+                {
+                    met.DontFall();
+                }
+                if (met == null)
+                    Debug.Log("없어");
             }
         }
-        ResetCoin();
     }
-    public void SaveTrapPositions()
+    private void SaveTrapPositions()
     {
         trapPositions.Clear();
-        foreach (var trap in traps)
+        foreach (var trap in trapList)
         {
-            if (trap != null && !trapPositions.ContainsKey(trap.gameObject))
+            if (trap != null)
             {
-                trapPositions[trap.gameObject] = trap.transform.position;
-
+                trapPositions.Add(new Data{obj = trap.gameObject,position = trap.transform.position });
             }
         }
     }
-    public void ResetTrapPositions()
+    private void ResetTrapPositions()
     {
         foreach (var kvp in trapPositions)
         {
-            if (kvp.Key != null)
+            if (kvp.obj != null)
             {
-                Trap trap = kvp.Key.GetComponent<Trap>();
+                Trap trap = kvp.obj.GetComponent<Trap>();
 
                 if (trap != null)
                 {
@@ -162,7 +198,7 @@ public class MapManager : MonoBehaviour
         }
         return traps;
     }
-    public void ResetButton()
+    private void ResetButton()
     {
         foreach (var buttonObject in button)
         {
@@ -211,7 +247,7 @@ public class MapManager : MonoBehaviour
 
                         cameraManager.transform.position = new Vector3(cameraX, cameraY, -10f);
                     }
-                    SaveCubePositions();
+                    SaveList();
                     transpos = true;
                 }
                 break;
