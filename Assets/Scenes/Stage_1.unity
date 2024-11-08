@@ -9674,11 +9674,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7923135947111726103, guid: ab0c0263f65b60a488e7209a1192ddc8, type: 3}
       propertyPath: duration
-      value: 0.002
+      value: 0.005
+      objectReference: {fileID: 0}
+    - target: {fileID: 7923135947111726103, guid: ab0c0263f65b60a488e7209a1192ddc8, type: 3}
+      propertyPath: target.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7923135947111726103, guid: ab0c0263f65b60a488e7209a1192ddc8, type: 3}
       propertyPath: target.y
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 7923135947111726103, guid: ab0c0263f65b60a488e7209a1192ddc8, type: 3}
+      propertyPath: target.z
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7923135947111726103, guid: ab0c0263f65b60a488e7209a1192ddc8, type: 3}
       propertyPath: TrapTypes
