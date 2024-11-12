@@ -36,26 +36,30 @@ public class EmptyGround : MonoBehaviour
 
     void DisableTilemapCollider(Collider2D other)
     {
-        CompositeCollider2D tilemapCollider = tilemap.GetComponent<CompositeCollider2D>();
-        if (tilemapCollider != null)
+        Collider2D[] tilemapCollider = tilemap.GetComponentsInChildren<Collider2D>();
+        List<Collider2D> colliderlist = new List<Collider2D>(tilemapCollider);
+        foreach (Collider2D collider in colliderlist)
         {
-            Physics2D.IgnoreCollision(tilemapCollider,other,true);
+            Physics2D.IgnoreCollision(collider, other, true);
             if (other.CompareTag("Player"))
             {
-                tilemapCollider.gameObject.layer = 0;
+                collider.gameObject.layer = 0;
             }
         }
     }
-    void EnableTileMap(Collider2D other){
+    void EnableTileMap(Collider2D other)
     {
-        CompositeCollider2D tilemapCollider = tilemap.GetComponent<CompositeCollider2D>();
-            if (tilemapCollider != null)
+        // Tilemap에 있는 모든 Collider2D를 가져와 리스트로 저장
+        Collider2D[] tilemapColliders = tilemap.GetComponentsInChildren<Collider2D>();
+        List<Collider2D> colliderList = new List<Collider2D>(tilemapColliders);
+
+        foreach (Collider2D collider in colliderList)
+        {
+            Physics2D.IgnoreCollision(collider, other, false);
+
+            if (other.CompareTag("Player"))
             {
-            Physics2D.IgnoreCollision(tilemapCollider,other ,false);
-                if (other.CompareTag("Player"))
-                {
-                    tilemapCollider.gameObject.layer = 6;
-                }
+                collider.gameObject.layer = 6;
             }
         }
     }
