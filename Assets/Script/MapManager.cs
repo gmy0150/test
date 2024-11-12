@@ -50,7 +50,15 @@ public class MapManager : MonoBehaviour
         var sortedObjects = findMapTag.OrderBy(obj => obj.name).ToList();
         maplist = sortedObjects;
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
-        //runplayer = GameObject.FindGameObjectWithTag("Player").GetComponent<JustRunPlayer>();
+        runplayer = GameObject.FindGameObjectWithTag("Player").GetComponent<JustRunPlayer>();
+        if (player != null)
+        {
+            Debug.LogError("오류없음");
+        }
+        if (runplayer != null)
+        {
+            Debug.LogError("오류");
+        }
         cameraManager = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraManager>();
 
         foreach (var mapobj in maplist)
