@@ -50,8 +50,12 @@ public class MapManager : MonoBehaviour
         var sortedObjects = findMapTag.OrderBy(obj => obj.name).ToList();
         maplist = sortedObjects;
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
-        //runplayer = GameObject.FindGameObjectWithTag("Player").GetComponent<JustRunPlayer>();
-        cameraManager = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraManager>();
+        if (player == null)
+        {
+            Debug.Log("1");
+            runplayer = GameObject.FindGameObjectWithTag("Player").GetComponent<JustRunPlayer>();
+        }
+            cameraManager = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraManager>();
 
         foreach (var mapobj in maplist)
         {
@@ -228,7 +232,7 @@ public class MapManager : MonoBehaviour
                     {
                         GravityRoom = false;
                     }
-                    if (player.enabled)
+                    if (player != null)
                     {
                         player.transform.position = maplist[mapCount].transform.position;
                         player.savePos = player.transform.position;
@@ -239,6 +243,7 @@ public class MapManager : MonoBehaviour
                     }
                     else
                     {
+                        Debug.Log(runplayer.name);
                         runplayer.transform.position = maplist[mapCount].transform.position;
                         runplayer.savePos = runplayer.transform.position;
                         cameraX = runplayer.transform.position.x;
