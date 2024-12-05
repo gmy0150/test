@@ -230,6 +230,7 @@ public class Player : MonoBehaviour
             if (map.activeSelf) // 활성화된 오브젝트만 확인
             {
                 number = GetNumberAfterUnderscore(map.name);
+                Debug.Log("추출된 번호: " + number);
                 if (number != -1)
                 {
                     Debug.Log("추출된 번호: " + number);
@@ -255,7 +256,9 @@ public class Player : MonoBehaviour
     int GetNumberAfterUnderscore(string name)
     {
         // "_" 다음에 나오는 숫자만 추출
-        Match match = Regex.Match(name, @"_(\d+)$");
+        Match match = Regex.Match(name, @"_(\d+)\b");
+        Debug.Log(name);
+        Debug.Log("2" + match);
         return match.Success ? int.Parse(match.Groups[1].Value) : -1;
     }
     int GetStageNumber(string sceneName)
