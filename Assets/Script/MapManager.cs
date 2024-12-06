@@ -1,6 +1,7 @@
 
 using System.Collections.Generic;
 using System.Linq;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -27,6 +28,7 @@ public class MapManager : MonoBehaviour
     private List<GameObject> button;
      List<Data> trapPositions = new List<Data>();
     private List<Data> Brkfloor = new List<Data>();
+    public TMP_Text Deathtext;
 
     private void Awake()
     {
@@ -66,6 +68,7 @@ public class MapManager : MonoBehaviour
             maplist[0].SetActive(true);
             SaveList();
         }
+        
     }
     public void SaveList()
     {
@@ -215,6 +218,7 @@ public class MapManager : MonoBehaviour
     }
     private void Update()
     {
+        Deathtext.text = DeathCount.GetCount().ToString();
         switch (mapCount)
         {
             case 0:

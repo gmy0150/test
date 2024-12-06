@@ -69,6 +69,7 @@ public class Player : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.B)){
         }
         if(Input.GetKeyDown(KeyCode.R)){
+            if(!die)
             Respawn();
         }
     }
@@ -202,9 +203,7 @@ public class Player : MonoBehaviour
             return null;
         }
     }
-    private void OnTriggerExit2D(Collider2D other) {
-        
-    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (enable && !die)
@@ -217,7 +216,8 @@ public class Player : MonoBehaviour
             if (other.tag == "respawn")
             {
                 Debug.Log("너 작동하면안돼..");
-                Respawn();
+                if(!die)
+                    Respawn();
             }
         }
     }
@@ -269,6 +269,7 @@ public class Player : MonoBehaviour
     public void Respawn(){
         die = true;
         rigid.velocity = Vector2.zero;
+        DeathCount.CountUp();
         StartCoroutine(Reset());
     }
     IEnumerator Reset()
