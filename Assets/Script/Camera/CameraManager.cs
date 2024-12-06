@@ -41,7 +41,7 @@ public class CameraManager : MonoBehaviour
         }
         if (MapManager.Instance.transpos)
         {
-            transform.position = new Vector3(player.transform.position.x,player.transform.position.y,transform.position.z);
+            transform.position = new Vector3(player.transform.position.x,player.transform.position.y + 3,transform.position.z);
         }
 
     }
