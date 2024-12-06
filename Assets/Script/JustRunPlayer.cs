@@ -208,9 +208,13 @@ public class JustRunPlayer : MonoBehaviour
 
     public void Respawn()
     {
-        die = true;
-        rigid.velocity = Vector2.zero;
-        StartCoroutine(Reset());
+        if (!die)
+        {
+            die = true;
+            rigid.velocity = Vector2.zero;
+            StartCoroutine(Reset());
+            DeathCount.CountUp();
+        }
     }
     IEnumerator Reset()
     {

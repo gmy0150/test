@@ -88,6 +88,7 @@ public class Trap : MonoBehaviour
         {
             Detect = true;
             startTime = Time.time;
+            Debug.Log("tq");
         }
     }
     public void ResetTrap()

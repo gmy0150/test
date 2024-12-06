@@ -3972,6 +3972,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button
       objectReference: {fileID: 0}
+    - target: {fileID: 4034886202267334272, guid: 5badcc639a9e6aa41ada906490861a05, type: 3}
+      propertyPath: m_TagString
+      value: Button
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25009,7 +25013,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3930648799495891122, guid: f67e92b88e24e28488bce55673604aac, type: 3}
       propertyPath: m_Size.x
-      value: 5.854191
+      value: 13.459545
       objectReference: {fileID: 0}
     - target: {fileID: 3930648799495891122, guid: f67e92b88e24e28488bce55673604aac, type: 3}
       propertyPath: m_Size.y
@@ -25017,7 +25021,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3930648799495891122, guid: f67e92b88e24e28488bce55673604aac, type: 3}
       propertyPath: m_Offset.x
-      value: 3.033987
+      value: 6.836664
       objectReference: {fileID: 0}
     - target: {fileID: 3930648799495891122, guid: f67e92b88e24e28488bce55673604aac, type: 3}
       propertyPath: m_Offset.y

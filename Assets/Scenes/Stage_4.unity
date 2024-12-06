@@ -5282,7 +5282,7 @@ MonoBehaviour:
   trapLayerName: Trap
   transpos: 0
   GravityRoom: 0
-  Deathtext: {fileID: 0}
+  Deathtext: {fileID: 638741893}
 --- !u!4 &979436751
 Transform:
   m_ObjectHideFlags: 0
