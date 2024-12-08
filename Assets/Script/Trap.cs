@@ -22,6 +22,10 @@ public class Trap : MonoBehaviour
     float timer;
     private void Awake()
     {
+        if (targetobj == null)
+        {
+            targetobj = this.gameObject;
+        }
         if (TrapTypes == TrapType.increase)
         {
             if (scaleRight == true)
@@ -35,13 +39,11 @@ public class Trap : MonoBehaviour
 
             }
         }
+
     }
     void Start()
     {
-        if (targetobj == null)
-        {
-            targetobj = this.gameObject;
-        }
+
         startPos = targetobj.transform.localPosition;
         initScale = targetobj.transform.localScale;
     }

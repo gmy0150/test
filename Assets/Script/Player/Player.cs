@@ -286,7 +286,6 @@ public class Player : MonoBehaviour
     IEnumerator Reset()
     {
         rigid.velocity = Vector2.zero;
-
         yield return new WaitForSeconds(1);
         rigid.velocity = Vector2.zero;
         gravityState.count = -2;
