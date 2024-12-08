@@ -10,7 +10,7 @@ public class PlayerInputKey
     protected float xInput;
     protected float yvelocity;
     protected float xvelocity;
-
+    protected bool first;
 
     public PlayerInputKey(Player _player, PlayerControl _control){
         this.player = _player;

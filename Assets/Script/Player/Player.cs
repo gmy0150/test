@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Text.RegularExpressions;
+using Unity.Burst.CompilerServices;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -27,6 +28,7 @@ public class Player : MonoBehaviour
     [SerializeField]private float groundCheckDistance;
     [SerializeField]private LayerMask whatIsGround;
     [SerializeField]private LayerMask whatIsBtn;
+    [SerializeField]private LayerMask nonFloor;
     [SerializeField]private LayerMask bkfloor;
     [SerializeField]private Transform groundCheck;
     public LayerMask CubeLayer;
@@ -39,6 +41,7 @@ public class Player : MonoBehaviour
     int gravity = 10;
     int rotate = 90;
     public bool enable;
+    public Animator animator;
     void Awake() {  
         stateMachine = new PlayerControl();
         freezeState = new PlayerFreezeCube(this,stateMachine);
@@ -47,6 +50,7 @@ public class Player : MonoBehaviour
         gravityState = new PlayerGravityControl(this,stateMachine);
         jumpState = new PlayerJumpState(this,stateMachine);
         AirState = new PlayerAirState(this,stateMachine);
+        animator = GetComponent<Animator>();
     }
     void Start(){
         audiosource = GetComponent<AudioSource>();
@@ -66,6 +70,7 @@ public class Player : MonoBehaviour
             stateMachine.Initalize(idleState);
             return;
         }
+        IsGroundDetected();
         stateMachine.currentState.Update();
 
         gravitycontrol();
@@ -120,17 +125,29 @@ public class Player : MonoBehaviour
     int numberOfRays = 3;
     public bool IsGroundDetected()
     {
+        bool isGroundDetected = false;
         for (int i = 0; i < numberOfRays; i++)
         {
-            // 각 레이의 시작 위치를 계산합니다.
             Vector2 rayOrigin = (Vector2)groundCheck.position + GetOffset(i);
-            // 레이를 쏘고 바닥과 충돌하는지 확인합니다.
-            if (Physics2D.Raycast(rayOrigin, -transform.up, groundCheckDistance, whatIsGround | CubeLayer | whatIsBtn | bkfloor))
+            RaycastHit2D hit = Physics2D.Raycast(rayOrigin, -transform.up, groundCheckDistance, whatIsGround | CubeLayer | whatIsBtn | bkfloor|nonFloor);
+
+            if (hit.collider != null)
             {
-                return true; 
+                if (((1 << hit.collider.gameObject.layer) & (whatIsGround| CubeLayer | whatIsBtn | bkfloor)) != 0)
+                {
+
+                    if (((1 << hit.collider.gameObject.layer) & (nonFloor)) != 0)
+                    {
+                        continue;
+                    }
+                    else
+                    {
+                        isGroundDetected = true;
+                    }
+                }
             }
         }
-        return false; 
+        return isGroundDetected; 
     }
     private Vector2 GetOffset(int index)
     {
@@ -286,12 +303,14 @@ public class Player : MonoBehaviour
     IEnumerator Reset()
     {
         rigid.velocity = Vector2.zero;
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(1f);
         rigid.velocity = Vector2.zero;
+
         gravityState.count = -2;
         transform.position = savePos;
-        mapManager.ResetList() ;
         die = false;
+        mapManager.ResetList() ;
+
     }
 
     private void OnCollisionEnter2D(Collision2D other) {
@@ -300,6 +319,7 @@ public class Player : MonoBehaviour
             if (other.transform.tag == "spike")
             {
                 Debug.Log("작동?");
+                if(!die)
                 Respawn();
             }
         }

@@ -11,6 +11,7 @@ public class PlayerMoveState : PlayerGroundState
     public override void Enter()
     {
         base.Enter();
+        player.animator.SetTrigger("move");
     }
     public override void Exit()
     {

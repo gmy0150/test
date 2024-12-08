@@ -25,6 +25,11 @@ public class Button : MonoBehaviour
     protected float buttonValue;
     AudioSource audioSource;
     AudioClip clip;
+    private void Awake()
+    {
+        savePos = transform.position;
+
+    }
     protected void Start()
     {
         cubemask = LayerMask.GetMask("Cube");
@@ -32,7 +37,6 @@ public class Button : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         runPlayer = GameObject.FindGameObjectWithTag("Player").GetComponent<JustRunPlayer>();
         render = GetComponent<SpriteRenderer>();
-        savePos = transform.position;
         audioSource = GetComponent<AudioSource>();
         //howray();
         if (ButtonType == ButtonTypeEnum.GenTrap)

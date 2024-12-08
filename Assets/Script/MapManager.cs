@@ -84,6 +84,7 @@ public class MapManager : MonoBehaviour
         ResetCubePositions();
         ResetButton();
         ResetTrapPositions();
+        Debug.Log("ehlsk");
     }
     private void SaveBK()
     {

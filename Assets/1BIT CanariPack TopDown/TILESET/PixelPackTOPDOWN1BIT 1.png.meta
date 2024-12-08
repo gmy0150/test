@@ -1,0 +1,7506 @@
+fileFormatVersion: 2
+guid: 444fef404f3203a4c817c9218704fc47
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 335.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5c8f372989b8794b89880704f0afb90
+      internalID: -754795163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 335.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2abcc3fe8d1fc44ea5309553f1832fc
+      internalID: -613525337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 335.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30c5984788674b641b5bca980b9324d5
+      internalID: 823565562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 335.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10e92d8aead8b8b4d852c87c0839b50e
+      internalID: 1616792137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 335.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d14d1e35ab6fad443a64684916a21660
+      internalID: -1667210328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 335.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6686121993415f44fbd9575b56f819a3
+      internalID: 376598863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_6
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 335.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 505488ba9cf49294199f5ade3a85fb24
+      internalID: -1740288816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_7
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 335.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7f40596f3fdd7f41bc861460b1813a6
+      internalID: -2109250536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_8
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 335.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4568067d98557484d9959b3aca7a3e05
+      internalID: 361487078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_9
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 335.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9561af2d5d060b4faaa80d8212dbbed
+      internalID: 167613135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_10
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 335.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28d1d6f2798459d4bab4dfacede71cba
+      internalID: 1357120254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_11
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 335.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c488e48dd16f8244bcc8de2eb9f5396
+      internalID: 1601740737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_12
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 335.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a161ee314fdd1443ad9039fee981efc
+      internalID: 1202332730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_13
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 335.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d92888cba451f9c43a36d0a4247c62d8
+      internalID: 1253120189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_14
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 335.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8543d8bdad663084d8068e585e50c85b
+      internalID: -319104603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_15
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 335.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4db970fc7fd74ea45b90e6d387f085c6
+      internalID: -1491031021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 319.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 994b208eda65e8a4cb46563c10de114c
+      internalID: -1080986014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_17
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 319.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cf440892890751448ac072ec9a332c8
+      internalID: -1945231237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_18
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 319.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c46e08fac996644f9227e273ebea64f
+      internalID: 1884807191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_19
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 319.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46628522cf1711a4d9188de681907c44
+      internalID: 1632108004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_20
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 319.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f43e14c23d9b1e04bab308c7fee2bccc
+      internalID: 1345379832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_21
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 319.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ba4b597efa00b040ae732740da83649
+      internalID: -1361998488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_22
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 319.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ab9b4703449f8841b3acad661778a7b
+      internalID: 1311833834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_23
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 319.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d477aa17e53f0a4dba0d0a3fdb13f17
+      internalID: 773359413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_24
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 319.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1789981be62b6946a130257b102507d
+      internalID: 1770086929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_25
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 319.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e241749ed0f946c48acc66e4cc40a563
+      internalID: 1416631396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_26
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 319.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 225836060160ac24d854ee8da9ab2f97
+      internalID: -1075000993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_27
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 319.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d6a23a6db4d63848bcff7106bb86a21
+      internalID: 1881250561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_28
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 319.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 938ee1c118ef6444b9a24282bd7bce87
+      internalID: -1799141899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_29
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 319.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 852c4ab36a3de4948b93eb7d96e620df
+      internalID: -1666805995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_30
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 319.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e054b17672e770459013ff5ab81cfc0
+      internalID: -1667990055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_31
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 319.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6116e1a2cf8e3184e9450a756ad2d963
+      internalID: -186395359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 303.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7c4d860ae3d24f41bd8cec3e96cece2
+      internalID: -506245389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_33
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 303.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c71a0e3f868dcc244b7cb7cd2194d468
+      internalID: -2011135404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_34
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 303.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccc8d6cdb64bb3c468da617d3eb06bce
+      internalID: -2134556272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_35
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 303.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96ff59ebe6d3f5248afaef15f90b524c
+      internalID: -1955205044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_36
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 303.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b6eeb1139dceab4881498351c94cf21
+      internalID: 327875398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_37
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 303.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 760fe26bf8abbf54cb9cce56230f21ae
+      internalID: -1754201001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_38
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 303.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06028f07557c1814d8322d4fae7ecf7c
+      internalID: -1740095089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_39
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 303.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0df7e65ae57a5f541b3c2421a997ea5a
+      internalID: -588178308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_40
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 303.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be71c9ae30d490a4dbde67e17af12214
+      internalID: -635225758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_41
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 303.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99a6f0701d5dc8b4e9e5b73da571a7f4
+      internalID: 1311399478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_42
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 303.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3724cf10b2790724f9a48e612c9be6a1
+      internalID: -844053397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_43
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 303.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aa51e8869c43424a98fbeafaef4d0bd
+      internalID: 1107065639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_44
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 303.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5894efb44558a8746941dcad671d9a61
+      internalID: -1308586964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_45
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 303.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8c66fccc2c81ac4fabd1a33b2d7c3cf
+      internalID: 118778024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_46
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 303.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0043e70d789285644a0875230d052036
+      internalID: -1870987375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_47
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 303.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 754fb020c3868fd4db16a9d199a8a88a
+      internalID: -2120240696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 287.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d7a35353be89cf46ba09b26ed92f170
+      internalID: -290048425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_49
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 287.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 129642079bb6fd4418b05e9deacfc02a
+      internalID: -923002549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_50
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 287.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81a6102b78025e549bf9ff1bc56605ab
+      internalID: 1567856321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_51
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 287.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79a3fd8a096af3349b382a15d6112a60
+      internalID: -48569844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_52
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 287.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8b95b84481fa344288e433a5f0cbdae
+      internalID: -858150767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_53
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 287.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f12042452b4d28948a831c45f59931a2
+      internalID: -1182372034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_54
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 287.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0504b93ec395c64c88f630f741eabdc
+      internalID: 1293088954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_55
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 287.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2562e78d9b243d14ba3d9b0a83f79ed6
+      internalID: -1355547674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_56
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 287.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91c49a5c84a8640499e20ce4d737f72c
+      internalID: -1464283441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_57
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 287.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 181d7172ddf8efa4bba628cefd67c194
+      internalID: -1712894728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_58
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 287.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ad4129872a925946a71deef2dbcc90d
+      internalID: -178270131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_59
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 287.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 095b8a0b974744444b035f940fe73789
+      internalID: 1328099323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_60
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 287.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebc6f943afc042b4d99110ce9059ae6a
+      internalID: 1350954766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_61
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 287.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 018bb68f5acf8184abb388d081eac728
+      internalID: -451879786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_62
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 287.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6d7e03444b03c04aa39864aba19905b
+      internalID: 1115538731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_63
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 287.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f62c9381d128fd4c81d7bf9a6cc0221
+      internalID: -1802310859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_64
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 271.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1100c478e6a8ee8438f6568b59839f33
+      internalID: 1384099483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_65
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 271.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82459e62196543b439638278ed12a0aa
+      internalID: 1500017715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_66
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 271.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9e4b94ef7b0bb249aa5ea6e1450aac3
+      internalID: -392416051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_67
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 271.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcb07155a1b135845b307b8f03ee0c0a
+      internalID: -568166083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_68
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 271.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9132bc8474906a747950873d421ec7f7
+      internalID: 1832135093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_69
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 271.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa73cefe76e3dc047be7aa9998073002
+      internalID: 560319674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_70
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 271.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c1f6069f7359dc4aa9ada6684390906
+      internalID: 1742695030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_71
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 271.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32f2d44caf2c76d47a0f8ecf7fdbeedd
+      internalID: 1389690790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_72
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 271.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4326d1e72be01df4a81cd959e7bac87a
+      internalID: -610580338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_73
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 271.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0ceb20daae2e944288bc9a3d0e0ab5b
+      internalID: -841987263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_74
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 271.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1a0d1b587ebef445a94614563e630d4
+      internalID: -117058232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_75
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 271.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1af0056a6bfde34195ce3ecd755e3e1
+      internalID: 61438068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_76
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 271.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dff7e2f17c35b34189a713e7980f6cb
+      internalID: 1831973036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_77
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 271.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6e7b4c65a4e8fe44b13d80f9b7e96a5
+      internalID: 1493813739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_78
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 271.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35aa844e4792d1043983a169dbd57c46
+      internalID: 1947051708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_79
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 271.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f571bb3e244b62459de0084c073fb66
+      internalID: -1731937632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 255.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac2922e4bc5f4a745ba2db3f440c514c
+      internalID: -1218710923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_81
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 255.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dada02ca3c2da24b93bc59d499b49fe
+      internalID: 1985189969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_82
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 255.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1c0dbd43a6d1c243a7ca10f509c7ff7
+      internalID: 1251500605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_83
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 255.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 320c6d13b43e0124aa5db60f4cb608bf
+      internalID: 1714754731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_84
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 255.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c968c799f1fe34948a85b6fd2661c4b4
+      internalID: 1661898079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_85
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 255.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ee2585cc2c1be04a9aa73e5ff1a92e1
+      internalID: 556252672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_86
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 255.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2301eae8a5d9c442a7d9bfedc04b5dc
+      internalID: -1055288788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_87
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 255.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4324f88ecb34344d882e4540d395f9b
+      internalID: 1838302403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_88
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 255.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75c6c04525a4bdd4abf847be71f82041
+      internalID: 1213900663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_89
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 255.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4e3fc291ca4c6d419b567ad46f4bafa
+      internalID: -827481136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_90
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 255.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 432d146428f7df944b3e9dcb5372d54e
+      internalID: -867666178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_91
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 255.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61eba3cc23b08f0478d32abdc5c874de
+      internalID: 187772690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_92
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 255.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eafcb07af066f8429712ba9f524fea9
+      internalID: 1365762562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_93
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 255.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0eb317759598f740b95b33c53e2b9ce
+      internalID: 133790453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_94
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 255.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faf13524b890c384eb5afe405c6711cc
+      internalID: 1449681955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_95
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 255.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79f466936299f734a9b631249a82acbe
+      internalID: 258260507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_96
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 239.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 542410062b59bc445ae61196cd74e51d
+      internalID: -55405057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_97
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 239.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfd13be3f1f4f3e4b9fdd2f7106cc2bc
+      internalID: -651469298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_98
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 239.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62932899681e64f4492d77185121d316
+      internalID: -863430610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_99
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 239.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b69913b37908e3428d86dd768ddbc6b
+      internalID: 787320613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_100
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 239.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 743ee4835294a6943b9a651df23a763a
+      internalID: -846927442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_101
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 239.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d46c37df4d11b724488b9008a85c1dce
+      internalID: -1234483960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_102
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 239.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb3f1289e36cdd14db58ce1239942277
+      internalID: 1356018254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_103
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 239.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f536071676995d47ac2576b3918799c
+      internalID: -1932347412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_104
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 239.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 835f47e6865f9d943b9f966ce1ca475a
+      internalID: 1831339453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_105
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 239.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 295516cbd80da9347972a40fec786178
+      internalID: -1977630201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_106
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 239.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb56d0e5a813adb4498f6eab4f2ef26f
+      internalID: -536014575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_107
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 239.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf5bbaed94f7a8f4b86231b597ab3440
+      internalID: 136299889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_108
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 239.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0db4d71641417e24588f5942aa12965c
+      internalID: 863825335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_109
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 239.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d90e37b073b6f5b49b94581b165f04bd
+      internalID: 1082831300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_110
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 239.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebffab8e2b85216429fc4a263ba36a02
+      internalID: 318181017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_111
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 239.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5254082a9f192be41a60db9bbf6dab23
+      internalID: -394219051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_112
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 223.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34833794809376c4f910817b3764b07e
+      internalID: -287279084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_113
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 223.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14055a5c79b3e0246be7594e2cfff807
+      internalID: 1765747420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_114
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 223.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 617314f7794b6154c914b19a45a4f6b6
+      internalID: -414846751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_115
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 223.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1a1cd2e3d685ba4d840cf7eff00d6d1
+      internalID: -2069104710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_116
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 223.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9323be238788d6649accf161f28d97b1
+      internalID: 245360405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_117
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 223.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef4bf7c387d4f9442a2af59e841ebe1f
+      internalID: 598777157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_118
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 223.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24092d3b12f1b0047a6d7bb047dd0e06
+      internalID: 265005744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_119
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 223.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32a787a5e942b69479472b049ed18991
+      internalID: 130068747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_120
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 223.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecfd991a1f5fe554cb77ad1923072b6d
+      internalID: -1215748906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_121
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 223.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e173e04cb26ed4c44bb64180764713ad
+      internalID: -630166576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_122
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 223.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dec5be42ce7ea8140b9a407e13da5ac5
+      internalID: 1155553449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_123
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 223.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 597858926ce51b948b9de12f15cff5b7
+      internalID: -1725265808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_124
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 223.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ae08d4749261c540aa9fd4e80fd90d3
+      internalID: 494878727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_125
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 223.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2330eb6370622fc42ac8f8ba41ecea7c
+      internalID: -1747691669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_126
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 223.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66aef19403695ff498a1f52baaff3cd7
+      internalID: 1090928207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_127
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 223.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5476a0e7ab04d8d4e9fb842d3ec9acd6
+      internalID: 35226911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_128
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 207.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 775c46a30e59cbd42b282b6579061906
+      internalID: 770755032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_129
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 207.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d90fcbf276de7d343b139d50d8abb73b
+      internalID: 877412366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_130
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 207.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e718ad0cbb58f2458422fd64d35cc3b
+      internalID: -1132292484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_131
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 207.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ace3403dbceb8ed4ea5511e7662d7a7b
+      internalID: 1033791306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_132
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 207.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0438e5c5dc24d04e902afc13e5aa795
+      internalID: -1917617138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_133
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 207.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0c232193e6cdc043a1a8fae5e555846
+      internalID: -1188933291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_134
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 207.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ba0a4301baad3841af40c1fd2eaa3e0
+      internalID: 2072500068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_135
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 207.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4baec1af6e213e74c9b971bf6b0cf726
+      internalID: 1204215834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_136
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 207.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 991f6782dda24194cb54ad9f62f1309e
+      internalID: 1680400423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_137
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 207.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a55a21f8de6d4954c8c99f02c8480eff
+      internalID: 449754193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_138
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 207.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 959a1a7b891c67b4aab49a9079bcacf6
+      internalID: -915561792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_139
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 207.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a23ffcd3feba6b40a50bb70c5ebc9a5
+      internalID: -2046763652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_140
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 207.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36b1adeaf6bdf024ea20b9666a49016e
+      internalID: 1527892269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_141
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 207.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad2765aeca4924a47b713e6b0ab7f662
+      internalID: -453769259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_142
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 207.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50d02527700fa2a4a8be084f55b0752f
+      internalID: 1727970874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_143
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 207.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c810cd320e75404496ebd4709d22332
+      internalID: -1914211244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_144
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 191.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0c3a2d5137a11a41a1d7b139370f411
+      internalID: 713923632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_145
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 191.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60061117f2011b0418c0eb6d1b0a3cae
+      internalID: 485993117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_146
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 191.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 108b8817532a9ff439d58cc3e3070c11
+      internalID: 1396630795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_147
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 191.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fa0866037865b241ba3329c2b731ba7
+      internalID: -2130169841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_148
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 191.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0170c52dcee9d7542bb651ca3137d186
+      internalID: 634657536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_149
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 191.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81c9bbf36c78fdb45b91c62bed98b517
+      internalID: -2019581937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_150
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 191.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b1b0e4975bdfc548990e0d4274f1f09
+      internalID: -976748855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_151
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 191.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 168e75aa8f4c4d048a4afbdf89834985
+      internalID: -495602497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_152
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 191.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 387bfb2b7fb1553469920b04c8a86072
+      internalID: 105763912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_153
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 191.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 513c9b7efedf99040a21b1c48b634701
+      internalID: -970208752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_154
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 191.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2558e9039773e024ca2b8295150e3144
+      internalID: 1138065501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_155
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 191.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b90e6af32b620f41941f35ce47bba95
+      internalID: 1603391491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_156
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 191.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 529186dbfc44be04ab821f95664461c6
+      internalID: -1896452623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_157
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 191.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55a214e73788c634ba2584963b2b5420
+      internalID: -406139408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_158
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 191.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae4553355e73f2f46a631025f23b4dc8
+      internalID: -1341984374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_159
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 191.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8e8e094bfbe5854195c3fa347fa5061
+      internalID: -740237299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_160
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 175.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 660923fe88f4b6f49872003984732407
+      internalID: 2099328907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_161
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 175.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd103f43aaad8fc45926051ffb20430a
+      internalID: -708442789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_162
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 175.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3bd4de5c9cca964289f3cc7d4f07f03
+      internalID: -882739078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_163
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 175.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad3f01172835aac47abd16285ee4452c
+      internalID: -12526282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_164
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 175.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d72f4f181e393240997feeaeb320c29
+      internalID: 1200966626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_165
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 175.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e86152622561fe34fa2cf7e4a688d821
+      internalID: -991495257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_166
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 175.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b1f1a35a6d54324c93035bbf97f66e9
+      internalID: 1694024417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_167
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 175.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78e6cc6b59d9c3546aaf25626b7d13ff
+      internalID: 643420495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_168
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 175.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02c625e356f07e7409ad7b40319088d4
+      internalID: -2005078065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_169
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 175.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4348862f4c3463543b09088d172183be
+      internalID: 1155763607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_170
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 175.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f90f63ce41cd354184241530243f559
+      internalID: 2086306465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_171
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 175.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb8e108e233cb9245ae2def116318780
+      internalID: 454658651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_172
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 175.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f24582772ca0d64ebdaa321f54264e4
+      internalID: -350446384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_173
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 175.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cc74ab9a5b83c44b825457aa7ff29e0
+      internalID: -1131404219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_174
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 175.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd2b189000920404f98e8175e0887c22
+      internalID: -349372524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_175
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 175.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e56c5b59e6c7b23499695b8c6e8a0467
+      internalID: -1150627996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_176
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 159.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2ec4e40dbe453942a51b572832fc484
+      internalID: -1388799863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_177
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 159.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1151d2e1b8c2334693baf8c7ae5531d
+      internalID: 1511056005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_178
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 159.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ad5b7acd77460145ae20ec62e825fdb
+      internalID: 2103973716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_179
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 159.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e4429461c3acdd4f91fd34235c0e7ee
+      internalID: -533896752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_180
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 159.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3289c486c2c7f6b479cd1c07d4f6fef1
+      internalID: 1263058107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_181
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 159.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae3717c05ec3a2340b4b7245a5637af6
+      internalID: -1050644745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_182
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 159.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d7081fbf9b0aac4c9a18d5723a4ea53
+      internalID: -813031413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_183
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 159.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd1184da87666314981543ea1a3025ea
+      internalID: -1175669114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_184
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 159.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e74e11fc4ff63dc46b7eb676bc2614da
+      internalID: -1524125532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_185
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 159.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60456fe50a2b4da469d00adb4558d4fc
+      internalID: 953085377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_186
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 159.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd3d1d85678dbc5439861dc3aa92d576
+      internalID: 339388973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_187
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 159.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d7be1bd0c39f11418e9a1b0e41ba3b8
+      internalID: -1831052476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_188
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 159.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a839feecd4ce814d8e805a7d0f30c53
+      internalID: -399916037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_189
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 159.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad535d015cfb3d649a38aabcbefe3314
+      internalID: -673360708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_190
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 159.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7365d132d6b0e244a4384db5816e27e
+      internalID: -1797815252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_191
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 159.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b16a45ad5c91da540980eebe8888155d
+      internalID: -256121125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_192
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 143.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48da8bab07398d94cab3aba76ac977ae
+      internalID: -1433268856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_193
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 143.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f4eaecc3042b5741b93835709e727ee
+      internalID: 1466852917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_194
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 143.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1ecab16be131ba4ea94bff4c70c30a6
+      internalID: 1819065986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_195
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 143.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92352394e27625643bfd1ecbc60454ed
+      internalID: 1948678705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_196
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 143.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b5bc3676d840fc418c83fde3cb3e255
+      internalID: 162122262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_197
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 143.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dd7e163af2db2d4bbd83935b28ea3c8
+      internalID: 900683827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_198
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 143.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63ade0fe81fd9794eaa5427a3d671855
+      internalID: 981481042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_199
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 143.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8cf033b222c0104eb020adaf0efe2eb
+      internalID: 1185582362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_200
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 143.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 369721648dc2669479e8630f3e684c47
+      internalID: 308412621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_201
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 143.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cc3e3ff22a64c2448634f9e6d44f80c
+      internalID: 1051274406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_202
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 143.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c87d86fc4f30a8b4c81a45be35f928d3
+      internalID: 701572784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_203
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 143.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b10a443cb1d6975468655126103297be
+      internalID: 186398217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_204
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 143.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6ae2ae5d66715440937a961b43be765
+      internalID: -1483136759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_205
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 143.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18fe5a34bb78fc64db61aafadc768871
+      internalID: -1243797083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_206
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 143.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bf9efe5d73d0ed47885cb54e7e7a4eb
+      internalID: -1712367527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_207
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 143.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4c74bbc5745f1c458bca4a7a4cce628
+      internalID: -1719394754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_208
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 127.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed713b574a7fbc642a5f4e0dc9285b49
+      internalID: -1620105238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_209
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 127.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03565dd36e2852d47a5a0f2b9e203864
+      internalID: -1676210879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_210
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 127.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ff11f6b532890e49ac7970bbeb73ee4
+      internalID: 1630221011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_211
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 127.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa3d7797dfbfb474093df04c4e003da8
+      internalID: -7240642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_212
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 127.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c568caa6074e144b8bcb2511d1d2295
+      internalID: -1683349889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_213
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 127.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff07fa9634496d14aa7bf4ac2390c8a2
+      internalID: 764356526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_214
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 127.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df87f4dede1b780448d89a8e574d0032
+      internalID: -1993800013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_215
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 127.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7229c709fe149f7439a51d30e9fedccb
+      internalID: 1149373543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_216
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 127.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 454b140952914e04fb898286ed192a00
+      internalID: 689087364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_217
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 127.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58ce4b64554e32d47897cfeeffcb2273
+      internalID: 176213664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_218
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 127.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7b14f4eeec218a408a0fb58d855ec0d
+      internalID: 1754639986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_219
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 127.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4162a7c54ec7e7545a0ef78aade24e21
+      internalID: -1824016707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_220
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 127.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c8a9598b5281f840a2632b730007e2a
+      internalID: -2004314212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_221
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 127.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb44cfbf56ce2664c9584774ec9291b7
+      internalID: -645048826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_222
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 127.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a5c910ed1bb76d4890b86deda7b47ed
+      internalID: 139234709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_223
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 127.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43af880ec3a0cc44ea924e8d1ce11af6
+      internalID: -2019357681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_224
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 111.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4965622bfe07bd84aa9ab5473a379530
+      internalID: -766654244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_225
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 111.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7647d37557a0c04aa43446ff1156b11
+      internalID: -509894301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_226
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 111.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62d8b08282a096a49ba452b1ebb4fc71
+      internalID: 1487558730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_227
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 111.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12fba395a540e0441b68381687de3849
+      internalID: -1345691371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_228
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 111.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 368c4898262395c4b8a172d81cc4017c
+      internalID: -74320007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_229
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 111.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d1b7af908197b64585c586bb57f7f06
+      internalID: 989553654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_230
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 111.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c85627a9d52cc148a9bde7601e4ca89
+      internalID: -1136125640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_231
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 111.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03ebbcf5c8ffe544385134d2d151fcd2
+      internalID: 2114675824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_232
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 111.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8748af7014e7c0478d3bfdfdb50af54
+      internalID: 1053969964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_233
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 111.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e284b53e0b4e0604d9a5e9e66188cfde
+      internalID: -1302740257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_234
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 111.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e70f049b0c0d0a47a7e9e24de5c8523
+      internalID: 1284544999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_235
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 111.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 701c1ed186107314c85161625e464f4e
+      internalID: 2057812956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_236
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 111.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b62f193b266939e4bb5baa3a26fa7b3b
+      internalID: 429360273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_237
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 111.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88caccbf98487ca42a545ed545eb6827
+      internalID: 1408785696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_238
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 111.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f26e13bd08717134789a363526da8386
+      internalID: 1480055571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_239
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 111.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc3c0030917612e48920f32ee278b291
+      internalID: 971945042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_240
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 95.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87b7c879b9d00784fa786f04f25d0c96
+      internalID: -805788898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_241
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 95.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60d4bbf11985b3d48a6e13d711fa8c73
+      internalID: 759717175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_242
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 95.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4241649815ca1794f94b50a16d27d3d2
+      internalID: 1459398651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_243
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 95.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fdea48741be6bd4183ab196b79e10c3
+      internalID: 1219507018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_244
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 95.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7db5b0450445ca246979ec4b69240f78
+      internalID: -1583122809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_245
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 95.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ed567122d37cab48bbe65f1c142265a
+      internalID: -1735704786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_246
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 95.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3098a9623a5cd740b5c857fcffacc5f
+      internalID: 1851022077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_247
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 95.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7308d7d84df2b7949a8dca53a4c31f75
+      internalID: 552370831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_248
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 95.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f41a3191353ef41488830dabe8fafbf3
+      internalID: -498773918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_249
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 95.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34bb6430959c2614ca20ef979888f393
+      internalID: -1481930063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_250
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 95.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89b78dc5bfefd3b42b9279ae599a066b
+      internalID: 1735448310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_251
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 95.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd34047416c49bc408a8ba6fa98b498a
+      internalID: 676798331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_252
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 95.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a8f7bdc56936f846a2e3f1b242fb0a3
+      internalID: -455455710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_253
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 95.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b15e756054cc584ebee74bc7613d74f
+      internalID: 144386700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_254
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 95.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a964e6e408fd6124ebb888bbdb264eb8
+      internalID: 1826557610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_255
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 95.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3800edd3216b105429fec444ec948018
+      internalID: 220187159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_256
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 79.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61dc3886e2012764bbe8830fbc2f8db0
+      internalID: 234908155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_257
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 79.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9391f7fcb52a36b49942d8c2f4ad147f
+      internalID: -1658078578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_258
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 79.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51513063d1a94a741beca720392435c0
+      internalID: 335137306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_259
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 79.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8304235e2111674a9391db2ebabf6d5
+      internalID: 1298667729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_260
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 79.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b4fc129821080045891d49218c73ca0
+      internalID: -1170185274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_261
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 79.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d7cf57aab0d98a45922cc9a0bddd26d
+      internalID: -1967678722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_262
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 79.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d58300497dcad54c8ee35b504b718cb
+      internalID: -29279203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_263
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 79.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4791e6cca526cf642a77fd43ba06f781
+      internalID: -1597193679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_264
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 79.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae2a511e4bb320d4c9736fa3f87f9f7e
+      internalID: -1295202714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_265
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 79.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be4f32e32318bd3418163ac53b742737
+      internalID: -582580169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_266
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 79.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d48c1cec4ddc2040ba8efdf0912f41a
+      internalID: -126505575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_267
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 79.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 714fcb58978b4d24db623576eb0fdef8
+      internalID: -205796581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_268
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 79.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb34b5f7289082345baa1d3f5d3d3f93
+      internalID: 1717897765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_269
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 79.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7987029c8c4c28c45a7114f4c715f1ce
+      internalID: 1719420710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_270
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 79.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63c99d4517408cd4e89b6eff48b92ec4
+      internalID: 2115845917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_271
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 79.2381
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93be74e30f3f2d24da5f5c7a329fb256
+      internalID: -183035165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_272
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 63.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6948aba6e68ea843825b8e2cec983fa
+      internalID: -596111594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_273
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 63.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f934c9328fd88684188040bf9eb0f1c3
+      internalID: -478432538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_274
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 63.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f67269572061ff24eaf65d73c3fd64a8
+      internalID: 904495222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_275
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 63.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4009951750521f64b8bf59623169509f
+      internalID: -450758659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_276
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 63.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61e57a1908a099840be14eb3d775076c
+      internalID: 1324936067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_277
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 63.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de167063171512f45990947e6d6138ad
+      internalID: 1131352501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_278
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 63.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab9167138b1566b4796b8d69429b72ff
+      internalID: 1637630679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_279
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 63.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67d3420f77029944a94d02f99f1a08c5
+      internalID: 468578234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_280
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 63.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa437f038103fce4da78c665df91ea17
+      internalID: -519375410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_281
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 63.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf70e0a726ebebd4a985cb01d263dd81
+      internalID: -313369946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_282
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 63.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75db6ebe08c499941aa2e078be18071e
+      internalID: -777624490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_283
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 63.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b7699067f45eb24d9a3a40d500f2390
+      internalID: -2009322924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_284
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 63.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb7613b1b6705ba4fb081357198d9149
+      internalID: 1401524955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_285
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 63.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 846f1548bc965ef4c825020c290b56fc
+      internalID: 1249859752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_286
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 63.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d405da7495ddb184290fe9bffa88d1ba
+      internalID: 2080628068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_287
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 63.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b75c8fb5876dc664b8171e3a1f6d3f2f
+      internalID: -127349249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_288
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 47.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4065925c21fc1c5439bb3d2a630a8fc2
+      internalID: 855574020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_289
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 47.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98b653554da94c04095d8db78329575c
+      internalID: 285194586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_290
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 47.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0af3d219b4c0536449689d9b0f3297b2
+      internalID: -1145058257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_291
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 47.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52f78a14d2674994ba79053e6d698636
+      internalID: -128865261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_292
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 47.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aa30e152d27e3744bccb0fc53c7e5db
+      internalID: 481262920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_293
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 47.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21b7ffb019593004f87c55278fda93b2
+      internalID: 2021951081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_294
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 47.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c1d36b7c08efee4dba00f731298c73d
+      internalID: 1968629389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_295
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 47.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b368650697d6204eae5f7535f38dadf
+      internalID: -1636800529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_296
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 47.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f88667f9572ba0b4498341d1760fb36e
+      internalID: -1605224536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_297
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 47.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8297be00f5313b74ea230be34ea94655
+      internalID: -800772078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_298
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 47.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f712f238bb5fcde4fbc475bdab88f29f
+      internalID: -1067755709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_299
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 47.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9d315e243b33a547946badedc124408
+      internalID: 1512165442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_300
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 47.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eac907e27d115b1409210910b0b63f37
+      internalID: 907976946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_301
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 47.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a372e5a1c8f52d542a99e67fe56f0fc9
+      internalID: 2037975210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_302
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 47.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1911ff160963a404b9c27487dc11f1ba
+      internalID: 1014761607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_303
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 47.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69ff3699954bc114695f2ed0d8daa316
+      internalID: -884841564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_304
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 31.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c20f8b9ae75396459c2ca9e31d25796
+      internalID: 122769819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_305
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 31.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 218bfd193b49cd247b7371d82221cbc0
+      internalID: -1785377752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_306
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 31.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b106d8e311f224447990cf9b6902af2d
+      internalID: 518459515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_307
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 31.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19cd519a162f08f41b704f61716ad78c
+      internalID: -329403762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_308
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 31.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d461756be51f7594795f2408cc67f624
+      internalID: -143050784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_309
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 31.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 195222b96f8fea74882a1f731a159190
+      internalID: 370617562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_310
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 31.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cc23f0cf27abda4db269efb374fbcb4
+      internalID: 804317641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_311
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 31.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4252252d57ef3ba4880641d8785a927f
+      internalID: -2117799450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_312
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 31.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57c2e32ce1de60344aa884730ec44fe8
+      internalID: -1783138373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_313
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 31.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 212cec51b70a29d4ea3964de9000b8e3
+      internalID: -1917555618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_314
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 31.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04c47276b9b7a4241a21523900e0fdba
+      internalID: 486129446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_315
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 31.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 543b5b5fb6f10d946a967ae912cc9335
+      internalID: 425156565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_316
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 31.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e4099eb5a7b9814ea71f7b671534c91
+      internalID: 1021019027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_317
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 31.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6874903fd8367714a87cff4add3bded5
+      internalID: -95929388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_318
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 31.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e5b202ceba758b468da53dfaa3fd35a
+      internalID: 101225777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_319
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 31.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cfc28b0f08673d44a4dde040bb60bb7
+      internalID: -1978472093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_320
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 15.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e25dadb64b8124048b1fbb2d0e2932b9
+      internalID: 1206623546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_321
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 15.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a39554d33cb8ba34ab9349f6b6001939
+      internalID: -302559376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_322
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 15.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeeb81af1a5bfc04986f368ea8b63e51
+      internalID: -1262208228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_323
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 15.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63308405b5dbd8943948384f2c402ef4
+      internalID: -1116355896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_324
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 15.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98881bba4474d2246829bc70e1accc5c
+      internalID: 519716001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_325
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 15.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8074dd12d803bc42b1344fd5ac8dd2c
+      internalID: -662411892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_326
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 15.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcb49da8c3a3e6144a60db4994a5d7ed
+      internalID: 830602526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_327
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 15.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e72ef302d78782d4d9b769f4d1d648f1
+      internalID: 1372155463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_328
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 15.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a7910fea5788954887a69df21be33c7
+      internalID: 780588852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_329
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 15.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 569835f8a9366674ca2fc7c852363557
+      internalID: 211996946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_330
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 15.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4e36a8948326e548a748db5c616dfa0
+      internalID: -1818206980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_331
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 15.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f88f435a3ded0b41b4d14c26a6e06a3
+      internalID: 2067132864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_332
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 15.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e62810dc6400fc4cad205a4fadf8e52
+      internalID: 890688584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_333
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 15.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ef18471eb2e5ee469ca54ff2b745f07
+      internalID: -1845892548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_334
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 15.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd1e10c1a381db442aa3dd1379409ed1
+      internalID: -286762282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelPackTOPDOWN1BIT 1_335
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 15.238094
+        width: 16
+        height: 16.761906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b3e30fa168c0a043a80cdaa3ae61f13
+      internalID: 1295820441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      PixelPackTOPDOWN1BIT 1_0: -754795163
+      PixelPackTOPDOWN1BIT 1_1: -613525337
+      PixelPackTOPDOWN1BIT 1_10: 1357120254
+      PixelPackTOPDOWN1BIT 1_100: -846927442
+      PixelPackTOPDOWN1BIT 1_101: -1234483960
+      PixelPackTOPDOWN1BIT 1_102: 1356018254
+      PixelPackTOPDOWN1BIT 1_103: -1932347412
+      PixelPackTOPDOWN1BIT 1_104: 1831339453
+      PixelPackTOPDOWN1BIT 1_105: -1977630201
+      PixelPackTOPDOWN1BIT 1_106: -536014575
+      PixelPackTOPDOWN1BIT 1_107: 136299889
+      PixelPackTOPDOWN1BIT 1_108: 863825335
+      PixelPackTOPDOWN1BIT 1_109: 1082831300
+      PixelPackTOPDOWN1BIT 1_11: 1601740737
+      PixelPackTOPDOWN1BIT 1_110: 318181017
+      PixelPackTOPDOWN1BIT 1_111: -394219051
+      PixelPackTOPDOWN1BIT 1_112: -287279084
+      PixelPackTOPDOWN1BIT 1_113: 1765747420
+      PixelPackTOPDOWN1BIT 1_114: -414846751
+      PixelPackTOPDOWN1BIT 1_115: -2069104710
+      PixelPackTOPDOWN1BIT 1_116: 245360405
+      PixelPackTOPDOWN1BIT 1_117: 598777157
+      PixelPackTOPDOWN1BIT 1_118: 265005744
+      PixelPackTOPDOWN1BIT 1_119: 130068747
+      PixelPackTOPDOWN1BIT 1_12: 1202332730
+      PixelPackTOPDOWN1BIT 1_120: -1215748906
+      PixelPackTOPDOWN1BIT 1_121: -630166576
+      PixelPackTOPDOWN1BIT 1_122: 1155553449
+      PixelPackTOPDOWN1BIT 1_123: -1725265808
+      PixelPackTOPDOWN1BIT 1_124: 494878727
+      PixelPackTOPDOWN1BIT 1_125: -1747691669
+      PixelPackTOPDOWN1BIT 1_126: 1090928207
+      PixelPackTOPDOWN1BIT 1_127: 35226911
+      PixelPackTOPDOWN1BIT 1_128: 770755032
+      PixelPackTOPDOWN1BIT 1_129: 877412366
+      PixelPackTOPDOWN1BIT 1_13: 1253120189
+      PixelPackTOPDOWN1BIT 1_130: -1132292484
+      PixelPackTOPDOWN1BIT 1_131: 1033791306
+      PixelPackTOPDOWN1BIT 1_132: -1917617138
+      PixelPackTOPDOWN1BIT 1_133: -1188933291
+      PixelPackTOPDOWN1BIT 1_134: 2072500068
+      PixelPackTOPDOWN1BIT 1_135: 1204215834
+      PixelPackTOPDOWN1BIT 1_136: 1680400423
+      PixelPackTOPDOWN1BIT 1_137: 449754193
+      PixelPackTOPDOWN1BIT 1_138: -915561792
+      PixelPackTOPDOWN1BIT 1_139: -2046763652
+      PixelPackTOPDOWN1BIT 1_14: -319104603
+      PixelPackTOPDOWN1BIT 1_140: 1527892269
+      PixelPackTOPDOWN1BIT 1_141: -453769259
+      PixelPackTOPDOWN1BIT 1_142: 1727970874
+      PixelPackTOPDOWN1BIT 1_143: -1914211244
+      PixelPackTOPDOWN1BIT 1_144: 713923632
+      PixelPackTOPDOWN1BIT 1_145: 485993117
+      PixelPackTOPDOWN1BIT 1_146: 1396630795
+      PixelPackTOPDOWN1BIT 1_147: -2130169841
+      PixelPackTOPDOWN1BIT 1_148: 634657536
+      PixelPackTOPDOWN1BIT 1_149: -2019581937
+      PixelPackTOPDOWN1BIT 1_15: -1491031021
+      PixelPackTOPDOWN1BIT 1_150: -976748855
+      PixelPackTOPDOWN1BIT 1_151: -495602497
+      PixelPackTOPDOWN1BIT 1_152: 105763912
+      PixelPackTOPDOWN1BIT 1_153: -970208752
+      PixelPackTOPDOWN1BIT 1_154: 1138065501
+      PixelPackTOPDOWN1BIT 1_155: 1603391491
+      PixelPackTOPDOWN1BIT 1_156: -1896452623
+      PixelPackTOPDOWN1BIT 1_157: -406139408
+      PixelPackTOPDOWN1BIT 1_158: -1341984374
+      PixelPackTOPDOWN1BIT 1_159: -740237299
+      PixelPackTOPDOWN1BIT 1_16: -1080986014
+      PixelPackTOPDOWN1BIT 1_160: 2099328907
+      PixelPackTOPDOWN1BIT 1_161: -708442789
+      PixelPackTOPDOWN1BIT 1_162: -882739078
+      PixelPackTOPDOWN1BIT 1_163: -12526282
+      PixelPackTOPDOWN1BIT 1_164: 1200966626
+      PixelPackTOPDOWN1BIT 1_165: -991495257
+      PixelPackTOPDOWN1BIT 1_166: 1694024417
+      PixelPackTOPDOWN1BIT 1_167: 643420495
+      PixelPackTOPDOWN1BIT 1_168: -2005078065
+      PixelPackTOPDOWN1BIT 1_169: 1155763607
+      PixelPackTOPDOWN1BIT 1_17: -1945231237
+      PixelPackTOPDOWN1BIT 1_170: 2086306465
+      PixelPackTOPDOWN1BIT 1_171: 454658651
+      PixelPackTOPDOWN1BIT 1_172: -350446384
+      PixelPackTOPDOWN1BIT 1_173: -1131404219
+      PixelPackTOPDOWN1BIT 1_174: -349372524
+      PixelPackTOPDOWN1BIT 1_175: -1150627996
+      PixelPackTOPDOWN1BIT 1_176: -1388799863
+      PixelPackTOPDOWN1BIT 1_177: 1511056005
+      PixelPackTOPDOWN1BIT 1_178: 2103973716
+      PixelPackTOPDOWN1BIT 1_179: -533896752
+      PixelPackTOPDOWN1BIT 1_18: 1884807191
+      PixelPackTOPDOWN1BIT 1_180: 1263058107
+      PixelPackTOPDOWN1BIT 1_181: -1050644745
+      PixelPackTOPDOWN1BIT 1_182: -813031413
+      PixelPackTOPDOWN1BIT 1_183: -1175669114
+      PixelPackTOPDOWN1BIT 1_184: -1524125532
+      PixelPackTOPDOWN1BIT 1_185: 953085377
+      PixelPackTOPDOWN1BIT 1_186: 339388973
+      PixelPackTOPDOWN1BIT 1_187: -1831052476
+      PixelPackTOPDOWN1BIT 1_188: -399916037
+      PixelPackTOPDOWN1BIT 1_189: -673360708
+      PixelPackTOPDOWN1BIT 1_19: 1632108004
+      PixelPackTOPDOWN1BIT 1_190: -1797815252
+      PixelPackTOPDOWN1BIT 1_191: -256121125
+      PixelPackTOPDOWN1BIT 1_192: -1433268856
+      PixelPackTOPDOWN1BIT 1_193: 1466852917
+      PixelPackTOPDOWN1BIT 1_194: 1819065986
+      PixelPackTOPDOWN1BIT 1_195: 1948678705
+      PixelPackTOPDOWN1BIT 1_196: 162122262
+      PixelPackTOPDOWN1BIT 1_197: 900683827
+      PixelPackTOPDOWN1BIT 1_198: 981481042
+      PixelPackTOPDOWN1BIT 1_199: 1185582362
+      PixelPackTOPDOWN1BIT 1_2: 823565562
+      PixelPackTOPDOWN1BIT 1_20: 1345379832
+      PixelPackTOPDOWN1BIT 1_200: 308412621
+      PixelPackTOPDOWN1BIT 1_201: 1051274406
+      PixelPackTOPDOWN1BIT 1_202: 701572784
+      PixelPackTOPDOWN1BIT 1_203: 186398217
+      PixelPackTOPDOWN1BIT 1_204: -1483136759
+      PixelPackTOPDOWN1BIT 1_205: -1243797083
+      PixelPackTOPDOWN1BIT 1_206: -1712367527
+      PixelPackTOPDOWN1BIT 1_207: -1719394754
+      PixelPackTOPDOWN1BIT 1_208: -1620105238
+      PixelPackTOPDOWN1BIT 1_209: -1676210879
+      PixelPackTOPDOWN1BIT 1_21: -1361998488
+      PixelPackTOPDOWN1BIT 1_210: 1630221011
+      PixelPackTOPDOWN1BIT 1_211: -7240642
+      PixelPackTOPDOWN1BIT 1_212: -1683349889
+      PixelPackTOPDOWN1BIT 1_213: 764356526
+      PixelPackTOPDOWN1BIT 1_214: -1993800013
+      PixelPackTOPDOWN1BIT 1_215: 1149373543
+      PixelPackTOPDOWN1BIT 1_216: 689087364
+      PixelPackTOPDOWN1BIT 1_217: 176213664
+      PixelPackTOPDOWN1BIT 1_218: 1754639986
+      PixelPackTOPDOWN1BIT 1_219: -1824016707
+      PixelPackTOPDOWN1BIT 1_22: 1311833834
+      PixelPackTOPDOWN1BIT 1_220: -2004314212
+      PixelPackTOPDOWN1BIT 1_221: -645048826
+      PixelPackTOPDOWN1BIT 1_222: 139234709
+      PixelPackTOPDOWN1BIT 1_223: -2019357681
+      PixelPackTOPDOWN1BIT 1_224: -766654244
+      PixelPackTOPDOWN1BIT 1_225: -509894301
+      PixelPackTOPDOWN1BIT 1_226: 1487558730
+      PixelPackTOPDOWN1BIT 1_227: -1345691371
+      PixelPackTOPDOWN1BIT 1_228: -74320007
+      PixelPackTOPDOWN1BIT 1_229: 989553654
+      PixelPackTOPDOWN1BIT 1_23: 773359413
+      PixelPackTOPDOWN1BIT 1_230: -1136125640
+      PixelPackTOPDOWN1BIT 1_231: 2114675824
+      PixelPackTOPDOWN1BIT 1_232: 1053969964
+      PixelPackTOPDOWN1BIT 1_233: -1302740257
+      PixelPackTOPDOWN1BIT 1_234: 1284544999
+      PixelPackTOPDOWN1BIT 1_235: 2057812956
+      PixelPackTOPDOWN1BIT 1_236: 429360273
+      PixelPackTOPDOWN1BIT 1_237: 1408785696
+      PixelPackTOPDOWN1BIT 1_238: 1480055571
+      PixelPackTOPDOWN1BIT 1_239: 971945042
+      PixelPackTOPDOWN1BIT 1_24: 1770086929
+      PixelPackTOPDOWN1BIT 1_240: -805788898
+      PixelPackTOPDOWN1BIT 1_241: 759717175
+      PixelPackTOPDOWN1BIT 1_242: 1459398651
+      PixelPackTOPDOWN1BIT 1_243: 1219507018
+      PixelPackTOPDOWN1BIT 1_244: -1583122809
+      PixelPackTOPDOWN1BIT 1_245: -1735704786
+      PixelPackTOPDOWN1BIT 1_246: 1851022077
+      PixelPackTOPDOWN1BIT 1_247: 552370831
+      PixelPackTOPDOWN1BIT 1_248: -498773918
+      PixelPackTOPDOWN1BIT 1_249: -1481930063
+      PixelPackTOPDOWN1BIT 1_25: 1416631396
+      PixelPackTOPDOWN1BIT 1_250: 1735448310
+      PixelPackTOPDOWN1BIT 1_251: 676798331
+      PixelPackTOPDOWN1BIT 1_252: -455455710
+      PixelPackTOPDOWN1BIT 1_253: 144386700
+      PixelPackTOPDOWN1BIT 1_254: 1826557610
+      PixelPackTOPDOWN1BIT 1_255: 220187159
+      PixelPackTOPDOWN1BIT 1_256: 234908155
+      PixelPackTOPDOWN1BIT 1_257: -1658078578
+      PixelPackTOPDOWN1BIT 1_258: 335137306
+      PixelPackTOPDOWN1BIT 1_259: 1298667729
+      PixelPackTOPDOWN1BIT 1_26: -1075000993
+      PixelPackTOPDOWN1BIT 1_260: -1170185274
+      PixelPackTOPDOWN1BIT 1_261: -1967678722
+      PixelPackTOPDOWN1BIT 1_262: -29279203
+      PixelPackTOPDOWN1BIT 1_263: -1597193679
+      PixelPackTOPDOWN1BIT 1_264: -1295202714
+      PixelPackTOPDOWN1BIT 1_265: -582580169
+      PixelPackTOPDOWN1BIT 1_266: -126505575
+      PixelPackTOPDOWN1BIT 1_267: -205796581
+      PixelPackTOPDOWN1BIT 1_268: 1717897765
+      PixelPackTOPDOWN1BIT 1_269: 1719420710
+      PixelPackTOPDOWN1BIT 1_27: 1881250561
+      PixelPackTOPDOWN1BIT 1_270: 2115845917
+      PixelPackTOPDOWN1BIT 1_271: -183035165
+      PixelPackTOPDOWN1BIT 1_272: -596111594
+      PixelPackTOPDOWN1BIT 1_273: -478432538
+      PixelPackTOPDOWN1BIT 1_274: 904495222
+      PixelPackTOPDOWN1BIT 1_275: -450758659
+      PixelPackTOPDOWN1BIT 1_276: 1324936067
+      PixelPackTOPDOWN1BIT 1_277: 1131352501
+      PixelPackTOPDOWN1BIT 1_278: 1637630679
+      PixelPackTOPDOWN1BIT 1_279: 468578234
+      PixelPackTOPDOWN1BIT 1_28: -1799141899
+      PixelPackTOPDOWN1BIT 1_280: -519375410
+      PixelPackTOPDOWN1BIT 1_281: -313369946
+      PixelPackTOPDOWN1BIT 1_282: -777624490
+      PixelPackTOPDOWN1BIT 1_283: -2009322924
+      PixelPackTOPDOWN1BIT 1_284: 1401524955
+      PixelPackTOPDOWN1BIT 1_285: 1249859752
+      PixelPackTOPDOWN1BIT 1_286: 2080628068
+      PixelPackTOPDOWN1BIT 1_287: -127349249
+      PixelPackTOPDOWN1BIT 1_288: 855574020
+      PixelPackTOPDOWN1BIT 1_289: 285194586
+      PixelPackTOPDOWN1BIT 1_29: -1666805995
+      PixelPackTOPDOWN1BIT 1_290: -1145058257
+      PixelPackTOPDOWN1BIT 1_291: -128865261
+      PixelPackTOPDOWN1BIT 1_292: 481262920
+      PixelPackTOPDOWN1BIT 1_293: 2021951081
+      PixelPackTOPDOWN1BIT 1_294: 1968629389
+      PixelPackTOPDOWN1BIT 1_295: -1636800529
+      PixelPackTOPDOWN1BIT 1_296: -1605224536
+      PixelPackTOPDOWN1BIT 1_297: -800772078
+      PixelPackTOPDOWN1BIT 1_298: -1067755709
+      PixelPackTOPDOWN1BIT 1_299: 1512165442
+      PixelPackTOPDOWN1BIT 1_3: 1616792137
+      PixelPackTOPDOWN1BIT 1_30: -1667990055
+      PixelPackTOPDOWN1BIT 1_300: 907976946
+      PixelPackTOPDOWN1BIT 1_301: 2037975210
+      PixelPackTOPDOWN1BIT 1_302: 1014761607
+      PixelPackTOPDOWN1BIT 1_303: -884841564
+      PixelPackTOPDOWN1BIT 1_304: 122769819
+      PixelPackTOPDOWN1BIT 1_305: -1785377752
+      PixelPackTOPDOWN1BIT 1_306: 518459515
+      PixelPackTOPDOWN1BIT 1_307: -329403762
+      PixelPackTOPDOWN1BIT 1_308: -143050784
+      PixelPackTOPDOWN1BIT 1_309: 370617562
+      PixelPackTOPDOWN1BIT 1_31: -186395359
+      PixelPackTOPDOWN1BIT 1_310: 804317641
+      PixelPackTOPDOWN1BIT 1_311: -2117799450
+      PixelPackTOPDOWN1BIT 1_312: -1783138373
+      PixelPackTOPDOWN1BIT 1_313: -1917555618
+      PixelPackTOPDOWN1BIT 1_314: 486129446
+      PixelPackTOPDOWN1BIT 1_315: 425156565
+      PixelPackTOPDOWN1BIT 1_316: 1021019027
+      PixelPackTOPDOWN1BIT 1_317: -95929388
+      PixelPackTOPDOWN1BIT 1_318: 101225777
+      PixelPackTOPDOWN1BIT 1_319: -1978472093
+      PixelPackTOPDOWN1BIT 1_32: -506245389
+      PixelPackTOPDOWN1BIT 1_320: 1206623546
+      PixelPackTOPDOWN1BIT 1_321: -302559376
+      PixelPackTOPDOWN1BIT 1_322: -1262208228
+      PixelPackTOPDOWN1BIT 1_323: -1116355896
+      PixelPackTOPDOWN1BIT 1_324: 519716001
+      PixelPackTOPDOWN1BIT 1_325: -662411892
+      PixelPackTOPDOWN1BIT 1_326: 830602526
+      PixelPackTOPDOWN1BIT 1_327: 1372155463
+      PixelPackTOPDOWN1BIT 1_328: 780588852
+      PixelPackTOPDOWN1BIT 1_329: 211996946
+      PixelPackTOPDOWN1BIT 1_33: -2011135404
+      PixelPackTOPDOWN1BIT 1_330: -1818206980
+      PixelPackTOPDOWN1BIT 1_331: 2067132864
+      PixelPackTOPDOWN1BIT 1_332: 890688584
+      PixelPackTOPDOWN1BIT 1_333: -1845892548
+      PixelPackTOPDOWN1BIT 1_334: -286762282
+      PixelPackTOPDOWN1BIT 1_335: 1295820441
+      PixelPackTOPDOWN1BIT 1_34: -2134556272
+      PixelPackTOPDOWN1BIT 1_35: -1955205044
+      PixelPackTOPDOWN1BIT 1_36: 327875398
+      PixelPackTOPDOWN1BIT 1_37: -1754201001
+      PixelPackTOPDOWN1BIT 1_38: -1740095089
+      PixelPackTOPDOWN1BIT 1_39: -588178308
+      PixelPackTOPDOWN1BIT 1_4: -1667210328
+      PixelPackTOPDOWN1BIT 1_40: -635225758
+      PixelPackTOPDOWN1BIT 1_41: 1311399478
+      PixelPackTOPDOWN1BIT 1_42: -844053397
+      PixelPackTOPDOWN1BIT 1_43: 1107065639
+      PixelPackTOPDOWN1BIT 1_44: -1308586964
+      PixelPackTOPDOWN1BIT 1_45: 118778024
+      PixelPackTOPDOWN1BIT 1_46: -1870987375
+      PixelPackTOPDOWN1BIT 1_47: -2120240696
+      PixelPackTOPDOWN1BIT 1_48: -290048425
+      PixelPackTOPDOWN1BIT 1_49: -923002549
+      PixelPackTOPDOWN1BIT 1_5: 376598863
+      PixelPackTOPDOWN1BIT 1_50: 1567856321
+      PixelPackTOPDOWN1BIT 1_51: -48569844
+      PixelPackTOPDOWN1BIT 1_52: -858150767
+      PixelPackTOPDOWN1BIT 1_53: -1182372034
+      PixelPackTOPDOWN1BIT 1_54: 1293088954
+      PixelPackTOPDOWN1BIT 1_55: -1355547674
+      PixelPackTOPDOWN1BIT 1_56: -1464283441
+      PixelPackTOPDOWN1BIT 1_57: -1712894728
+      PixelPackTOPDOWN1BIT 1_58: -178270131
+      PixelPackTOPDOWN1BIT 1_59: 1328099323
+      PixelPackTOPDOWN1BIT 1_6: -1740288816
+      PixelPackTOPDOWN1BIT 1_60: 1350954766
+      PixelPackTOPDOWN1BIT 1_61: -451879786
+      PixelPackTOPDOWN1BIT 1_62: 1115538731
+      PixelPackTOPDOWN1BIT 1_63: -1802310859
+      PixelPackTOPDOWN1BIT 1_64: 1384099483
+      PixelPackTOPDOWN1BIT 1_65: 1500017715
+      PixelPackTOPDOWN1BIT 1_66: -392416051
+      PixelPackTOPDOWN1BIT 1_67: -568166083
+      PixelPackTOPDOWN1BIT 1_68: 1832135093
+      PixelPackTOPDOWN1BIT 1_69: 560319674
+      PixelPackTOPDOWN1BIT 1_7: -2109250536
+      PixelPackTOPDOWN1BIT 1_70: 1742695030
+      PixelPackTOPDOWN1BIT 1_71: 1389690790
+      PixelPackTOPDOWN1BIT 1_72: -610580338
+      PixelPackTOPDOWN1BIT 1_73: -841987263
+      PixelPackTOPDOWN1BIT 1_74: -117058232
+      PixelPackTOPDOWN1BIT 1_75: 61438068
+      PixelPackTOPDOWN1BIT 1_76: 1831973036
+      PixelPackTOPDOWN1BIT 1_77: 1493813739
+      PixelPackTOPDOWN1BIT 1_78: 1947051708
+      PixelPackTOPDOWN1BIT 1_79: -1731937632
+      PixelPackTOPDOWN1BIT 1_8: 361487078
+      PixelPackTOPDOWN1BIT 1_80: -1218710923
+      PixelPackTOPDOWN1BIT 1_81: 1985189969
+      PixelPackTOPDOWN1BIT 1_82: 1251500605
+      PixelPackTOPDOWN1BIT 1_83: 1714754731
+      PixelPackTOPDOWN1BIT 1_84: 1661898079
+      PixelPackTOPDOWN1BIT 1_85: 556252672
+      PixelPackTOPDOWN1BIT 1_86: -1055288788
+      PixelPackTOPDOWN1BIT 1_87: 1838302403
+      PixelPackTOPDOWN1BIT 1_88: 1213900663
+      PixelPackTOPDOWN1BIT 1_89: -827481136
+      PixelPackTOPDOWN1BIT 1_9: 167613135
+      PixelPackTOPDOWN1BIT 1_90: -867666178
+      PixelPackTOPDOWN1BIT 1_91: 187772690
+      PixelPackTOPDOWN1BIT 1_92: 1365762562
+      PixelPackTOPDOWN1BIT 1_93: 133790453
+      PixelPackTOPDOWN1BIT 1_94: 1449681955
+      PixelPackTOPDOWN1BIT 1_95: 258260507
+      PixelPackTOPDOWN1BIT 1_96: -55405057
+      PixelPackTOPDOWN1BIT 1_97: -651469298
+      PixelPackTOPDOWN1BIT 1_98: -863430610
+      PixelPackTOPDOWN1BIT 1_99: 787320613
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

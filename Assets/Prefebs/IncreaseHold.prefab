@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6952868593844535616}
   - component: {fileID: 8124314596607938977}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: respawn
   m_TagString: respawn
   m_Icon: {fileID: 0}
@@ -86,7 +86,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7332388851178443382}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: IncreaseHold
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -121,7 +121,7 @@ GameObject:
   - component: {fileID: 2625465596891894137}
   - component: {fileID: 7923135947111726103}
   - component: {fileID: 736134765872989517}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: Trap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -216,7 +216,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8538639022340407144}
   - component: {fileID: 7885946983045658117}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -265,7 +265,7 @@ GameObject:
   - component: {fileID: 3140311564715765759}
   - component: {fileID: 3267031184919995110}
   - component: {fileID: 1285866496539690455}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Empty
   m_TagString: Untagged
   m_Icon: {fileID: 0}

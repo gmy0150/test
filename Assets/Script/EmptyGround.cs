@@ -7,10 +7,15 @@ public class EmptyGround : MonoBehaviour
 {
     public Tilemap tilemap; // 타일맵 참조
     public LayerMask playerLayer; // 플레이어 레이어
-    public LayerMask cubeLayer; // 큐브 레이어
+    Player player;
+    JustRunPlayer JustRunPlayer;
         private void Start() 
     {
-        
+        player = GameObject.FindObjectOfType<Player>();
+        if(player == null)
+        {
+            JustRunPlayer = GameObject.FindObjectOfType<JustRunPlayer>();
+        }
     }
 
     private void Update()
@@ -18,12 +23,44 @@ public class EmptyGround : MonoBehaviour
         // 특정 조건에서 타일을 업데이트 (예: 게임 로직에 따라)
         //UpdateEmptyTiles();
     }
-    private void OnTriggerEnter2D(Collider2D other) {
-        if (other.CompareTag("Player")||other.CompareTag("Cube")) // 충돌한 오브젝트의 태그를 확인
-        {
-            DisableTilemapCollider(other);
+    //private void OnTriggerEnter2D(Collider2D other) {
+    //    if (other.CompareTag("Player")||other.CompareTag("Cube")) // 충돌한 오브젝트의 태그를 확인
+    //    {
+    //        DisableTilemapCollider(other);
             
-        }else{
+    //    }else{
+    //        EnableTileMap(other);
+    //    }
+    //}
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.CompareTag("Player") || other.CompareTag("Cube")) // 충돌한 오브젝트의 태그를 확인
+        {
+            if (!other.CompareTag("Cube"))
+            {
+                bool abs = true;
+                if (player != null)
+                {
+                    abs = player.IsGroundDetected();
+                }
+                else if (JustRunPlayer != null)
+                {
+                    abs = JustRunPlayer.IsGroundDetected();
+                }
+                Debug.Log(abs);
+                if (!abs)
+                {
+                    DisableTilemapCollider(other);
+                }
+            }
+            else
+            {
+                DisableTilemapCollider(other);
+            }
+
+        }
+        else
+        {
             EnableTileMap(other);
         }
     }

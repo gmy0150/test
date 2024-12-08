@@ -10,7 +10,6 @@ public class PlayerGroundState : PlayerInputKey
     public PlayerGroundState(Player _player, PlayerControl _control) : base(_player, _control)
     {
     }
-
      public override void Enter()
     {
         base.Enter();
@@ -23,16 +22,20 @@ public class PlayerGroundState : PlayerInputKey
     public override void Update()
     {
         base.Update();
-        if(Input.GetButtonDown("Vertical")&&player.IsGroundDetected()&&MapManager.Instance.GravityRoom){
+
+       
+        Debug.Log(control.GetState());
+        Debug.Log(first);
+        if (Input.GetButtonDown("Vertical")&&player.IsGroundDetected()&&MapManager.Instance.GravityRoom){
             control.ChangeState(player.gravityState);
         }
         if(Input.GetButtonDown("Vertical")&&player.IsGroundDetected()&&!MapManager.Instance.GravityRoom){
             control.ChangeState(player.jumpState);
         }
 
-        if(Input.GetKeyDown(KeyCode.Q)){
-            control.ChangeState(player.freezeState);
-        }
+        //if(Input.GetKeyDown(KeyCode.Q)){
+        //    control.ChangeState(player.freezeState);
+        //}
 
         if(xInput == 0 && rb.velocity.y == 0){
             control.ChangeState(player.idleState);

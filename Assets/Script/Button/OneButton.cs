@@ -34,11 +34,8 @@ public class OneButton : Button
                     case Type.right:
                         buttonValue = transform.position.x - 0.2f;
                         transform.position = new Vector3(buttonValue,transform.position.y,transform.position.z);
-
-
                     break;
                 }
-
                 isClick = true;
                 player.gravityState.PushButton();
             }

@@ -12,20 +12,23 @@ public class PlayerJumpState : PlayerAirState
     {
         base.Enter();
         player.EntryAudio(1);
+        player.animator.SetTrigger("Jump");
+
         rb.velocity = new Vector2(xvelocity, player.jumpforce);
     }
     public override void Exit()
     {
         base.Exit();
+        player.animator.SetTrigger("Ground");
+        Debug.Log("?");
+
     }
     public override void Update()
     {
-        
         rb.velocity = new Vector2(xInput * player.moveSpeed, rb.velocity.y);
         base.Update();
-        if(rb.velocity.y == 0 ){
+        if ( rb.velocity.y == 0 && player.IsGroundDetected()){
             control.ChangeState(player.idleState);
         }
-        
     }
 }

@@ -25,6 +25,12 @@ public class Trap : MonoBehaviour
         if (targetobj == null)
         {
             targetobj = this.gameObject;
+            Debug.Log(targetobj.name);
+        }
+        else
+        {
+            Debug.Log(targetobj.name);
+
         }
         if (TrapTypes == TrapType.increase)
         {
@@ -39,13 +45,15 @@ public class Trap : MonoBehaviour
 
             }
         }
+        startPos = targetobj.transform.localPosition;
+        Debug.Log($"targetobj : {targetobj.name} + posiitoin : {startPos}");
+        initScale = targetobj.transform.localScale;
 
     }
     void Start()
     {
 
-        startPos = targetobj.transform.localPosition;
-        initScale = targetobj.transform.localScale;
+
     }
     public void ActiveDetect()
     {
@@ -102,6 +110,7 @@ public class Trap : MonoBehaviour
         startTime = 0;
         targetobj.transform.localPosition = startPos;
         targetobj.transform.localScale = initScale;
+        Debug.Log(startPos);
     }
 }
 

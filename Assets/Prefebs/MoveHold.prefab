@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2912841564832108748}
   - component: {fileID: 8955833219514543339}
   - component: {fileID: 4541471444874633963}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Empty
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -394,7 +394,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2269275202710941368}
   - component: {fileID: 6201521363998932139}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: respawn
   m_TagString: respawn
   m_Icon: {fileID: 0}
@@ -471,7 +471,7 @@ GameObject:
   m_Component:
   - component: {fileID: 807917036462359305}
   - component: {fileID: 1046774495987268486}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -515,7 +515,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6546688806635335378}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: MoveHold
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -550,7 +550,7 @@ GameObject:
   - component: {fileID: 8817984539729837692}
   - component: {fileID: 7642412769532581411}
   - component: {fileID: 3930648799495891122}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: Trap
   m_TagString: Untagged
   m_Icon: {fileID: 0}

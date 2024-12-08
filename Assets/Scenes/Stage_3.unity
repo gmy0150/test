@@ -18513,6 +18513,10 @@ PrefabInstance:
       value: 1.8
       objectReference: {fileID: 0}
     - target: {fileID: 431217601304287054, guid: 5badcc639a9e6aa41ada906490861a05, type: 3}
+      propertyPath: ButtonType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 431217601304287054, guid: 5badcc639a9e6aa41ada906490861a05, type: 3}
       propertyPath: ButtonTouch
       value: 2
       objectReference: {fileID: 0}
