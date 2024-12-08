@@ -55,6 +55,8 @@ public class MetalObj : Cube
                     if(groundHit.collider !=null){
                         CameraManager.Instance.ShakeCamera();
                         groundHit.collider.gameObject.SetActive(false);
+                        AudioSource audioSource = GetComponent<AudioSource>();
+                        audioSource.Play(); 
                     }
                 }
             }

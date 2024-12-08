@@ -13,6 +13,7 @@ public class PlayerGravityControl : PlayerInputKey
     public override void Enter()
     {
         base.Enter();
+        player.EntryAudio(1);
         count *= -1;
     }
     public override void Exit()

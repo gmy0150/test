@@ -18,6 +18,8 @@ public class Coin : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             gameObject.SetActive(false);
+            AudioSource audioSource = GetComponent<AudioSource>();
+            audioSource.Play();
         }
     }
 }

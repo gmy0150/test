@@ -24,10 +24,12 @@ public class JustRunPlayer : MonoBehaviour
     public float jumpforce;
     MapManager mapManager;
     Camera cam;
+    AudioSource audiosource;
     public bool enable;
     void Start()
     {
         cam = Camera.main;
+        audiosource = GetComponent<AudioSource>();
         savePos = transform.position;
         rigid = GetComponent<Rigidbody2D>();
         mapManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<MapManager>();
@@ -42,6 +44,7 @@ public class JustRunPlayer : MonoBehaviour
         if (Input.GetButtonDown("Vertical") && IsGroundDetected())
         {
             rigid.AddForce(new Vector2(0f, jumpforce), ForceMode2D.Impulse);
+            EntryAudio(1);
         }
         if (Input.GetKeyDown(KeyCode.R))
         {
@@ -187,6 +190,7 @@ public class JustRunPlayer : MonoBehaviour
         else
             mapManager.mapCount++;
         mapManager.transpos = false;
+        EntryAudio(0);
     }
     int GetNumberAfterUnderscore(string name)
     {
@@ -199,13 +203,12 @@ public class JustRunPlayer : MonoBehaviour
         Match match = Regex.Match(sceneName, @"\d+");
         return match.Success ? int.Parse(match.Value) : -1;
     }
-    /*public void Respawns()
+    public AudioClip[] audioclips;
+    public void EntryAudio(int audiocnt)
     {
-        transform.position = savePos;
-        mapManager.ResetList();
-        FlipInit();
-    }*/
-
+        audiosource.clip = audioclips[audiocnt];
+        audiosource.Play();
+    }
     public void Respawn()
     {
         if (!die)
@@ -213,6 +216,7 @@ public class JustRunPlayer : MonoBehaviour
             die = true;
             rigid.velocity = Vector2.zero;
             StartCoroutine(Reset());
+            EntryAudio(2);
             DeathCount.CountUp();
         }
     }
@@ -227,16 +231,6 @@ public class JustRunPlayer : MonoBehaviour
         die = false;
     }
 
-    /*private void OnCollisionEnter2D(Collision2D other)
-    {
-        if (enable)
-        {
-            if (other.transform.tag == "spike")
-            {
-                Respawn();
-            }
-        }
-    }*/
 
     private void OnCollisionEnter2D(Collision2D other)
     {

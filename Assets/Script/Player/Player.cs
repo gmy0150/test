@@ -17,6 +17,8 @@ public class Player : MonoBehaviour
     public PlayerFreezeCube freezeState{get; private set;}
 
     public PlayerControl stateMachine{get;private set;}
+     AudioSource audiosource;
+    public AudioClip[] audioclips;
     private Quaternion saveMap;
     public int facingDir {get;private set;} = -1;
     private bool facingRight = true;
@@ -47,6 +49,7 @@ public class Player : MonoBehaviour
         AirState = new PlayerAirState(this,stateMachine);
     }
     void Start(){
+        audiosource = GetComponent<AudioSource>();
         savePos = transform.position;
         rigid = GetComponent<Rigidbody2D>();
         mapManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<MapManager>();
@@ -252,6 +255,12 @@ public class Player : MonoBehaviour
         }else
          mapManager.mapCount++;
         mapManager.transpos = false;
+        EntryAudio(0);
+    }
+    public void EntryAudio(int audiocnt)
+    {
+        audiosource.clip = audioclips[audiocnt];
+        audiosource.Play();
     }
     int GetNumberAfterUnderscore(string name)
     {
@@ -270,6 +279,8 @@ public class Player : MonoBehaviour
         die = true;
         rigid.velocity = Vector2.zero;
         DeathCount.CountUp();
+        EntryAudio(2);
+
         StartCoroutine(Reset());
     }
     IEnumerator Reset()

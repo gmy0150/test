@@ -11,6 +11,7 @@ public class PlayerJumpState : PlayerAirState
     public override void Enter()
     {
         base.Enter();
+        player.EntryAudio(1);
         rb.velocity = new Vector2(xvelocity, player.jumpforce);
     }
     public override void Exit()

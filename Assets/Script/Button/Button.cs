@@ -23,6 +23,8 @@ public class Button : MonoBehaviour
     public int numberOfRays = 5;
     Vector2 savePos;
     protected float buttonValue;
+    AudioSource audioSource;
+    AudioClip clip;
     protected void Start()
     {
         cubemask = LayerMask.GetMask("Cube");
@@ -31,6 +33,7 @@ public class Button : MonoBehaviour
         runPlayer = GameObject.FindGameObjectWithTag("Player").GetComponent<JustRunPlayer>();
         render = GetComponent<SpriteRenderer>();
         savePos = transform.position;
+        audioSource = GetComponent<AudioSource>();
         //howray();
         if (ButtonType == ButtonTypeEnum.GenTrap)
         {
@@ -46,6 +49,9 @@ public class Button : MonoBehaviour
     {
         if (IsButtonHit())
         {
+            if(!isClick)
+                audioSource.Play();
+
             if (!isClick && ButtonType == ButtonTypeEnum.Gravity)
             {
                 PushBtn();
